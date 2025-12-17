@@ -13,6 +13,7 @@ import { usePathname } from '@/routing/hooks';
 
 import { Logo } from '@/components/logo';
 
+import { Footer } from './footer';
 import { HomeFooter } from './home-footer';
 import { langs } from '../langs-config';
 import { navData } from './nav-config';
@@ -116,7 +117,7 @@ export function MainLayout({
     );
   };
 
-  const renderFooter = () => (homePage ? <HomeFooter /> : <></>);
+  const renderFooter = () => (homePage ? <HomeFooter /> : <Footer layoutQuery={layoutQuery} />);
 
   const renderMain = () => <MainSection {...slotProps?.main}>{children}</MainSection>;
 
