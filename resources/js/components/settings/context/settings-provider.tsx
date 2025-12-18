@@ -30,7 +30,26 @@ export function SettingsProvider({
     setOpenDrawer(false);
   }, []);
 
-  const canReset = !isEqual(state, defaultSettings);
+  // Comparer en normalisant le mode "system" qui peut être équivalent au mode par défaut
+  const canReset = useMemo(() => {
+    // Normaliser le mode pour la comparaison
+    // Si defaultSettings.mode est "light" et state.mode est "system", 
+    // on considère que c'est équivalent (le système détecte automatiquement le mode)
+    const normalizedState = { ...state };
+    const normalizedDefault = { ...defaultSettings };
+    
+    // Si le mode par défaut est "light" et le mode actuel est "system", 
+    // normaliser pour la comparaison
+    if (normalizedDefault.mode === 'light' && normalizedState.mode === 'system') {
+      normalizedState.mode = 'light';
+    }
+    
+    // Exclure la version de la comparaison car elle peut changer sans modification utilisateur
+    const { version: _, ...stateWithoutVersion } = normalizedState;
+    const { version: __, ...defaultWithoutVersion } = normalizedDefault;
+    
+    return !isEqual(stateWithoutVersion, defaultWithoutVersion);
+  }, [state, defaultSettings]);
 
   const onReset = useCallback(() => {
     resetState(defaultSettings);

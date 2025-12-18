@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 import Alert from '@mui/material/Alert';
 
 import { usePathname } from '@/routing/hooks';
+import { varAlpha } from 'minimal-shared/utils';
 
 import { Logo } from '@/components/logo';
 
@@ -90,12 +91,26 @@ export function MainLayout({
         />
       ),
       rightArea: (
-        <Box sx={{ gap: 1, display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ gap: 1.5, display: 'flex', alignItems: 'center', py: 1 }}>
           {/** @slot Searchbar */}
           <Searchbar />
 
           {/** @slot Language popover */}
-          <LanguagePopover data={langs} />
+          <Box
+            sx={{
+              '& .MuiIconButton-root': {
+                borderRadius: 2,
+                backgroundColor: (theme) => varAlpha(theme.vars.palette.grey['500Channel'], 0.08),
+                '&:hover': {
+                  backgroundColor: (theme) => varAlpha(theme.vars.palette.primary.mainChannel, 0.08),
+                  transform: 'translateY(-1px)',
+                },
+                transition: 'all 0.3s ease-in-out',
+              },
+            }}
+          >
+            <LanguagePopover data={langs} />
+          </Box>
 
           {/** @slot Settings button */}
           <SettingsButton />

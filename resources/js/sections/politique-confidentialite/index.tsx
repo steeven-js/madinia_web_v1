@@ -69,33 +69,17 @@ export function PolitiqueConfidentialiteView({ data }: PolitiqueConfidentialiteV
     <Box
       sx={{
         minHeight: '100vh',
-        position: 'relative',
-        background:
-          theme.palette.mode === 'light'
-            ? `linear-gradient(135deg, ${varAlpha(theme.vars.palette.grey['50Channel'], 0.8)}, ${varAlpha(theme.vars.palette.grey['100Channel'], 0.95)})`
-            : `linear-gradient(135deg, ${varAlpha(theme.vars.palette.grey['900Channel'], 0.8)}, ${varAlpha(theme.vars.palette.grey['800Channel'], 0.95)})`,
-        '&::before': {
-          content: '""',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: `radial-gradient(circle at 20% 20%, ${theme.palette.primary.main}08, transparent 50%)`,
-          zIndex: 0,
-        },
+        pt: { xs: 10, md: 15 },
+        pb: 8,
       }}
     >
-      <Container sx={{ pt: { xs: 10, md: 15 }, pb: 8, position: 'relative', zIndex: 1 }}>
+      <Container>
         <Typography
           variant="h2"
           sx={{
             textAlign: 'center',
             mb: 6,
-            background: `linear-gradient(135deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-            backgroundClip: 'text',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
+            color: 'primary.main',
           }}
         >
           {data.titre}
@@ -105,17 +89,12 @@ export function PolitiqueConfidentialiteView({ data }: PolitiqueConfidentialiteV
           <Box
             key={article.numero}
             sx={{
-              mb: 6,
+              mb: 3,
               p: 3,
-              border: `1px solid ${varAlpha(theme.vars.palette.grey['500Channel'], 0.12)}`,
               borderRadius: 2,
               bgcolor: 'background.paper',
-              boxShadow: theme.customShadows.z8,
-              transition: 'all 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'translateY(-4px)',
-                boxShadow: theme.customShadows.z16,
-              },
+              border: '1px solid',
+              borderColor: 'divider',
             }}
           >
             <Typography variant="h4" sx={{ color: 'primary.main', mb: 2 }}>

@@ -50,6 +50,13 @@ export function SettingsDrawer({ sx, defaultSettings }: SettingsDrawerProps) {
   const handleReset = useCallback(() => {
     settings.onReset();
     setMode(null);
+    
+    // Réinitialiser la langue à 'fr' par défaut
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('app-locale', 'fr');
+      // Déclencher un événement personnalisé pour notifier le LanguagePopover
+      window.dispatchEvent(new CustomEvent('locale-reset', { detail: { locale: 'fr' } }));
+    }
   }, [setMode, settings]);
 
   const renderHead = () => (

@@ -45,8 +45,8 @@ class ContactMail extends Mailable
         // Email envoyé à l'admin → From = adresse officielle, Reply-To = email du contact
         return new Envelope(
             from: new Address('contact@madinia.fr', 'Madin.IA - Contact'),
-            subject: 'Nouveau message de contact - '.$this->contactData['subject'],
-            replyTo: [new Address($this->contactData['email'], $this->contactData['firstName'].' '.$this->contactData['lastName'])]
+            subject: 'Nouveau message de contact - ' . $this->contactData['subject'],
+            replyTo: [new Address($this->contactData['email'], $this->contactData['firstName'] . ' ' . $this->contactData['lastName'])]
         );
     }
 
