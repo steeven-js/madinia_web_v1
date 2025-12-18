@@ -26,7 +26,7 @@ export function CareerAbout({ sx, ...other }: BoxProps) {
       component="section"
       sx={[
         {
-          pt: { xs: 3, md: 5 },
+          pt: { xs: 3, md: 10 },
           pb: { xs: 5, md: 10 },
         },
         ...(Array.isArray(sx) ? sx : [sx]),
@@ -63,7 +63,7 @@ export function CareerAbout({ sx, ...other }: BoxProps) {
             size={{ xs: 12, md: 6, lg: 6 }}
             sx={{
               rowGap: 3,
-              columnGap: 10,
+              columnGap: { xs: 0, md: 3 },
               display: 'grid',
               color: 'text.secondary',
               gridTemplateColumns: { xs: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' },
@@ -107,25 +107,41 @@ function Section({ sx, ...other }: BoxProps) {
     >
       <Box
         sx={(theme) => ({
-          py: 10,
+          py: { xs: 8, md: 10 },
+          pb: { xs: 10, md: 12 },
           ml: 'auto',
           width: { lg: 0.5 },
+          minHeight: { xs: 400, md: 500 },
           textAlign: 'center',
           color: 'common.white',
           px: { xs: 2.5, md: 5 },
           backgroundImage: `linear-gradient(to bottom, transparent 0%, ${theme.vars.palette.common.black} 75%)`,
         })}
       >
-        <Typography variant="h2" sx={{ mb: 3 }}>
+        <Typography 
+          variant="h2" 
+          sx={{ 
+            mb: 3,
+            wordBreak: 'break-word',
+            overflowWrap: 'break-word',
+          }}
+        >
           Our agency has been
         </Typography>
 
-        <Typography sx={{ mb: 5, opacity: 0.72 }}>
+        <Typography 
+          sx={{ 
+            mb: 5, 
+            opacity: 0.72,
+            wordBreak: 'break-word',
+            overflowWrap: 'break-word',
+          }}
+        >
           Hello. Our agency has been present for over 20 years. We make the best for all our
           customers.
         </Typography>
 
-        <Box sx={{ gap: 5, display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }}>
+        <Box sx={{ gap: { xs: 3, md: 5 }, display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }}>
           {SUMMARY.map((value) => (
             <Box
               key={value.name}

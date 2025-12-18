@@ -13,12 +13,12 @@ import { Iconify } from '@/components/iconify';
 import { CtaPreinscription } from '@/components/cta-preinscription';
 
 // import { Advertisement } from '../../advertisement';
-// import { CatalogueNewsletter } from '../catalogue-newsletter';
-import { CatalogueListSimilar } from '../list/catalogue-list-similar';
-import { CatalogueDetailsHero } from '../details/catalogue-details-hero';
-import { CatalogueDetailsInfo } from '../details/catalogue-details-info';
-import { CatalogueDetailsSummary } from '../details/catalogue-details-summary';
-// import { CatalogueDetailsTeachers } from '../details/catalogue-details-teachers-info';
+// import { FormationsNewsletter } from '../formations-newsletter';
+import { FormationsListSimilar } from '../list/formations-list-similar';
+import { FormationsDetailsHero } from '../details/formations-details-hero';
+import { FormationsDetailsInfo } from '../details/formations-details-info';
+import { FormationsDetailsSummary } from '../details/formations-details-summary';
+// import { FormationsDetailsTeachers } from '../details/formations-details-teachers-info';
 
 // ----------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ type ViewProps = {
   relatedFormations?: Formation[];
 };
 
-export function CatalogueCourseView({ course, relatedCourses, formation, relatedFormations }: ViewProps) {
+export function FormationsCourseView({ course, relatedCourses, formation, relatedFormations }: ViewProps) {
   // Utiliser les vraies données de formation si disponibles, sinon mock
   const displayFormation = formation;
   const displayRelatedFormations = relatedFormations || [];
@@ -72,7 +72,7 @@ export function CatalogueCourseView({ course, relatedCourses, formation, related
   return (
     <>
       {displayFormation && (
-        <CatalogueDetailsHero
+        <FormationsDetailsHero
           formation={displayFormation}
         />
       )}
@@ -81,20 +81,20 @@ export function CatalogueCourseView({ course, relatedCourses, formation, related
         <Container sx={{ py: { xs: 5, md: 10 } }}>
           <Grid container spacing={{ xs: 5, md: 8 }}>
             <Grid size={{ xs: 12, md: 7, lg: 8 }}>
-              <CatalogueDetailsSummary formation={displayFormation} />
+              <FormationsDetailsSummary formation={displayFormation} />
 
               {/* {renderSocials()} */}
             </Grid>
 
             <Grid size={{ xs: 12, md: 5, lg: 4 }}>
-              <CatalogueDetailsInfo formation={displayFormation} sx={{ mb: 5 }} />
+              <FormationsDetailsInfo formation={displayFormation} sx={{ mb: 5 }} />
             </Grid>
           </Grid>
         </Container>
       )}
 
       {!!displayRelatedFormations.length && (
-        <CatalogueListSimilar formations={displayRelatedFormations} />
+        <FormationsListSimilar formations={displayRelatedFormations} />
       )}
 
       <CtaPreinscription />

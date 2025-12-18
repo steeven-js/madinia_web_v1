@@ -49,7 +49,7 @@ type ElearningFiltersProps = {
   };
 };
 
-export function CatalogueFilters({ open, onClose, filters, options }: ElearningFiltersProps) {
+export function FormationsFilters({ open, onClose, filters, options }: ElearningFiltersProps) {
   const { state, setState } = filters;
 
   // Gestion de la touche Échap pour fermer le drawer mobile

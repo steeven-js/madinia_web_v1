@@ -37,7 +37,7 @@ const features = [
   },
   {
     icon: 'solar:rocket-2-bold',
-    title: 'Plan d'action',
+    title: "Plan d'action",
     description: 'Feuille de route concrète pour vos projets IA',
   },
 ];

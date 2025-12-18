@@ -13,7 +13,7 @@ type Props = BoxProps & {
   formation: Formation;
 };
 
-export function CatalogueDetailsSummary({ formation, sx, ...other }: Props) {
+export function FormationsDetailsSummary({ formation, sx, ...other }: Props) {
   const renderObjectives = () => {
     if (!formation.objectives || !formation.show_objectives) return null;
 

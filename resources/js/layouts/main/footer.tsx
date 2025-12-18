@@ -16,6 +16,7 @@ import Button, { buttonClasses } from '@mui/material/Button';
 
 import { usePathname } from '@/routing/hooks';
 import { RouterLink } from '@/routing/components';
+import { paths } from '@/routing/paths';
 
 import { Logo } from '@/components/logo';
 import { SocialLinks } from '@/components/social-links';
@@ -31,7 +32,7 @@ const getFooterLinks = () => [
   {
     subheader: 'Formations',
     items: [
-      { title: 'Catalogue des formations', path: '/catalogue' },
+      { title: 'Formations', path: '/formations' },
       // { title: 'Formation IA', path: '/formation-ia' },
       // { title: 'Formations Certifiantes', path: '/formations-certifiantes' },
       { title: 'Pré-inscription', path: '/preinscription' },
@@ -40,15 +41,15 @@ const getFooterLinks = () => [
   {
     subheader: 'Services',
     items: [
-      { title: 'Conférence IA', path: '/conference-ia' },
-      { title: 'Audit & Conseils IA', path: '/audit-et-conseils-ia' },
-      { title: 'Accompagnement Perso', path: '/accompagnement-perso' },
+      { title: 'Conférence IA', path: paths.services.conferenceIa },
+      { title: 'Audit & Conseils IA', path: paths.services.auditEtConseilsIa },
+      { title: 'Accompagnement Perso', path: paths.services.accompagnementPerso },
     ],
   },
   {
     subheader: 'À propos',
     items: [
-      { title: 'À propos', path: '/about' },
+      { title: 'À propos', path: paths.about.root },
       { title: 'Contact', path: '/contact' },
       { title: 'Certification Qualiopi', path: '/certification-qualiopi' },
     ],

@@ -7,10 +7,11 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 import { RouterLink } from '@/routing/components';
+import { paths } from '@/routing/paths';
 
 import { Iconify } from '@/components/iconify';
 
-import { CatalogueItem } from './catalogue-item';
+import { FormationsItem } from './formations-item';
 
 // ----------------------------------------------------------------------
 
@@ -18,7 +19,7 @@ type Props = BoxProps & {
   formations: Formation[];
 };
 
-export function CatalogueListSimilar({ formations, sx, ...other }: Props) {
+export function FormationsListSimilar({ formations, sx, ...other }: Props) {
   return (
     <Box
       component="section"
@@ -39,7 +40,7 @@ export function CatalogueListSimilar({ formations, sx, ...other }: Props) {
 
           <Button
             component={RouterLink}
-            href="/catalogue"
+            href={paths.formations.root}
             color="inherit"
             endIcon={<Iconify icon="carbon:chevron-right" />}
           >
@@ -59,7 +60,7 @@ export function CatalogueListSimilar({ formations, sx, ...other }: Props) {
           }}
         >
           {formations.map((formation) => (
-            <CatalogueItem key={formation.id} formation={formation} isVertical />
+            <FormationsItem key={formation.id} formation={formation} isVertical />
           ))}
         </Box>
       </Container>

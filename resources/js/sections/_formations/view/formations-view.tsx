@@ -15,9 +15,9 @@ import { _tags } from '@/_mock';
 import { Iconify } from '@/components/iconify';
 import { CtaPreinscription } from '@/components/cta-preinscription';
 
-import { CatalogueList } from '../list/catalogue-list';
-import { CatalogueFilters } from '../catalogue-filters';
-// import { CatalogueNewsletter } from '../catalogue-newsletter';
+import { FormationsList } from '../list/formations-list';
+import { FormationsFilters } from '../formations-filters';
+// import { FormationsNewsletter } from '../formations-newsletter';
 
 // ----------------------------------------------------------------------
 
@@ -25,7 +25,7 @@ type ViewProps = {
     formations?: Formation[];
 };
 
-export function CatalogueView({ formations }: ViewProps) {
+export function FormationsView({ formations }: ViewProps) {
     const openMobile = useBoolean();
     const [showFilters, setShowFilters] = useState(true);
 
@@ -149,7 +149,7 @@ export function CatalogueView({ formations }: ViewProps) {
                     }}
                 >
                     {showFilters && (
-                        <CatalogueFilters
+                        <FormationsFilters
                             filters={filters}
                             open={openMobile.value}
                             onClose={openMobile.onFalse}
@@ -165,7 +165,7 @@ export function CatalogueView({ formations }: ViewProps) {
 
                     <Box sx={(theme) => ({ [theme.breakpoints.up('md')]: { minWidth: 0, flex: '1 1 auto' } })}>
                         {filteredFormations.length > 0 ? (
-                            <CatalogueList formations={filteredFormations} />
+                            <FormationsList formations={filteredFormations} />
                         ) : (
                             <Box
                                 sx={{

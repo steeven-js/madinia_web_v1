@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\CatalogueController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FormationsController;
+use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -9,22 +11,20 @@ Route::get('/', function () {
     return Inertia::render('home');
 })->name('home');
 
-// Routes Catalogue/Formations
-Route::get('/catalogue', [CatalogueController::class, 'index'])->name('catalogue');
-Route::get('/catalogue/{slug}', [CatalogueController::class, 'show'])->name('catalogue.detail');
+// Routes Formations
+Route::get('/formations', [FormationsController::class, 'index'])->name('formations');
+Route::get('/formations/{slug}', [FormationsController::class, 'show'])->name('formations.detail');
 
 // Routes Services
-Route::get('/conference-ia', function () {
-    return Inertia::render('conference-ia');
-})->name('conference-ia');
+Route::prefix('services')->name('services.')->group(function () {
+    Route::get('/conference-ia', [ServicesController::class, 'conferenceIa'])->name('conference-ia');
+    Route::get('/audit-et-conseils-ia', [ServicesController::class, 'auditEtConseilsIa'])->name('audit-et-conseils-ia');
+    Route::get('/accompagnement-perso', [ServicesController::class, 'accompagnementPerso'])->name('accompagnement-perso');
+});
 
-Route::get('/audit-et-conseils-ia', function () {
-    return Inertia::render('audit-et-conseils-ia');
-})->name('audit-et-conseils-ia');
-
-Route::get('/accompagnement-perso', function () {
-    return Inertia::render('accompagnement-perso');
-})->name('accompagnement-perso');
+// Routes About
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/about/{slug}', [AboutController::class, 'show'])->name('about.detail');
 
 // Routes légales
 Route::get('/privacy-policy', function () {

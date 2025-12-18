@@ -1,4 +1,4 @@
-// Types pour les formations du catalogue (basés sur la base de données)
+// Types pour les formations (basés sur la base de données)
 
 export interface FormationCategory {
     id: number;
@@ -42,7 +42,7 @@ export interface FormationLevel {
     label: string;
 }
 
-export interface CatalogueFilters {
+export interface FormationsFilters {
     category: string;
     level: string;
     certification: string;
@@ -53,20 +53,25 @@ export interface CertificationStats {
     non_certifiantes: number;
 }
 
-export interface CatalogueMeta {
+export interface FormationsMeta {
     total: number;
     total_categories: number;
 }
 
-export interface CataloguePageProps {
+export interface FormationsPageProps {
     formations: Formation[];
     categories: FormationCategory[];
     levels: FormationLevel[];
-    filters: CatalogueFilters;
-    meta: CatalogueMeta;
+    filters: FormationsFilters;
+    meta: FormationsMeta;
     certificationStats?: CertificationStats;
     courses?: any[]; // Support pour les mock courses
 }
+
+// Alias pour compatibilité
+export type CataloguePageProps = FormationsPageProps;
+export type CatalogueFilters = FormationsFilters;
+export type CatalogueMeta = FormationsMeta;
 
 export interface FormationDetailPageProps {
     formation: Formation;

@@ -5,16 +5,16 @@ import { Head } from '@inertiajs/react';
 import { CONFIG } from '@/global-config';
 import { MainLayout } from '@/layouts/main';
 
-import { CatalogueCourseView } from '@/sections/_catalogue/view/catalogue-course-view';
+import { FormationsCourseView } from '@/sections/_formations/view/formations-course-view';
 
 // ----------------------------------------------------------------------
 
-interface CatalogueDetailPageProps {
+interface FormationsDetailPageProps {
     formation: Formation;
     relatedFormations: Formation[];
 }
 
-export default function CatalogueDetailPage({ formation, relatedFormations }: CatalogueDetailPageProps) {
+export default function FormationsDetailPage({ formation, relatedFormations }: FormationsDetailPageProps) {
     const metadata = {
         title: `${formation.title} - ${CONFIG.appName}`,
         description: formation.short_description || formation.description,
@@ -32,7 +32,7 @@ export default function CatalogueDetailPage({ formation, relatedFormations }: Ca
                 <meta name="description" content={metadata.description} />
             </Head>
 
-            <CatalogueCourseView formation={formation} relatedFormations={relatedFormations} />
+            <FormationsCourseView formation={formation} relatedFormations={relatedFormations} />
         </MainLayout>
     );
 }

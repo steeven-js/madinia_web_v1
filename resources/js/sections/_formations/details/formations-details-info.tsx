@@ -18,7 +18,7 @@ type Props = CardProps & {
   formation: Formation;
 };
 
-export function CatalogueDetailsInfo({ sx, formation, ...other }: Props) {
+export function FormationsDetailsInfo({ sx, formation, ...other }: Props) {
   // Fonction pour afficher les niveaux en français
   const getLevelLabel = (level: string) => {
     const levelLower = level.toLowerCase();

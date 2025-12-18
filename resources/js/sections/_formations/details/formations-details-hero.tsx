@@ -27,7 +27,7 @@ type Props = BoxProps & {
   formation: Formation;
 };
 
-export function CatalogueDetailsHero({ sx, formation, ...other }: Props) {
+export function FormationsDetailsHero({ sx, formation, ...other }: Props) {
   const [openLightbox, setOpenLightbox] = useState(false);
 
   const handleOpenLightbox = () => {
@@ -40,7 +40,7 @@ export function CatalogueDetailsHero({ sx, formation, ...other }: Props) {
 
   // Copier l'URL de la formation dans le presse-papier
   const handleShareFormation = async () => {
-    const formationUrl = `${window.location.origin}${paths.catalogue.detail(formation.slug)}`;
+    const formationUrl = `${window.location.origin}${paths.formations.detail(formation.slug)}`;
     try {
       await navigator.clipboard.writeText(formationUrl);
       toast.success('URL de la formation copiée dans le presse-papier');
@@ -257,7 +257,7 @@ export function CatalogueDetailsHero({ sx, formation, ...other }: Props) {
           <CustomBreadcrumbs
             links={[
               { name: 'Accueil', href: '/' },
-              { name: 'Formations', href: '/catalogue' },
+              { name: 'Formations', href: paths.formations.root },
               { name: formation.title },
             ]}
             sx={{ mb: { xs: 5, md: 10 } }}

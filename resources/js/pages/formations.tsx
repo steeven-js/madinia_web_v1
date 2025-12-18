@@ -1,19 +1,19 @@
-import type { CataloguePageProps } from '@/types/formation';
+import type { FormationsPageProps } from '@/types/formation';
 
 import { Head } from '@inertiajs/react';
 
 import { CONFIG } from '@/global-config';
 import { MainLayout } from '@/layouts/main';
 
-import { CatalogueView } from '@/sections/_catalogue';
+import { FormationsView } from '@/sections/_formations';
 
 // ----------------------------------------------------------------------
 
-export default function CataloguePage({ formations }: CataloguePageProps) {
+export default function FormationsPage({ formations }: FormationsPageProps) {
     const metadata = {
-        title: `Catalogue des formations - ${CONFIG.appName}`,
+        title: `Formations - ${CONFIG.appName}`,
         description: 'Découvrez notre catalogue complet de formations en intelligence artificielle. Formations certifiantes, tous niveaux, avec des experts reconnus.',
-        keywords: 'catalogue,formations,intelligence artificielle,IA,apprentissage,compétences,certification,madinia',
+        keywords: 'formations,intelligence artificielle,IA,apprentissage,compétences,certification,madinia',
     };
 
     return (
@@ -39,7 +39,7 @@ export default function CataloguePage({ formations }: CataloguePageProps) {
                 <meta name="twitter:description" content={metadata.description} />
             </Head>
 
-            <CatalogueView formations={formations} />
+            <FormationsView formations={formations} />
         </MainLayout>
     );
 }

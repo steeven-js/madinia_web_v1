@@ -10,10 +10,10 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
 
-class CatalogueController extends Controller
+class FormationsController extends Controller
 {
     /**
-     * Affiche le catalogue des formations
+     * Affiche les formations
      */
     public function index(Request $request): Response
     {
@@ -65,7 +65,7 @@ class CatalogueController extends Controller
             ];
         });
 
-        return Inertia::render('catalogue', [
+        return Inertia::render('formations', [
             'formations' => $formattedFormations,
             'certificationStats' => $certificationStats,
         ]);
@@ -141,7 +141,7 @@ class CatalogueController extends Controller
                 ];
             });
 
-        return Inertia::render('catalogue/detail', [
+        return Inertia::render('formations/detail', [
             'formation' => $formattedFormation,
             'relatedFormations' => $relatedFormations,
         ]);

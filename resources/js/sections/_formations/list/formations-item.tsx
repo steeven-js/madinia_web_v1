@@ -28,7 +28,7 @@ type Props = {
   isVertical?: boolean;
 };
 
-export function CatalogueItem({ formation, isVertical }: Props) {
+export function FormationsItem({ formation, isVertical }: Props) {
   const [openLightbox, setOpenLightbox] = useState(false);
 
   const handleOpenLightbox = () => {
@@ -41,7 +41,7 @@ export function CatalogueItem({ formation, isVertical }: Props) {
 
   // Copier l'URL de la formation dans le presse-papier
   const handleShareFormation = async () => {
-    const formationUrl = `${window.location.origin}${paths.catalogue.detail(formation.slug)}`;
+    const formationUrl = `${window.location.origin}${paths.formations.detail(formation.slug)}`;
     try {
       await navigator.clipboard.writeText(formationUrl);
       toast.success('URL de la formation copiée dans le presse-papier');
@@ -248,7 +248,7 @@ export function CatalogueItem({ formation, isVertical }: Props) {
 
       <Link
         component={RouterLink}
-        href={`/catalogue/${formation.slug}`}
+        href={paths.formations.detail(formation.slug)}
         color="inherit"
         variant="h6"
         sx={{
@@ -407,7 +407,7 @@ export function CatalogueItem({ formation, isVertical }: Props) {
 
           <Button
             component={RouterLink}
-            href={`/catalogue/${formation.slug}`}
+            href={paths.formations.detail(formation.slug)}
             variant="text"
             size="medium"
             endIcon={<Iconify icon="solar:arrow-right-bold" width={18} />}

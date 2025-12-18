@@ -4,7 +4,7 @@ import type { Formation } from '@/types/formation';
 import Box from '@mui/material/Box';
 import Pagination, { paginationClasses } from '@mui/material/Pagination';
 
-import { CatalogueItem } from './catalogue-item';
+import { FormationsItem } from './formations-item';
 
 // ----------------------------------------------------------------------
 
@@ -12,7 +12,7 @@ type Props = BoxProps & {
   formations: Formation[];
 };
 
-export function CatalogueList({ formations, sx, ...other }: Props) {
+export function FormationsList({ formations, sx, ...other }: Props) {
   return (
     <>
       <Box
@@ -23,7 +23,7 @@ export function CatalogueList({ formations, sx, ...other }: Props) {
         {...other}
       >
         {formations.map((formation) => (
-            <CatalogueItem key={formation.id} formation={formation} />
+            <FormationsItem key={formation.id} formation={formation} />
         ))}
       </Box>
 
