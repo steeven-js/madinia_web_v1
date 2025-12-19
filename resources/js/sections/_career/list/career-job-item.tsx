@@ -51,7 +51,7 @@ export function CareerJobItem({ job, sx, ...other }: Props) {
       </Box>
 
       <Box sx={{ mt: 3, mb: 2 }}>
-        <Link component={RouterLink} href={paths.career.job} color="inherit" variant="h6" noWrap>
+        <Link component={RouterLink} href="#" color="inherit" variant="h6" noWrap>
           {job.slug}
         </Link>
 

@@ -52,7 +52,7 @@ export function FormationsItem({ formation, isVertical }: Props) {
 
   // Copier l'URL de pré-inscription avec formation_id dans le presse-papier
   const handleSharePreinscription = async () => {
-    const preinscriptionUrl = `${window.location.origin}${paths.preinscription}?formation_id=${formation.id}`;
+    const preinscriptionUrl = `${window.location.origin}${paths.formations.preinscription}?formation_id=${formation.id}`;
     try {
       await navigator.clipboard.writeText(preinscriptionUrl);
       toast.success('URL de pré-inscription copiée dans le presse-papier');
@@ -297,7 +297,7 @@ export function FormationsItem({ formation, isVertical }: Props) {
         {/* Bouton principal - S'inscrire */}
         <Button
           component={RouterLink}
-          href={`/preinscription?formation_id=${formation.id}`}
+          href={`${paths.formations.preinscription}?formation_id=${formation.id}`}
           variant="contained"
           size="medium"
           fullWidth

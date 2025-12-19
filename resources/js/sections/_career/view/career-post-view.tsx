@@ -140,7 +140,7 @@ export function CareerPostView() {
             <CustomBreadcrumbs
               links={[
                 { name: 'Home', href: '/' },
-                { name: 'Blog', href: paths.career.posts },
+                { name: 'Blog', href: paths.blog.posts },
                 { name: post.title },
               ]}
               sx={{ my: { xs: 3, md: 5 } }}

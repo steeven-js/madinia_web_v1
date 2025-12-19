@@ -55,7 +55,6 @@ export const paths = {
      */
     privacyPolicy: '/privacy-policy',
     reglementInterieur: '/reglement-interieur',
-    certificationQualiopi: '/certification-qualiopi',
     facebook: 'https://www.facebook.com/madinia.fr',
     linkedin: 'https://www.linkedin.com/company/madinia',
     instagram: 'https://www.instagram.com/madinia.fr',

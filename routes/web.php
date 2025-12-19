@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FormationsController;
+use App\Http\Controllers\PreinscriptionFormationController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -11,9 +12,14 @@ Route::get('/', function () {
     return Inertia::render('home');
 })->name('home');
 
-// Routes Formations
-Route::get('/formations', [FormationsController::class, 'index'])->name('formations');
-Route::get('/formations/{slug}', [FormationsController::class, 'show'])->name('formations.detail');
+Route::prefix('formations')->name('formations.')->group(function () {
+    Route::get('/', [FormationsController::class, 'index'])->name('index');
+    // Routes Pré-inscription (doivent être avant /{slug} pour éviter les conflits)
+    Route::get('/preinscription', [PreinscriptionFormationController::class, 'index'])->name('preinscription.index');
+    Route::post('/preinscription', [PreinscriptionFormationController::class, 'store'])->name('preinscription.store');
+    // Route détail formation (doit être en dernier car elle capture tout)
+    Route::get('/{slug}', [FormationsController::class, 'show'])->name('detail');
+});
 
 // Routes Services
 Route::prefix('services')->name('services.')->group(function () {
@@ -23,8 +29,13 @@ Route::prefix('services')->name('services.')->group(function () {
 });
 
 // Routes About
-Route::get('/about', [AboutController::class, 'index'])->name('about');
-Route::get('/about/{slug}', [AboutController::class, 'show'])->name('about.detail');
+Route::prefix('about')->name('about.')->group(function () {
+    Route::get('/', [AboutController::class, 'index'])->name('index');
+    Route::get('/certification-qualiopi', function () {
+        return Inertia::render('certification-qualiopi');
+    })->name('certification-qualiopi');
+    Route::get('/{slug}', [AboutController::class, 'show'])->name('detail');
+});
 
 // Routes légales
 Route::get('/privacy-policy', function () {
@@ -35,9 +46,15 @@ Route::get('/reglement-interieur', function () {
     return Inertia::render('reglement-interieur');
 })->name('reglement-interieur');
 
-Route::get('/certification-qualiopi', function () {
-    return Inertia::render('certification-qualiopi');
-})->name('certification-qualiopi');
+// Routes Blog
+Route::prefix('blog')->name('blog.')->group(function () {
+    Route::get('/posts', function () {
+        return Inertia::render('blog/posts');
+    })->name('posts');
+    Route::get('/posts/details', function () {
+        return Inertia::render('blog/post');
+    })->name('post');
+});
 
 // Routes Contact
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');

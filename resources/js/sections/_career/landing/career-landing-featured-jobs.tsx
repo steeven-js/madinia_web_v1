@@ -74,7 +74,7 @@ export function CareerLandingFeaturedJobs({ jobs, sx, ...other }: Props) {
         <Box sx={{ textAlign: 'center' }}>
           <Button
             component={RouterLink}
-            href={paths.career.jobs}
+            href="#"
             color="inherit"
             size="large"
             variant="outlined"

@@ -91,7 +91,7 @@ type CompanyItemProps = {
 
 function CompanyItem({ company }: CompanyItemProps) {
   return (
-    <Link component={RouterLink} href={paths.career.jobs} color="inherit" underline="none">
+    <Link component={RouterLink} href="#" color="inherit" underline="none">
       <Box
         sx={(theme) => ({
           py: 5,

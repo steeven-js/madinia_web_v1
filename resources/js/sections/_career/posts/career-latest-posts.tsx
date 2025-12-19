@@ -66,7 +66,7 @@ export function CareerLatestPosts({ largePost, smallPosts, sx, ...other }: Props
       <Box sx={{ mt: 5, textAlign: 'center', display: { md: 'none' } }}>
         <Button
           component={RouterLink}
-          href={paths.career.posts}
+          href={paths.blog.posts}
           color="inherit"
           endIcon={<Iconify icon="carbon:chevron-right" />}
         >
@@ -115,7 +115,7 @@ export function CareerLatestPosts({ largePost, smallPosts, sx, ...other }: Props
 
           <Button
             component={RouterLink}
-            href={paths.career.posts}
+            href={paths.blog.posts}
             color="inherit"
             endIcon={<Iconify icon="carbon:chevron-right" />}
             sx={{ display: { xs: 'none', md: 'inline-flex' } }}
@@ -196,7 +196,7 @@ export function PostItem({ sx, post, order, largePost, ...other }: PostItemProps
 
         <Link
           component={RouterLink}
-          href={paths.career.post}
+          href={paths.blog.post}
           color="inherit"
           variant={largePost ? 'h4' : 'h6'}
           sx={(theme) => ({ ...theme.mixins.maxLine({ line: 2 }) })}

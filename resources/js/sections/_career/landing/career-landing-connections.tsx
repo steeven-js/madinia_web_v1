@@ -75,7 +75,7 @@ export function CareerLandingConnections({ countries, sx, ...other }: Props) {
 
               <Button
                 component={RouterLink}
-                href={paths.career.jobs}
+                href="#"
                 color="inherit"
                 size="large"
                 variant="contained"
@@ -100,7 +100,7 @@ export function CareerLandingConnections({ countries, sx, ...other }: Props) {
                   <Link
                     component={RouterLink}
                     key={country.id}
-                    href={paths.career.jobs}
+                    href="#"
                     underline="none"
                   >
                     <JobItem country={country} />

@@ -40,7 +40,7 @@ export function CareerJobListSimilar({ jobs, sx, ...other }: Props) {
 
           <Button
             component={RouterLink}
-            href={paths.career.jobs}
+            href="#"
             color="inherit"
             endIcon={<Iconify icon="carbon:chevron-right" />}
           >

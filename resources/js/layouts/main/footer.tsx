@@ -35,7 +35,7 @@ const getFooterLinks = () => [
       { title: 'Formations', path: '/formations' },
       // { title: 'Formation IA', path: '/formation-ia' },
       // { title: 'Formations Certifiantes', path: '/formations-certifiantes' },
-      { title: 'Pré-inscription', path: '/preinscription' },
+      { title: 'Pré-inscription', path: paths.formations.preinscription },
     ],
   },
   {
@@ -51,7 +51,7 @@ const getFooterLinks = () => [
     items: [
       { title: 'À propos', path: paths.about.root },
       { title: 'Contact', path: '/contact' },
-      { title: 'Certification Qualiopi', path: '/certification-qualiopi' },
+      { title: 'Certification Qualiopi', path: paths.about.certificationQualiopi },
     ],
   },
   {
@@ -249,7 +249,7 @@ export function Footer({ layoutQuery = 'md', sx, ...other }: FooterProps) {
         </Typography>
         <Link
           component={RouterLink}
-          href="/certification-qualiopi"
+          href={paths.about.certificationQualiopi}
           sx={{
             display: 'inline-flex',
             alignItems: 'center',

@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 
+import { paths } from '@/routing/paths';
 import { RouterLink } from '@/routing/components';
 
 import { Iconify } from '@/components/iconify';
@@ -213,7 +214,7 @@ export function FormationsDetailsInfo({ sx, formation, ...other }: Props) {
       <Stack spacing={2}>
         <Button
           component={RouterLink}
-          href={`/preinscription?formation_id=${formation.id}`}
+          href={`${paths.formations.preinscription}?formation_id=${formation.id}`}
           variant="contained"
           size="large"
           color="primary"

@@ -86,7 +86,7 @@ export function PostItem({ post, index, sx, ...other }: PostItemProps) {
 
       <Link
         component={RouterLink}
-        href={paths.career.post}
+        href={paths.blog.post}
         color="inherit"
         variant="h5"
         sx={{ ...(isImageNotVisible && { color: 'grey.800' }) }}

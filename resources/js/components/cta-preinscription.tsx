@@ -8,6 +8,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 
+import { paths } from '@/routing/paths';
 import { Iconify } from '@/components/iconify';
 import { varFade } from '@/components/animate';
 
@@ -17,7 +18,7 @@ export function CtaPreinscription() {
     const theme = useTheme();
 
     const handleClick = () => {
-        router.visit('/preinscription');
+        router.visit(paths.formations.preinscription);
     };
 
     return (

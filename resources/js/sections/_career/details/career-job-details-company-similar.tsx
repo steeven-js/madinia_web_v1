@@ -44,7 +44,7 @@ export function CareerJobDetailsCompanySimilar({ jobs, sx, ...other }: Props) {
             '&:last-child': { borderBottom: 0 },
           })}
         >
-          <Link component={RouterLink} href={paths.career.job} variant="subtitle1" color="inherit">
+          <Link component={RouterLink} href="#" variant="subtitle1" color="inherit">
             {job.slug}
           </Link>
 

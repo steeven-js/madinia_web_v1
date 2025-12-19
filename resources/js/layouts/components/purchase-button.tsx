@@ -52,14 +52,14 @@ export function PurchaseButton({ slotProps, sx }: PurchaseButtonProps) {
         variant="text"
         target="_blank"
         rel="noopener noreferrer"
-        href={paths.zoneStore}
+        href={paths.formations.preinscription}
         {...slotProps?.button}
         sx={[
           { px: 2, borderRadius: 'inherit' },
           ...(Array.isArray(slotProps?.button?.sx) ? slotProps.button.sx : [slotProps?.button?.sx]),
         ]}
       >
-        Purchase
+        Pré-inscription
       </Button>
     </AnimateBorder>
   );

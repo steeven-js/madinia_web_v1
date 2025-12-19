@@ -24,7 +24,18 @@ export function NavList({ data, sx, ...other }: NavListProps) {
   const isNotComponentsPath = !pathname.startsWith(paths.components);
   const isOpenPath = !!data.children && isNotRootOrDocs && isNotComponentsPath;
 
-  const isActive = isActiveLink(pathname, data.path, !!data.children);
+  // Vérifier si le pathname correspond à un des enfants de l'item
+  const isPathInChildren = data.children?.some((section) =>
+    section.items?.some((item) => isActiveLink(pathname, item.path, false))
+  );
+
+  // Pour les items avec children, être actif seulement si:
+  // 1. Le pathname correspond exactement au path de l'item (ex: /about)
+  // 2. OU le pathname correspond à un des enfants (ex: /about/certification-qualiopi)
+  // Pour les items sans children, utiliser match exact
+  const isActive = data.children
+    ? isActiveLink(pathname, data.path, false) || !!isPathInChildren
+    : isActiveLink(pathname, data.path, false);
 
   const { value: open, onToggle } = useBoolean(isOpenPath);
 

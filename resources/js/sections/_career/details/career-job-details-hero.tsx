@@ -155,7 +155,7 @@ export function CareerJobDetailsHero({
         <CustomBreadcrumbs
           links={[
             { name: 'Home', href: '/' },
-            { name: 'Jobs', href: paths.career.jobs },
+            { name: 'Jobs', href: '#' },
             { name: slug },
           ]}
           sx={{ mb: { xs: 5, md: 10 }, '& a > div': { color: 'common.white' } }}
