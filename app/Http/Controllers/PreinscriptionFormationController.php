@@ -109,7 +109,7 @@ class PreinscriptionFormationController extends Controller
 
             return back()->with(
                 'success',
-                'Merci pour votre inscription ! Nous vous contacterons dès que la prochaine session sera ouverte. ' .
+                'Merci pour votre inscription ! Nous vous contacterons dès que la prochaine session sera ouverte. '.
                 'Vous recevrez également une confirmation par e-mail.'
             );
 
