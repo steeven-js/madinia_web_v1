@@ -106,6 +106,10 @@ function useProgressBar() {
 export function ProgressBar() {
   useEffect(() => {
     NProgress.configure({ showSpinner: false });
+    
+    // S'assurer que NProgress est terminé au montage
+    NProgress.done();
+    
     return () => {
       NProgress.done();
     };

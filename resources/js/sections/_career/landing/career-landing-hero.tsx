@@ -1,8 +1,11 @@
 import type { BoxProps } from '@mui/material/Box';
-import type { IJobFiltersProps } from '@/types/job';
+import type { Formation } from '@/types/formation';
+
+import { useState } from 'react';
 
 import { varAlpha } from 'minimal-shared/utils';
 import { useSetState } from 'minimal-shared/hooks';
+import { usePage, router } from '@inertiajs/react';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -12,24 +15,34 @@ import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import Autocomplete from '@mui/material/Autocomplete';
+import CircularProgress from '@mui/material/CircularProgress';
 import InputAdornment from '@mui/material/InputAdornment';
 import { inputBaseClasses } from '@mui/material/InputBase';
 
 import { fShortenNumber } from '@/utils/format-number';
 
-import { CONFIG } from '@/global-config';
+import { paths } from '@/routing/paths';
+
+// import { CONFIG } from '@/global-config';
 import { _brands, _jobTitles } from '@/_mock';
 
 import { Iconify } from '@/components/iconify';
 import { SvgColor } from '@/components/svg-color';
-import { CountrySelect } from '@/components/country-select';
 
 // ----------------------------------------------------------------------
 
-type FiltersProps = Partial<IJobFiltersProps>;
+type FiltersProps = {
+  formation: Formation | null;
+};
+
+type PageProps = {
+  formations?: Formation[];
+};
 
 export function CareerLandingHero({ sx, ...other }: BoxProps) {
-  const filters = useSetState<FiltersProps>({ keyword: null, location: null });
+  const { formations = [] } = usePage<PageProps>().props;
+  const filters = useSetState<FiltersProps>({ formation: null });
+  const [isLoading, setIsLoading] = useState(false);
 
   const renderFilters = () => (
     <Box
@@ -45,21 +58,29 @@ export function CareerLandingHero({ sx, ...other }: BoxProps) {
         flexDirection: { xs: 'column', md: 'row' },
         [`& .${inputBaseClasses.root}`]: {
           bgcolor: 'transparent',
+          color: 'common.black',
           '&:hover': { bgcolor: 'transparent' },
           [`&.${inputBaseClasses.focused}`]: { bgcolor: 'transparent' },
+          '& input': {
+            color: 'common.black !important',
+          },
+          '& input[type="text"]': {
+            color: 'common.black !important',
+          },
         },
       }}
     >
       <Autocomplete
         sx={{ width: 1 }}
-        options={_jobTitles}
-        value={filters.state.keyword}
-        onChange={(event, newValue: string | null) => filters.setState({ keyword: newValue })}
+        options={formations}
+        value={filters.state.formation}
+        onChange={(event, newValue: Formation | null) => filters.setState({ formation: newValue })}
+        getOptionLabel={(option) => (typeof option === 'string' ? option : option.title)}
         renderInput={(params) => (
           <TextField
             {...params}
             hiddenLabel
-            placeholder="Job title, keywords..."
+            placeholder="Rechercher une formation..."
             slotProps={{
               input: {
                 ...params.InputProps,
@@ -71,6 +92,21 @@ export function CareerLandingHero({ sx, ...other }: BoxProps) {
                 ),
               },
             }}
+            sx={(theme) => ({
+              '& .MuiOutlinedInput-root': {
+                color: theme.palette.common.black,
+                '& input': {
+                  color: `${theme.palette.common.black} !important`,
+                },
+                '& input[type="text"]': {
+                  color: `${theme.palette.common.black} !important`,
+                },
+                '& input::placeholder': {
+                  color: theme.palette.text.disabled,
+                  opacity: 1,
+                },
+              },
+            })}
           />
         )}
       />
@@ -80,18 +116,20 @@ export function CareerLandingHero({ sx, ...other }: BoxProps) {
         sx={{ my: 'auto', height: 24, display: { xs: 'none', md: 'block' } }}
       />
 
-      <CountrySelect
-        fullWidth
-        hiddenLabel
-        placeholder="Location"
-        value={filters.state.location}
-        onChange={(event, newValue: string) => filters.setState({ location: newValue })}
-      />
-
       <Button
         size="large"
         variant="contained"
         color="primary"
+        onClick={() => {
+          if (filters.state.formation?.slug) {
+            setIsLoading(true);
+            router.visit(paths.formations.detail(filters.state.formation.slug), {
+              onFinish: () => setIsLoading(false),
+              onError: () => setIsLoading(false),
+            });
+          }
+        }}
+        disabled={!filters.state.formation || isLoading}
         sx={(theme) => ({
           width: 1,
           [theme.breakpoints.up('md')]: {
@@ -101,57 +139,61 @@ export function CareerLandingHero({ sx, ...other }: BoxProps) {
           },
         })}
       >
-        <Iconify icon="carbon:search" />
+        {isLoading ? (
+          <CircularProgress size={20} color="inherit" />
+        ) : (
+          <Iconify icon="carbon:search" />
+        )}
       </Button>
     </Box>
   );
 
-  const renderBrands = () => (
-    <Box
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: { xs: 4, md: 2, lg: 4 },
-      }}
-    >
-      {_brands.slice(0, 4).map((brand) => (
-        <SvgColor
-          key={brand.id}
-          src={brand.image}
-          sx={{ width: 94, height: 28, color: 'text.disabled' }}
-        />
-      ))}
-    </Box>
-  );
+  // const renderBrands = () => (
+  //   <Box
+  //     sx={{
+  //       display: 'flex',
+  //       flexWrap: 'wrap',
+  //       alignItems: 'center',
+  //       justifyContent: 'center',
+  //       gap: { xs: 4, md: 2, lg: 4 },
+  //     }}
+  //   >
+  //     {_brands.slice(0, 4).map((brand) => (
+  //       <SvgColor
+  //         key={brand.id}
+  //         src={brand.image}
+  //         sx={{ width: 94, height: 28, color: 'text.disabled' }}
+  //       />
+  //     ))}
+  //   </Box>
+  // );
 
-  const renderSummary = () => (
-    <Stack
-      divider={<Divider orientation="vertical" flexItem sx={{ borderStyle: 'dashed' }} />}
-      sx={{
-        color: 'common.white',
-        flexDirection: 'row',
-        gap: { xs: 1.5, sm: 3 },
-      }}
-    >
-      {[
-        { label: 'Jobs', value: 2000000 },
-        { label: 'Successful hiring', value: 500000 },
-        { label: 'Partners', value: 250000 },
-        { label: 'Employee', value: 156000 },
-      ].map((item) => (
-        <div key={item.label}>
-          <Typography component="span" variant="h4" sx={{ mb: 0.75, display: 'block' }}>
-            {fShortenNumber(item.value)}+
-          </Typography>
-          <Typography component="span" variant="body2" sx={{ opacity: 0.48 }}>
-            {item.label}
-          </Typography>
-        </div>
-      ))}
-    </Stack>
-  );
+  // const renderSummary = () => (
+  //   <Stack
+  //     divider={<Divider orientation="vertical" flexItem sx={{ borderStyle: 'dashed' }} />}
+  //     sx={{
+  //       color: 'common.white',
+  //       flexDirection: 'row',
+  //       gap: { xs: 1.5, sm: 3 },
+  //     }}
+  //   >
+  //     {[
+  //       { label: 'Jobs', value: 2000000 },
+  //       { label: 'Successful hiring', value: 500000 },
+  //       { label: 'Partners', value: 250000 },
+  //       { label: 'Employee', value: 156000 },
+  //     ].map((item) => (
+  //       <div key={item.label}>
+  //         <Typography component="span" variant="h4" sx={{ mb: 0.75, display: 'block' }}>
+  //           {fShortenNumber(item.value)}+
+  //         </Typography>
+  //         <Typography component="span" variant="body2" sx={{ opacity: 0.48 }}>
+  //           {item.label}
+  //         </Typography>
+  //       </div>
+  //     ))}
+  //   </Stack>
+  // );
 
   return (
     <Box
@@ -202,7 +244,7 @@ export function CareerLandingHero({ sx, ...other }: BoxProps) {
           left: 0,
           width: '100%',
           height: '100%',
-          bgcolor: (theme) => varAlpha(theme.vars.palette.common.blackChannel, 0),
+          bgcolor: (theme) => varAlpha(theme.vars.palette.common.blackChannel, 0.1),
           zIndex: 1,
         }}
       />
@@ -217,29 +259,26 @@ export function CareerLandingHero({ sx, ...other }: BoxProps) {
           }}
         >
           <Typography variant="h1" sx={{ color: 'common.white' }}>
-            {`Get the `}
+            {`Maîtrisez l'`}
             <Box
               component="span"
-              sx={(theme) => ({
-                ...theme.mixins.textGradient(
-                  `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 100%`
-                ),
-              })}
-            >
-              Career
-            </Box>
+              sx={
+                {color: 'primary.main'}
+              }>
+                Intelligence Artificielle
+              </Box>
 
-            {` you deserve`}
-          </Typography>
-
+              {` de demain`}
+            </Typography>
+{/* 
           <Typography sx={{ color: 'grey.500', maxWidth: 480 }}>
             Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis
             venenatis ante odio sit amet eros.
-          </Typography>
+          </Typography> */}
 
           {renderFilters()}
-          {renderBrands()}
-          {renderSummary()}
+          {/* {renderBrands()}
+          {renderSummary()} */}
         </Box>
       </Container>
     </Box>

@@ -3,14 +3,13 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FormationsController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PreinscriptionFormationController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('formations')->name('formations.')->group(function () {
     Route::get('/', [FormationsController::class, 'index'])->name('index');

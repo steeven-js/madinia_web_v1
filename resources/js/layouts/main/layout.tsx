@@ -23,7 +23,7 @@ import { LayoutSection } from '../core/layout-section';
 import { HeaderSection } from '../core/header-section';
 import { NavMobile } from './nav/mobile';
 import { NavDesktop } from './nav/desktop';
-import { Searchbar } from '../components/searchbar';
+// import { Searchbar } from '../components/searchbar';
 import { MenuButton } from '../components/menu-button';
 import { PurchaseButton } from '../components/purchase-button';
 import { SettingsButton } from '../components/settings-button';
@@ -93,7 +93,7 @@ export function MainLayout({
       rightArea: (
         <Box sx={{ gap: 1.5, display: 'flex', alignItems: 'center', py: 1 }}>
           {/** @slot Searchbar */}
-          <Searchbar />
+          {/* <Searchbar /> */}
 
           {/** @slot Language popover */}
           <Box
