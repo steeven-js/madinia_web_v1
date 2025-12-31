@@ -37,32 +37,6 @@ export default function ContactPage() {
         <meta name="keywords" content={metadata.keywords} />
       </Head>
 
-      {/* Section d'en-tête */}
-      <Box
-        sx={{
-          pt: { xs: 12, md: 15 },
-          pb: { xs: 4, md: 6 },
-        }}
-      >
-        <Container>
-          <Stack spacing={2} alignItems="center" textAlign="center" sx={{ mb: 8 }}>
-            <Typography variant="h2" component="h1" color="primary.main">
-              Contactez-nous
-            </Typography>
-            <Typography
-              variant="h5"
-              sx={{
-                color: 'text.secondary',
-                maxWidth: 600,
-                lineHeight: 1.6,
-              }}
-            >
-              Une question ? Un projet ? N'hésitez pas à nous contacter, nous vous répondrons dans les plus brefs délais.
-            </Typography>
-          </Stack>
-        </Container>
-      </Box>
-
       {/* Section du formulaire */}
       <Container
         sx={{

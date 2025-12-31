@@ -35,6 +35,8 @@ class AdminPanelProvider extends PanelProvider
             ->login()
             ->profile()
             ->topNavigation()
+            ->registration()
+            ->emailVerification()
             ->multiFactorAuthentication([
                 EmailAuthentication::make(),
             ], isRequired: true)

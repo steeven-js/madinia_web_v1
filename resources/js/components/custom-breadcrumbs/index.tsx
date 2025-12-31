@@ -20,6 +20,7 @@ type CustomBreadcrumbsProps = {
   sx?: SxProps<Theme>;
   heading?: string;
   action?: React.ReactNode;
+  textColor?: string;
 };
 
 export function CustomBreadcrumbs({
@@ -27,6 +28,7 @@ export function CustomBreadcrumbs({
   sx,
   heading,
   action,
+  textColor,
 }: CustomBreadcrumbsProps) {
   const lastLink = links[links.length - 1];
 
@@ -39,7 +41,16 @@ export function CustomBreadcrumbs({
       )}
 
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <Breadcrumbs separator="›" sx={{ typography: 'body2' }}>
+        <Breadcrumbs
+          separator="›"
+          sx={{
+            typography: 'body2',
+            ...(textColor && {
+              color: textColor,
+              '& .MuiBreadcrumbs-separator': { color: textColor },
+            }),
+          }}
+        >
           {links.map((link, index) => {
             const isLast = index === links.length - 1;
 
@@ -48,7 +59,7 @@ export function CustomBreadcrumbs({
                 key={link.name ?? index}
                 variant="body2"
                 sx={{ 
-                  color: isLast ? 'text.primary' : 'text.disabled',
+                  color: textColor || (isLast ? 'text.primary' : 'text.disabled'),
                   fontWeight: isLast ? 600 : 400,
                 }}
               >
@@ -61,16 +72,24 @@ export function CustomBreadcrumbs({
                 href={link.href}
                 color="inherit"
                 sx={{
-                  display: 'flex',
-                  alignItems: 'center',
+                  display: 'inline-flex',
                   textDecoration: 'none',
                   '&:hover': {
                     textDecoration: 'underline',
                   },
                 }}
               >
-                {link.icon && <Box sx={{ mr: 0.5, display: 'flex' }}>{link.icon}</Box>}
-                {link.name}
+                <Box
+                  sx={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 0.5,
+                    color: textColor || 'inherit',
+                  }}
+                >
+                  {link.icon && <Box sx={{ display: 'flex' }}>{link.icon}</Box>}
+                  {link.name}
+                </Box>
               </Link>
             );
           })}

@@ -5,7 +5,6 @@ import { m } from 'framer-motion';
 import { useState, useCallback } from 'react';
 
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
@@ -15,6 +14,8 @@ import Typography from '@mui/material/Typography';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 
+import { paths } from '@/routing/paths';
+
 import { TrianglePattern } from '@/assets/illustrations/components/shape-pattern';
 
 import { varFade, MotionViewport } from '@/components/animate';
@@ -23,100 +24,63 @@ import { varFade, MotionViewport } from '@/components/animate';
 
 const FAQs = [
   {
-    question: 'How can I get the update?',
+    question: "Qu'est-ce que l'IA générative ?",
     answer: (
       <Typography>
-        You will get 12 months of free
-        <Link
-          href="https://support.mui.com/hc/en-us/articles/360008775240-How-do-I-get-access-to-an-item-I-purchased"
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{ mx: 0.5 }}
-        >
-          updates
-        </Link>
-        with the purchase. Please renew your license to get updates after that.
+        L'intelligence artificielle générative est une technologie capable de créer du contenu
+        original, comme du texte, des images ou même du code, à partir de données préexistantes.
+        Elle est utilisée pour automatiser des tâches, améliorer la créativité et optimiser les
+        processus dans divers secteurs d'activité.
       </Typography>
     ),
   },
   {
-    question: 'Which license is right for you?',
-    answer: (
-      <Box component="ul" sx={{ pl: 3, listStyleType: 'disc' }}>
-        <li> All licenses do not apply to open source.</li>
-        <li> One licenses / one end product (3 licenses / 3 products...).</li>
-        <li>
-          <strong>Standard / Plus</strong> license used in free products (Internal management...).
-        </li>
-        <li>
-          <strong>Extended</strong> license used in charge products, collect fees from users
-          (SAAS...).
-        </li>
-        <li>
-          Learn more about the
-          <Link
-            href="https://zone-docs.vercel.app/package"
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ mx: 0.5 }}
-          >
-            package & license
-          </Link>
-        </li>
-      </Box>
-    ),
-  },
-  {
-    question: 'How long is my license valid for?',
-    answer: (
-      <Box component="ul" sx={{ pl: 3, listStyleType: 'disc' }}>
-        <li> The license is lifetime.</li>
-        <li> You get 12 months of free updates.</li>
-      </Box>
-    ),
-  },
-  {
-    question: 'Which platforms will the template support?',
+    question: 'Pour qui sont destinées vos formations ?',
     answer: (
       <Typography>
-        {`The components in MUI are designed to work in the latest, stable releases of all major browsers, including Chrome, Firefox, Safari, and Edge. We don't support Internet Explorer 11. `}
-        Learn more about the
-        <Link
-          href="https://mui.com/material-ui/getting-started/supported-platforms/"
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{ mx: 0.5 }}
-        >
-          supported platforms
-        </Link>
+        Nos formations s'adressent à tous les profils : dirigeants, managers, employés,
+        entrepreneurs, étudiants et particuliers. Nous adaptons le contenu et la pédagogie selon le
+        niveau et les besoins spécifiques de chaque participant.
       </Typography>
     ),
   },
   {
-    question: 'For what kind of projects is the Standard license intended?',
+    question: 'Combien de temps durent vos formations ?',
     answer: (
       <Typography>
-        The Standard license is designed for internal applications in which staff will access the
-        application. An example could be the back-office dashboard of a public-facing e-commerce
-        website in which staff would sign in and manage inventory, customers, etc.
+        La durée varie selon le type de formation : de quelques heures pour les sensibilisations à
+        plusieurs jours pour les formations approfondies. Nous proposons aussi des accompagnements
+        sur mesure qui peuvent s'étendre sur plusieurs semaines.
       </Typography>
     ),
   },
   {
-    question: 'Do you have a free demo to review the code before purchasing?',
+    question: 'Quels sont les formats de formation proposés ?',
     answer: (
       <Typography>
-        Yes, you can check out our
-        <Link
-          href="https://mui.com/store/items/minimal-dashboard-free/"
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{ mx: 0.5 }}
-        >
-          open source
-        </Link>
-        dashboard template which should give you an overview of the code quality and folder
-        structure. Keep in mind that some aspects may differ from this paid version.
+        Nous proposons des formations en présentiel, en ligne (visioconférence) et en format
+        hybride. Nous nous adaptons à vos contraintes géographiques et organisationnelles pour vous
+        offrir la meilleure expérience d'apprentissage.
+      </Typography>
+    ),
+  },
+  {
+    question: 'Y a-t-il un suivi après la formation ?',
+    answer: (
+      <Typography>
+        Oui, nous proposons un accompagnement post-formation pour vous aider à mettre en pratique
+        les connaissances acquises. Cela peut inclure des sessions de Q&R, du mentoring ou un
+        support technique selon vos besoins.
+      </Typography>
+    ),
+  },
+  {
+    question: 'Pourquoi choisir Madin.IA ?',
+    answer: (
+      <Typography>
+        Madin.IA combine expertise technique, approche pédagogique adaptée et connaissance du
+        marché local. Nous sommes basés en Martinique et comprenons les spécificités des entreprises
+        caribéennes tout en ayant une vision globale de l'IA générative.
       </Typography>
     ),
   },
@@ -175,7 +139,7 @@ export function HomeFAQs({ sx, ...other }: BoxProps) {
           <Grid size={{ xs: 12, md: 8 }}>
             <m.div variants={variants}>
               <Typography variant="h2" sx={{ textAlign: 'center' }}>
-                Frequently asked questions
+                Foire Aux Questions
               </Typography>
             </m.div>
 
@@ -196,13 +160,13 @@ export function HomeFAQs({ sx, ...other }: BoxProps) {
             >
               <m.div variants={variants}>
                 <Typography component="h6" variant="h3">
-                  Still have questions?
+                  Vous avez d'autres questions ?
                 </Typography>
               </m.div>
 
               <m.div variants={variants}>
                 <Typography sx={{ color: 'text.secondary' }}>
-                  Please describe your case to receive the most accurate advice.
+                  Contactez notre équipe pour obtenir de plus amples informations.
                 </Typography>
               </m.div>
 
@@ -211,9 +175,9 @@ export function HomeFAQs({ sx, ...other }: BoxProps) {
                   size="large"
                   color="inherit"
                   variant="contained"
-                  href="mailto:support@minimals.cc?subject=[Feedback] from Customer"
+                  href={paths.contact.root}
                 >
-                  Contact us
+                  Nous contacter
                 </Button>
               </m.div>
             </Box>
