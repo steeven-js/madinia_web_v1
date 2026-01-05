@@ -1,0 +1,105 @@
+{
+    "demo": {
+        "lang": "English",
+        "description": "The starting point for your next project is based on MUI. Easy customization helps you build apps faster and better."
+    },
+    "buttons": {
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "add": "Add",
+        "close": "Close",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "confirm": "Confirm",
+        "learnMore": "Learn More",
+        "readMore": "Read More",
+        "viewAll": "View All",
+        "getStarted": "Get Started",
+        "downloadNow": "Download Now",
+        "bookAppointment": "Book Appointment",
+        "contactUs": "Contact Us",
+        "subscribe": "Subscribe",
+        "login": "Login",
+        "logout": "Logout",
+        "register": "Register"
+    },
+    "status": {
+        "loading": "Loading...",
+        "success": "Success",
+        "error": "Error",
+        "warning": "Warning",
+        "info": "Information",
+        "pending": "Pending",
+        "completed": "Completed",
+        "failed": "Failed"
+    },
+    "actions": {
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "download": "Download",
+        "upload": "Upload",
+        "share": "Share",
+        "copy": "Copy",
+        "print": "Print"
+    },
+    "labels": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "phone": "Phone",
+        "company": "Company",
+        "subject": "Subject",
+        "date": "Date",
+        "time": "Time",
+        "duration": "Duration",
+        "price": "Price",
+        "description": "Description",
+        "title": "Title",
+        "category": "Category",
+        "format": "Format",
+        "views": "views",
+        "features": "Features",
+        "benefits": "Benefits"
+    },
+    "services": {
+        "requestQuote": "Request a quote",
+        "otherServices": "Other services",
+        "otherServicesDescription": "Discover our other artificial intelligence services"
+    },
+    "placeholders": {
+        "enterName": "Enter your name",
+        "enterEmail": "Enter your email",
+        "enterMessage": "Enter your message",
+        "enterPhone": "Enter your phone",
+        "enterCompany": "Enter your company",
+        "search": "Search..."
+    },
+    "validation": {
+        "required": "This field is required",
+        "invalidEmail": "Invalid email address",
+        "minLength": "Minimum {{count}} characters",
+        "maxLength": "Maximum {{count}} characters",
+        "invalidPhone": "Invalid phone number"
+    },
+    "time": {
+        "minute": "minute",
+        "minutes": "minutes",
+        "hour": "hour",
+        "hours": "hours",
+        "day": "day",
+        "days": "days",
+        "week": "week",
+        "weeks": "weeks",
+        "month": "month",
+        "months": "months",
+        "year": "year",
+        "years": "years",
+        "ago": "ago",
+        "readingTime": "{{time}} min read"
+    }
+}

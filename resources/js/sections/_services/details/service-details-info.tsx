@@ -6,6 +6,8 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 
+import { useTranslate } from '@/locales';
+
 import { Iconify } from '@/components/iconify';
 
 import { paths } from '@/routing/paths';
@@ -19,6 +21,8 @@ type Props = CardProps & {
 };
 
 export function ServiceDetailsInfo({ sx, category, duration, format, ...other }: Props) {
+  const { t } = useTranslate('common');
+
   return (
     <Card
       sx={[
@@ -32,15 +36,15 @@ export function ServiceDetailsInfo({ sx, category, duration, format, ...other }:
       ]}
       {...other}
     >
-      {category && <Item icon="carbon:baggage-claim" label="Catégorie" value={category} />}
+      {category && <Item icon="carbon:baggage-claim" label={t('labels.category')} value={category} />}
 
-      {duration && <Item icon="solar:clock-circle-bold" label="Durée" value={duration} />}
+      {duration && <Item icon="solar:clock-circle-bold" label={t('labels.duration')} value={duration} />}
 
-      {format && <Item icon="solar:document-text-bold" label="Format" value={format} />}
+      {format && <Item icon="solar:document-text-bold" label={t('labels.format')} value={format} />}
 
       <Box sx={{ pt: 2 }}>
         <Button fullWidth variant="contained" size="large" color="primary" href={paths.contact.root}>
-          Demander un devis
+          {t('services.requestQuote')}
         </Button>
       </Box>
     </Card>

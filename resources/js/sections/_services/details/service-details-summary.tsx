@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 
+import { useTranslate } from '@/locales';
+
 import { Iconify } from '@/components/iconify';
 import { Markdown } from '@/components/markdown';
 
@@ -17,6 +19,8 @@ type Props = BoxProps & {
 };
 
 export function ServiceDetailsSummary({ sx, content, features, benefits, ...other }: Props) {
+  const { t } = useTranslate('common');
+
   return (
     <Box
       sx={[
@@ -34,7 +38,7 @@ export function ServiceDetailsSummary({ sx, content, features, benefits, ...othe
       {!!features?.length && (
         <div>
           <Typography component="h6" variant="h5" sx={{ mb: 3 }}>
-            Caractéristiques
+            {t('labels.features')}
           </Typography>
           <Box sx={{ gap: 1, display: 'flex', flexWrap: 'wrap' }}>
             {features.map((feature) => (
@@ -47,7 +51,7 @@ export function ServiceDetailsSummary({ sx, content, features, benefits, ...othe
       {!!benefits?.length && (
         <div>
           <Typography component="h6" variant="h5" sx={{ mb: 3 }}>
-            Avantages
+            {t('labels.benefits')}
           </Typography>
           <Box
             sx={{

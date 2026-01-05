@@ -5,6 +5,8 @@ import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 
+import { useTranslate } from '@/locales';
+
 import { _socials } from '@/_mock';
 
 import { Iconify } from '@/components/iconify';
@@ -23,10 +25,12 @@ type ViewProps = {
 };
 
 export function ServiceView({ service, relatedServices }: ViewProps) {
+  const { t } = useTranslate('common');
+
   const renderSocials = () => (
     <Box sx={{ gap: 1.5, display: 'flex', mt: 5 }}>
       <Box component="span" sx={{ lineHeight: '30px', typography: 'subtitle2' }}>
-        Partager:
+        {t('actions.share')}:
       </Box>
 
       <Box
@@ -91,8 +95,8 @@ export function ServiceView({ service, relatedServices }: ViewProps) {
             <ServiceDetailsInfo category={service?.category} />
 
             <Advertisement
-              title="Autres services"
-              description="Découvrez nos autres services en intelligence artificielle"
+              title={t('services.otherServices')}
+              description={t('services.otherServicesDescription')}
               imageUrl="/assets/images/career/newsletter.webp"
             />
           </Grid>

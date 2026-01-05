@@ -1,19 +1,21 @@
 import { Head } from '@inertiajs/react';
 
+import { useTranslate } from '@/locales';
 import { MainLayout } from '@/layouts/main';
 
 import { ServiceAccompagnementView } from '@/sections/_services/view/service-accompagnement-view';
 
 // ----------------------------------------------------------------------
 
-const metadata = {
-  title: 'Accompagnement Personnalisé - Madin.IA',
-  description:
-    'Accompagnement personnalisé en intelligence artificielle pour votre entreprise. Formations sur mesure et conseils adaptés à vos besoins spécifiques.',
-  keywords: 'accompagnement,formation,intelligence artificielle,IA,personnalisé,consulting,madinia',
-};
-
 export default function AccompagnementPersoPage() {
+  const { t } = useTranslate('services');
+
+  const metadata = {
+    title: `${t('accompagnementPerso.hero.title')} - Madin.IA`,
+    description: t('accompagnementPerso.hero.description'),
+    keywords: 'accompagnement,formation,intelligence artificielle,IA,personnalisé,consulting,madinia',
+  };
+
   return (
     <MainLayout>
       <Head title={metadata.title}>

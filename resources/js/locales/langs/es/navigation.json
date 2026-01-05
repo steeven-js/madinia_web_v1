@@ -1,0 +1,53 @@
+{
+    "main": {
+        "home": "Inicio",
+        "formationIA": "Formación IA",
+        "accompagnementPersonnalise": "Acompañamiento Personalizado",
+        "conferenceIA": "Conferencia IA",
+        "auditEtConseilsIA": "Auditoría y Consultoría IA",
+        "aboutUs": "Acerca de nosotros",
+        "contact": "Contacto"
+    },
+    "subheader": {
+        "madinia": "Madin.IA"
+    },
+    "breadcrumbs": {
+        "home": "Inicio",
+        "blog": "Blog",
+        "about": "Acerca de",
+        "contact": "Contacto",
+        "services": "Servicios"
+    },
+    "footer": {
+        "sections": {
+            "services": "Servicios",
+            "company": "Empresa",
+            "support": "Soporte",
+            "legal": "Legal"
+        },
+        "links": {
+            "formationIA": "Formación IA",
+            "conferenceIA": "Conferencia IA",
+            "auditConseilsIA": "Auditoría y Consultoría IA",
+            "accompagnementPerso": "Acompañamiento personalizado",
+            "about": "Acerca de",
+            "team": "Equipo",
+            "contact": "Contacto",
+            "help": "Ayuda",
+            "faq": "Preguntas frecuentes",
+            "support": "Soporte",
+            "privacyPolicy": "Política de privacidad",
+            "termsOfService": "Términos de servicio",
+            "reglementInterieur": "Reglamento interno"
+        },
+        "social": {
+            "followUs": "Síguenos",
+            "instagram": "Instagram",
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn"
+        },
+        "copyright": "© 2024 Madin.IA. Todos los derechos reservados.",
+        "madeWith": "Hecho con ❤️ en Martinica"
+    }
+}

@@ -7,6 +7,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 import { CONFIG } from '@/global-config';
+import { useTranslate } from '@/locales';
 import { MainLayout } from '@/layouts/main';
 
 import { CtaPreinscription } from '@/components/cta-preinscription';
@@ -16,14 +17,15 @@ import { MarketingContactInfo } from '@/sections/_contact/contact-info';
 
 // ----------------------------------------------------------------------
 
-const metadata = {
-  title: `Contact - ${CONFIG.appName}`,
-  description:
-    'Contactez MADIN.IA pour vos projets en intelligence artificielle. Formations, conférences, audit et accompagnement personnalisé.',
-  keywords: 'contact,madin.ia,intelligence artificielle,formation,conseil,martinique',
-};
-
 export default function ContactPage() {
+  const { t } = useTranslate('pages');
+
+  const metadata = {
+    title: `${t('contact.form.title')} - ${CONFIG.appName}`,
+    description: t('contact.description'),
+    keywords: 'contact,madin.ia,intelligence artificielle,formation,conseil,martinique',
+  };
+
   return (
     <MainLayout
       slotProps={{
@@ -69,10 +71,10 @@ export default function ContactPage() {
             >
               <Stack spacing={2} sx={{ mb: 3 }}>
                 <Typography variant="h4" sx={{ fontWeight: 600 }}>
-                  Envoyez-nous un message
+                  {t('contact.form.title')}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.
+                  {t('contact.form.subtitle')}
                 </Typography>
               </Stack>
 

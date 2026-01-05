@@ -14,6 +14,7 @@ import { createNavItem, navItemStyles, navSectionClasses } from '@/components/na
 export function NavItem({
   title,
   path,
+  icon,
   /********/
   open,
   active,
@@ -40,6 +41,10 @@ export function NavItem({
       })}
       {...other}
     >
+      {icon && !subItem && (
+        <ItemIcon {...ownerState}>{icon}</ItemIcon>
+      )}
+
       <ItemTitle {...ownerState}> {title}</ItemTitle>
 
       {hasChild && <ItemArrow {...ownerState} icon="eva:arrow-ios-downward-fill" />}
@@ -106,6 +111,19 @@ const ItemRoot = styled(ButtonBase, { shouldForwardProp })<StyledState>(({
     ],
   };
 });
+
+/**
+ * @slot icon
+ */
+const ItemIcon = styled('span', { shouldForwardProp })<StyledState>(({ theme }) => ({
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  flexShrink: 0,
+  width: 20,
+  height: 20,
+  marginRight: theme.spacing(1),
+}));
 
 /**
  * @slot title

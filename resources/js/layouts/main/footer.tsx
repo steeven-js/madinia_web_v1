@@ -14,9 +14,13 @@ import Typography from '@mui/material/Typography';
 import { styled, useTheme } from '@mui/material/styles';
 import Button, { buttonClasses } from '@mui/material/Button';
 
+import type { TFunction } from 'i18next';
+
 import { usePathname } from '@/routing/hooks';
 import { RouterLink } from '@/routing/components';
 import { paths } from '@/routing/paths';
+
+import { useTranslate } from '@/locales';
 
 import { Logo } from '@/components/logo';
 import { SocialLinks } from '@/components/social-links';
@@ -28,35 +32,33 @@ export type FooterProps = BoxProps & {
 };
 
 // Structure du footer avec les liens principaux
-const getFooterLinks = () => [
+const getFooterLinks = (t: TFunction, tPages: TFunction) => [
   {
-    subheader: 'Formations',
+    subheader: t('navigation:footer.sections.formations'),
     items: [
-      { title: 'Formations', path: '/formations' },
-      // { title: 'Formation IA', path: '/formation-ia' },
-      // { title: 'Formations Certifiantes', path: '/formations-certifiantes' },
-      { title: 'Pré-inscription', path: paths.formations.preinscription },
+      { title: tPages('footer.links.formationIA'), path: '/formations' },
+      { title: t('navigation:footer.links.preinscription'), path: paths.formations.preinscription },
     ],
   },
   {
-    subheader: 'Services',
+    subheader: t('navigation:footer.sections.services'),
     items: [
-      { title: 'Conférence IA', path: paths.services.conferenceIa },
-      { title: 'Audit & Conseils IA', path: paths.services.auditEtConseilsIa },
-      { title: 'Accompagnement Perso', path: paths.services.accompagnementPerso },
+      { title: t('navigation:footer.links.conferenceIA'), path: paths.services.conferenceIa },
+      { title: t('navigation:footer.links.auditConseilsIA'), path: paths.services.auditEtConseilsIa },
+      { title: t('navigation:footer.links.accompagnementPerso'), path: paths.services.accompagnementPerso },
     ],
   },
   {
-    subheader: 'À propos',
+    subheader: t('navigation:footer.sections.company') || tPages('footer.sections.about'),
     items: [
-      { title: 'À propos', path: paths.about.root },
-      { title: 'Contact', path: '/contact' },
-      { title: 'Certification Qualiopi', path: paths.about.certificationQualiopi },
+      { title: t('navigation:footer.links.about'), path: paths.about.root },
+      { title: t('navigation:footer.links.contact'), path: '/contact' },
+      { title: tPages('footer.links.certificationQualiopi'), path: paths.about.certificationQualiopi },
     ],
   },
   {
-    subheader: 'Ressources',
-    items: [{ title: 'Tous les articles', path: '/posts' }],
+    subheader: tPages('footer.sections.resources'),
+    items: [{ title: tPages('footer.links.allPosts'), path: '/posts' }],
   },
 ];
 
@@ -117,13 +119,16 @@ const blockStyles = (theme: Theme, layoutQuery: Breakpoint): SxProps<Theme> => (
 export function Footer({ layoutQuery = 'md', sx, ...other }: FooterProps) {
   const theme = useTheme();
   const pathname = usePathname();
+  const { t } = useTranslate('navigation');
+  const { t: tPages } = useTranslate('pages');
+
+  const footerLinks = getFooterLinks(t, tPages);
 
   const renderInfo = () => (
     <>
       <Logo />
       <Typography variant="body2" sx={{ maxWidth: 360, color: 'text.secondary' }}>
-        MADIN.IA - Expert en Intelligence Artificielle pour transformer votre entreprise avec des
-        solutions innovantes et sur-mesure. Formation, conseil et accompagnement personnalisé.
+        {tPages('footer.description')}
       </Typography>
       <SocialLinks variant="icons" size="medium" spacing={1} sx={{ mt: 2 }} />
     </>
@@ -141,7 +146,7 @@ export function Footer({ layoutQuery = 'md', sx, ...other }: FooterProps) {
         },
       })}
     >
-      {getFooterLinks().map((list) => (
+      {footerLinks.map((list) => (
         <Box
           component="li"
           key={list.subheader}
@@ -228,9 +233,7 @@ export function Footer({ layoutQuery = 'md', sx, ...other }: FooterProps) {
           display: 'block',
         }}
       >
-        MADIN.IA – 934 303 843 00015 | +33 6 47 43 80 84 | contact@madinia.fr | Enregistré sous
-        le numéro de déclaration d&apos;activité 02973663897 auprès du préfet de la région
-        Martinique, ce numéro ne vaut pas agrément de l&apos;État
+        {tPages('footer.legalInfo')}
       </Typography>
     </Container>
   );
@@ -245,7 +248,7 @@ export function Footer({ layoutQuery = 'md', sx, ...other }: FooterProps) {
     >
       <Stack spacing={2} alignItems="center">
         <Typography variant="subtitle2" color="primary.main">
-          Organisme de formation certifié Qualiopi
+          {tPages('certification.footer.certified') || 'Organisme de formation certifié Qualiopi'}
         </Typography>
         <Link
           component={RouterLink}
@@ -273,8 +276,7 @@ export function Footer({ layoutQuery = 'md', sx, ...other }: FooterProps) {
           />
         </Link>
         <Typography variant="caption" color="text.secondary">
-          La certification qualité a été délivrée au titre de la catégorie d&apos;action suivante
-          : ACTION DE FORMATION
+          {tPages('certification.footer.certifier') || 'La certification qualité a été délivrée au titre de la catégorie d\'action suivante : ACTION DE FORMATION'}
         </Typography>
       </Stack>
     </Container>
@@ -293,7 +295,7 @@ export function Footer({ layoutQuery = 'md', sx, ...other }: FooterProps) {
       }}
     >
       <Typography variant="caption">
-        {new Date().getFullYear()} © Tous droits réservés - MADIN.IA
+        {new Date().getFullYear()} {tPages('footer.copyright')} - MADIN.IA
       </Typography>
 
       <Box
@@ -306,7 +308,7 @@ export function Footer({ layoutQuery = 'md', sx, ...other }: FooterProps) {
         }}
       >
         <Link variant="caption" color="inherit" href="/privacy-policy">
-          Politique de confidentialité
+          {t('navigation:footer.links.privacyPolicy')}
         </Link>
         <Box
           sx={{
@@ -318,7 +320,7 @@ export function Footer({ layoutQuery = 'md', sx, ...other }: FooterProps) {
           }}
         />
         <Link variant="caption" color="inherit" href="/reglement-interieur">
-          Règlement intérieur
+          {t('navigation:footer.links.reglementInterieur')}
         </Link>
       </Box>
     </Container>

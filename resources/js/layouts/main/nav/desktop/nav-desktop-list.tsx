@@ -52,6 +52,7 @@ export function NavList({ data, sx, ...other }: NavListProps) {
       // slots
       path={data.path}
       title={data.title}
+      icon={data.icon}
       // state
       open={open}
       active={isActive}

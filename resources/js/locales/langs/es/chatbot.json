@@ -1,0 +1,13 @@
+{
+    "title": "Madin.IA",
+    "subtitle": "Hazme cualquier pregunta, estoy aquí para ayudarte 24/7.",
+    "footer": "Powered by Madin.IA",
+    "getStarted": "Nueva conversación",
+    "inputPlaceholder": "Escribe tu pregunta...",
+    "welcomeMessage": "¡Hola! 👋",
+    "helpMessage": "Inicia una conversación. Estamos aquí para ayudarte 24/7.",
+    "sendButton": "Enviar",
+    "minimize": "Minimizar",
+    "close": "Cerrar",
+    "initialMessages": ["¡Hola! 👋", "Soy el asistente IA de Madin.IA. ¿Cómo puedo ayudarte hoy?"]
+}

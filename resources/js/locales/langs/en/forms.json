@@ -1,0 +1,156 @@
+{
+    "contact": {
+        "title": "Contact form",
+        "fields": {
+            "firstName": {
+                "label": "First name",
+                "placeholder": "Enter your first name"
+            },
+            "lastName": {
+                "label": "Last name",
+                "placeholder": "Enter your last name"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Enter your email"
+            },
+            "phoneNumber": {
+                "label": "Phone number",
+                "placeholder": "Enter your number"
+            },
+            "company": {
+                "label": "Company",
+                "placeholder": "Your company name"
+            },
+            "website": {
+                "label": "Website",
+                "placeholder": "https://your-site.com"
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Describe your project"
+            },
+            "services": {
+                "label": "Desired services",
+                "placeholder": "Select your services"
+            },
+            "budget": {
+                "label": "Your budget",
+                "description": "Indicate your approximate budget"
+            }
+        },
+        "buttons": {
+            "submit": "Send message",
+            "submitting": "Sending..."
+        },
+        "validation": {
+            "firstName": {
+                "required": "First name required"
+            },
+            "lastName": {
+                "required": "Last name required"
+            },
+            "email": {
+                "required": "Email address required",
+                "invalid": "Invalid email address"
+            },
+            "phoneNumber": {
+                "required": "Phone number required"
+            },
+            "company": {
+                "required": "Company name required"
+            },
+            "message": {
+                "required": "Message content required"
+            },
+            "services": {
+                "required": "You must choose at least one service"
+            },
+            "budget": {
+                "required": "Budget required"
+            }
+        },
+        "success": {
+            "title": "Message sent!",
+            "description": "Your message has been sent successfully. We will contact you soon."
+        },
+        "error": {
+            "title": "Error",
+            "description": "An error occurred while sending. Please try again."
+        }
+    },
+    "newsletter": {
+        "title": "Newsletter",
+        "fields": {
+            "email": {
+                "label": "Email",
+                "placeholder": "Your email address"
+            }
+        },
+        "buttons": {
+            "subscribe": "Subscribe",
+            "subscribing": "Subscribing..."
+        },
+        "messages": {
+            "alreadySubscribed": "This email is already registered",
+            "subscribed": "You are now subscribed",
+            "error": "An error occurred"
+        },
+        "validation": {
+            "email": {
+                "required": "Email required",
+                "invalid": "Invalid email"
+            }
+        }
+    },
+    "checkout": {
+        "title": "Checkout",
+        "fields": {
+            "personalInfo": {
+                "title": "Personal information",
+                "firstName": "First name",
+                "lastName": "Last name",
+                "email": "Email",
+                "phone": "Phone"
+            },
+            "billingAddress": {
+                "title": "Billing address",
+                "address": "Address",
+                "city": "City",
+                "postalCode": "Postal code",
+                "country": "Country"
+            },
+            "payment": {
+                "title": "Payment",
+                "method": "Payment method",
+                "cardNumber": "Card number",
+                "expiryDate": "Expiry date",
+                "cvv": "CVV"
+            }
+        },
+        "buttons": {
+            "continue": "Continue",
+            "back": "Back",
+            "placeOrder": "Place order",
+            "processing": "Processing..."
+        },
+        "steps": {
+            "cart": "Cart",
+            "checkout": "Checkout",
+            "payment": "Payment",
+            "confirmation": "Confirmation"
+        },
+        "summary": {
+            "title": "Order summary",
+            "subtotal": "Subtotal",
+            "tax": "Tax",
+            "shipping": "Shipping",
+            "total": "Total"
+        }
+    },
+    "search": {
+        "placeholder": "Search...",
+        "noResults": "No results found",
+        "results": "results found"
+    }
+}

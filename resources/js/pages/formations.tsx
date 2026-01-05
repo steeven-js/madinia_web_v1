@@ -3,6 +3,7 @@ import type { FormationsPageProps } from '@/types/formation';
 import { Head } from '@inertiajs/react';
 
 import { CONFIG } from '@/global-config';
+import { useTranslate } from '@/locales';
 import { MainLayout } from '@/layouts/main';
 
 import { FormationsView } from '@/sections/_formations';
@@ -10,9 +11,11 @@ import { FormationsView } from '@/sections/_formations';
 // ----------------------------------------------------------------------
 
 export default function FormationsPage({ formations }: FormationsPageProps) {
+    const { t } = useTranslate('pages');
+
     const metadata = {
-        title: `Formations - ${CONFIG.appName}`,
-        description: 'Découvrez notre catalogue complet de formations en intelligence artificielle. Formations certifiantes, tous niveaux, avec des experts reconnus.',
+        title: `${t('formations.hero.title')} - ${CONFIG.appName}`,
+        description: t('formations.hero.description'),
         keywords: 'formations,intelligence artificielle,IA,apprentissage,compétences,certification,madinia',
     };
 

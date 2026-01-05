@@ -1,0 +1,395 @@
+{
+    "conference": {
+        "hero": {
+            "title": "Artificial Intelligence Conferences",
+            "subtitle": "For companies, institutions and schools",
+            "description": "At Madin.IA, we deliver artificial intelligence conferences designed to demystify, inspire and equip your teams. Our interventions adapt to your audience and challenges, whether in business, schools or within institutions.",
+            "additionalInfo": "Do you want to raise awareness among your employees about generative AI, understand the challenges of digital transformation or explore concrete uses of AI automation? Our formats combine introductory conferences and interactive workshops, with a discourse accessible to all levels."
+        },
+        "objectives": {
+            "title": "Objectives of our AI conferences",
+            "goals": [
+                "Demystify generative artificial intelligence",
+                "Open discussions on the professional & societal impacts of AI",
+                "Present business use cases that can be applied immediately",
+                "Address your digital transformation or future of work challenges",
+                "Provide an engaging, educational and inspiring moment"
+            ]
+        },
+        "examples": {
+            "title": "Examples of conferences already delivered",
+            "introduction": "Our team regularly speaks at events, trade shows, seminars or training cycles around generative artificial intelligence. Here are some examples of conferences we have had the pleasure of hosting:",
+            "conferences": [
+                {
+                    "title": "The fundamentals of generative artificial intelligence",
+                    "description": "A simplified introduction to understand key concepts, professional use cases and limitations of this technology."
+                },
+                {
+                    "title": "AI in service of agile methods",
+                    "description": "Intervention carried out during the Agile Tour, exploring how generative AI can optimize agile practices in business."
+                },
+                {
+                    "title": "Cybercrime & generative AI",
+                    "description": "Presentation at the 3S'EXPO Tour show in Madiana, on the malicious use of AI and challenges for cybersecurity."
+                },
+                {
+                    "title": "Generative AI and personal data protection",
+                    "description": "A reflection on legal, ethical and practical issues around data manipulation in AI tools."
+                }
+            ]
+        },
+        "format": {
+            "title": "Format of our conferences",
+            "details": [
+                "Duration: 2 hours (1h conference + 1h interactive workshop)",
+                "Level: accessible to all (no technical skills required)",
+                "Format: in-person or remote",
+                "Price: on quote, depending on the scale of the event"
+            ]
+        },
+        "clients": {
+            "title": "They trusted us",
+            "description": "Our AI conferences have already been delivered for players committed to digital transformation:",
+            "clientList": [
+                "University of the Antilles",
+                "CACEM (Central Martinique Agglomeration Community)",
+                "Port of Martinique",
+                "SKILLFOR",
+                "Rotaract of Lamentin"
+            ]
+        },
+        "testimonials": {
+            "title": "What participants say",
+            "feedbacks": [
+                {
+                    "quote": "A clear, modern and especially very engaging intervention. We learned while projecting ourselves into concrete cases.",
+                    "author": "HR Manager"
+                },
+                {
+                    "quote": "Madin.IA was able to popularize artificial intelligence with an accessible and professional tone. The workshop was particularly appreciated.",
+                    "author": "Educational Director"
+                },
+                {
+                    "quote": "Our teams left inspired and ready to integrate AI reflexes into their professional daily life.",
+                    "author": "SME CEO"
+                }
+            ]
+        },
+        "cta": {
+            "title": "Request your custom AI conference",
+            "description": "Ready to offer an AI conference in business, an inspiring seminar or a generative AI acculturation workshop to your teams? Book an appointment with our team to define your need and receive a personalized quote.",
+            "buttonText": "Book an appointment",
+            "buttonLink": "#"
+        },
+        "gallery": {
+            "title": "A preview in images",
+            "description": "Highlights, dynamic exchanges, and audiences captivated by artificial intelligence issues.",
+            "note": "(Gallery to insert here: photos of past conferences)"
+        },
+        "contact": {
+            "title": "Need info? Want to chat?",
+            "description": "Contact us via our form, or follow our behind-the-scenes & upcoming interventions on our networks:",
+            "buttons": [
+                {
+                    "text": "Write to us",
+                    "link": "#"
+                },
+                {
+                    "text": "Madin.IA",
+                    "link": "#"
+                },
+                {
+                    "text": "LinkedIn",
+                    "link": "#"
+                }
+            ]
+        }
+    },
+    "audit": {
+        "hero": {
+            "title": "AI Audit and Consulting",
+            "subtitle": "Optimize your business with AI",
+            "description": "Our artificial intelligence expertise allows you to identify automation and optimization opportunities in your business. We support you in implementing custom AI solutions to improve your productivity and competitiveness.",
+            "additionalInfo": "A personalized approach for each client, adapted to your specific needs and sector of activity.",
+            "cta": {
+                "buttonText": "Book an appointment"
+            }
+        },
+        "pourquoiAudit": {
+            "title": "Why an AI audit?",
+            "visualHighlight": "Discover AI potential for your business",
+            "introduction": "An AI audit allows you to:",
+            "services": [
+                "Assess your company's AI maturity",
+                "Identify automation opportunities",
+                "Define an AI strategy adapted to your needs",
+                "Estimate the potential ROI of AI solutions"
+            ],
+            "conclusion": "Ready to transform your business with AI?"
+        },
+        "conseilPersonnalise": {
+            "title": "Personalized Consulting",
+            "introduction": "Our experts support you at every step:",
+            "services": ["In-depth analysis of your processes", "Tailor-made recommendations", "Detailed action plan", "Follow-up and adjustments"]
+        },
+        "formatAdapte": {
+            "title": "A format adapted to your needs",
+            "options": ["Free initial audit", "Detailed report with recommendations", "Implementation support", "Team training"]
+        },
+        "benefices": {
+            "title": "Benefits for your business",
+            "visualHighlight": "Transform your business with AI",
+            "advantages": ["Improved productivity", "Reduced operational costs", "Better decision making", "Innovation and competitiveness"]
+        },
+        "temoignages": {
+            "title": "What our clients say",
+            "clients": [
+                {
+                    "quote": "The AI audit allowed us to identify automation opportunities we hadn't considered.",
+                    "author": "John Smith, Technical Director"
+                },
+                {
+                    "quote": "Quality support that allowed us to implement effective AI solutions.",
+                    "author": "Mary Johnson, CEO"
+                },
+                {
+                    "quote": "Concrete and applicable recommendations that transformed our way of working.",
+                    "author": "Peter Wilson, Operations Director"
+                }
+            ]
+        },
+        "cta": {
+            "title": "Ready to start your AI transformation?",
+            "description": "Contact us for a free initial audit and discover how AI can transform your business.",
+            "buttonText": "Book an appointment"
+        }
+    },
+    "accompagnementPerso": {
+        "hero": {
+            "title": "Personalized AI Consulting",
+            "subtitle": "For startups, SMEs and ambitious project leaders",
+            "description": "At Madin.IA, we support you step by step to integrate artificial intelligence into your professional daily life. Whether you want to automate your tasks, gain efficiency or validate an innovative project, our team offers you tailor-made generative AI support.",
+            "mission": "Our objective: help you transform your ideas into concrete solutions, with a personalized AI strategy and automation support adapted to your needs.",
+            "buttons": {
+                "bookCall": "Book a call",
+                "learnMore": "Learn more"
+            }
+        },
+        "whyChooseUs": {
+            "title": "Why choose our AI support?",
+            "advantages": [
+                "Custom diagnosis to understand your business challenges",
+                "Artificial intelligence consulting applied to your sector",
+                "Implementation of concrete AI solutions for business",
+                "Personalized follow-up according to your evolving needs",
+                "Simplification, clarity and immediately actionable tools"
+            ],
+            "note": "New: Benefit from a free 15-minute discovery call to better understand your need and define the best formula."
+        },
+        "packages": {
+            "title": "Our AI support packages",
+            "packs": [
+                {
+                    "title": "2-hour Pack – €300 incl. tax",
+                    "subtitle": "Ideal for a first approach to artificial intelligence in your activity",
+                    "features": [
+                        "2h of exchange with a dedicated AI expert",
+                        "Analysis of your project with strategic recommendations",
+                        "A personalized roadmap to take action quickly"
+                    ],
+                    "cta": "Book my call",
+                    "ctaLink": "#"
+                },
+                {
+                    "title": "Customized Pack – Quote on request",
+                    "subtitle": "For in-depth support and successful business AI integration",
+                    "features": [
+                        "An in-depth analysis of your objectives and constraints",
+                        "The design of tailor-made AI solutions",
+                        "Complete support over time, modular according to your needs"
+                    ],
+                    "cta": "Request a quote",
+                    "ctaLink": "#"
+                }
+            ]
+        },
+        "process": {
+            "title": "How does it work?",
+            "steps": [
+                {
+                    "title": "Book a free 15-minute call",
+                    "description": "An initial exchange without commitment to understand your project and advise you."
+                },
+                {
+                    "title": "Choose your AI support package",
+                    "description": "After the call, we guide you towards the most suitable formula."
+                },
+                {
+                    "title": "Launch your AI project with us",
+                    "description": "We support you from A to Z, according to the chosen formula."
+                }
+            ],
+            "cta": "Book my free call",
+            "ctaLink": "#"
+        },
+        "testimonials": {
+            "title": "What our clients say",
+            "clientFeedback": [
+                {
+                    "quote": "Thanks to Madin.IA, I was able to structure my project in 2 hours flat. The expert was super clear and relevant. I recommend with my eyes closed.",
+                    "author": "Julie"
+                },
+                {
+                    "quote": "The tailor-made support allowed me to save precious time. Their AI expertise is a real plus for my activity.",
+                    "author": "Cédric"
+                }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "questions": [
+                {
+                    "question": "How do I know if AI can help me?",
+                    "answer": "The free call is precisely for that. In 15 minutes, we evaluate if an AI solution is relevant for you."
+                },
+                {
+                    "question": "Do I need to have technical skills?",
+                    "answer": "No. Our experts simplify AI and guide you step by step."
+                },
+                {
+                    "question": "Is it useful for a project already in progress?",
+                    "answer": "Of course. We help you clarify, accelerate or reorient your ongoing approaches, with an expert eye."
+                },
+                {
+                    "question": "Can I combine both packages?",
+                    "answer": "Yes, according to your evolution, we can adjust your support at any time."
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contact us",
+            "description": "A question? Want to chat before booking?",
+            "cta": "Send a message",
+            "ctaLink": "#"
+        },
+        "social": {
+            "title": "Stay connected",
+            "networks": [
+                {
+                    "name": "Instagram",
+                    "description": "Follow our AI news & behind the scenes on Instagram",
+                    "link": "#"
+                },
+                {
+                    "name": "LinkedIn",
+                    "description": "Join our professional network on LinkedIn",
+                    "link": "#"
+                }
+            ]
+        },
+        "conclusion": {
+            "title": "Ready to integrate AI into your professional daily life?",
+            "description": "Take the first step with a free 15-minute call. We guide you towards the business AI solution that matches your needs, ambitions, and level.",
+            "cta": "Book my free call now",
+            "ctaLink": "#"
+        }
+    },
+    "formations": [
+        {
+            "id": 1,
+            "title": "AI Starter",
+            "slug": "ia-starter",
+            "description": "Level 1: Introduction to Generative Artificial Intelligence",
+            "description_lg": "Discover how generative artificial intelligence can transform your professional daily life! This accessible training will introduce you to tools such as ChatGPT and DALL·E to boost creativity and productivity. In addition to technical mastery, you will address essential ethical practices for responsible use. At the end of the session, you will have the basics to integrate generative AI into your daily work in an informed and effective way.",
+            "price": 1500,
+            "duration": "3 hours",
+            "category": "AI Training",
+            "format": "In-person",
+            "resources": ["Educational support", "Interactive sessions", "Certificate of completion"],
+            "isBestSeller": true,
+            "languages": ["English"],
+            "learnList": [
+                "Understand the key concepts of generative artificial intelligence.",
+                "Discover and master generative AI tools like ChatGPT and DALL·E.",
+                "Identify use cases for generative AI in your professional environment.",
+                "Reflect on ethical best practices and limitations of generative AI."
+            ],
+            "public_cible": [
+                "Business Leaders and Managers: Discover the basics of generative AI to simplify certain tasks and improve business operations.",
+                "Executives and Managers: Get introduced to generative AI tools to start exploring benefits in terms of team creativity and productivity.",
+                "Freelancers and Entrepreneurs: Discover how AI can help save time and simplify aspects of daily work.",
+                "Students: Acquire basic AI knowledge to enrich their skills and explore new opportunities in their academic journey."
+            ],
+            "prerequisites": ["No prior knowledge is required to attend the AI Starter training."],
+            "teachers": [
+                {
+                    "name": "Jacques-Henry Joseph"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "AI Performer",
+            "slug": "ia-performer",
+            "description": "Level 2: Advanced use and prompt engineering",
+            "description_lg": "We adopt an interactive approach to ensure complete understanding of theoretical and practical concepts. Each session combines clear explanations, live demonstrations and practical exercises to ensure you will be able to implement generative AI in your projects by the end of the training.",
+            "price": 2500,
+            "duration": "7 hours",
+            "category": "AI Training",
+            "format": "In-person",
+            "resources": "Course materials, access to AI tools for 3 months, 2 individual coaching sessions",
+            "isBestSeller": false,
+            "languages": ["English"],
+            "learnList": [
+                "Master the main features of ChatGPT and its various options.",
+                "Ability to use ChatGPT for various tasks (writing, assistance, automation).",
+                "Introduction to creating effective prompts to improve interactions with ChatGPT.",
+                "Using ChatGPT in different professional contexts to boost productivity.",
+                "Preparation for advanced prompt engineering techniques."
+            ],
+            "public_cible": [
+                "Business Leaders and Managers: Deepen knowledge of generative AI to maximize profitability with advanced use cases.",
+                "Executives and Managers: Learn to create and refine effective prompts that improve results and optimize work time.",
+                "Freelancers and Entrepreneurs: Acquire specific skills to stand out through our introduction to prompt engineering.",
+                "Students: Enrich your practices and knowledge of generative AI with tools such as Perplexity."
+            ],
+            "prerequisites": ["Knowledge of basic principles and tools is necessary to attend the AI Performer training."],
+            "teachers": [
+                {
+                    "name": "Jacques-Henry Joseph"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "AI Master",
+            "slug": "ia-master",
+            "description": "Level 3: Expertise and advanced integration of generative AI",
+            "description_lg": "Explore advanced AI applications in this intensive and practical training. You will learn to design complex prompts, develop personalized solutions and automate your workflows. Based on real scenarios and interactive exercises, this session will allow you to refine your skills through practical workshops and advanced simulations. Explore advanced AI applications in intensive and practical training. Learn to design sophisticated prompts, develop personalized solutions and automate complex workflows. Based on real scenarios and interactive exercises, this session allows you to refine your skills through concrete workshops and immersive simulations.",
+            "price": 3500,
+            "duration": "7 hours",
+            "category": "AI Training",
+            "format": "In-person",
+            "resources": "Course materials, unlimited access to a professional AI tools suite, 6 months of mentoring",
+            "isBestSeller": false,
+            "languages": ["English"],
+            "learnList": [
+                "Master advanced prompt engineering and its optimizations.",
+                "Customize generative AI tools to meet your specific needs.",
+                "Create automations of your processes with high-performance AI tools."
+            ],
+            "public_cible": [
+                "Business Leaders and Strategists: Integrate advanced AI for strategic decisions and productivity gains with advanced use cases.",
+                "Executives and Managers: Design and refine effective prompts that improve results and optimize work time.",
+                "Freelancers and Entrepreneurs: Acquire specific skills to stand out through our introduction to prompt engineering. Develop skills to train and support businesses on generative AI. Content creation and specialized workshop facilitation.",
+                "Researchers and Master's/PhD Students: Deepen knowledge for research projects. Access to the latest techniques and resources to publish work with tools such as Perplexity."
+            ],
+            "prerequisites": ["Professionals wishing to integrate generative AI into their projects."],
+            "teachers": [
+                {
+                    "name": "Jacques-Henry Joseph"
+                }
+            ]
+        }
+    ]
+}

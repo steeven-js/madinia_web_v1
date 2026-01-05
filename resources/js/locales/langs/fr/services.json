@@ -1,0 +1,405 @@
+{
+    "conference": {
+        "hero": {
+            "title": "Conférences sur l'intelligence artificielle",
+            "subtitle": "Pour entreprises, institutions et écoles",
+            "description": "Chez Madin.IA, nous animons des conférences sur l'intelligence artificielle conçues pour démystifier, inspirer et outiller vos équipes. Nos interventions s'adaptent à votre public et à vos enjeux, que ce soit en entreprise, en école ou au sein d'une institution.",
+            "additionalInfo": "Vous souhaitez sensibiliser vos collaborateurs à l'IA générative, comprendre les enjeux de la transition numérique ou explorer les usages concrets de l'automatisation IA ? Nos formats allient conférence introductive et atelier interactif, avec un discours accessible à tous niveaux."
+        },
+        "objectives": {
+            "title": "Objectifs de nos conférences IA",
+            "goals": [
+                "Vulgariser l'intelligence artificielle générative",
+                "Ouvrir la discussion sur les impacts professionnels & sociétaux de l'IA",
+                "Présenter des cas d'usage métiers applicables immédiatement",
+                "Répondre à vos enjeux de transformation digitale ou de futur du travail",
+                "Proposer un moment engageant, pédagogique et inspirant"
+            ]
+        },
+        "examples": {
+            "title": "Exemples de conférences déjà animées",
+            "introduction": "Notre équipe intervient régulièrement lors d'événements, salons, séminaires ou cycles de formation autour de l'intelligence artificielle générative. Voici quelques exemples de conférences que nous avons déjà eu le plaisir d'animer :",
+            "conferences": [
+                {
+                    "title": "Les fondamentaux de l'intelligence artificielle générative",
+                    "description": "Une introduction vulgarisée pour comprendre les concepts clés, les cas d'usage professionnels et les limites de cette technologie."
+                },
+                {
+                    "title": "L'IA au service des méthodes agiles",
+                    "description": "Intervention réalisée lors de l'Agile Tour, explorant comment l'IA générative peut optimiser les pratiques agiles en entreprise."
+                },
+                {
+                    "title": "Cybercriminalité & IA générative",
+                    "description": "Présentation lors du salon 3S'EXPO Tour à Madiana, sur l'usage malveillant de l'IA et les défis pour la cybersécurité."
+                },
+                {
+                    "title": "L'IA générative et la protection des données personnelles",
+                    "description": "Une réflexion sur les enjeux juridiques, éthiques et pratiques autour de la manipulation de données dans les outils IA."
+                }
+            ]
+        },
+        "format": {
+            "title": "Format de nos conférences",
+            "details": [
+                "Durée : 2 heures (1h conférence + 1h atelier interactif)",
+                "Niveau : accessible à tous (aucune compétence technique requise)",
+                "Format : en présentiel ou distanciel",
+                "Tarif : sur devis, selon l'envergure de l'événement"
+            ]
+        },
+        "clients": {
+            "title": "Ils nous ont fait confiance",
+            "description": "Nos conférences IA ont déjà été animées pour des acteurs engagés dans la transformation numérique :",
+            "clientList": [
+                "Université des Antilles",
+                "CACEM (Communauté d'Agglomération du Centre de la Martinique)",
+                "Port de la Martinique",
+                "SKILLFOR",
+                "Rotaract du Lamentin"
+            ]
+        },
+        "testimonials": {
+            "title": "Ce que les participants en disent",
+            "feedbacks": [
+                {
+                    "quote": "Une intervention claire, moderne et surtout très engageante. Nous avons appris tout en nous projetant dans des cas concrets.",
+                    "author": "Responsable RH"
+                },
+                {
+                    "quote": "Madin.IA a su vulgariser l'intelligence artificielle avec un ton accessible et professionnel. L'atelier a été particulièrement apprécié.",
+                    "author": "Directrice pédagogique"
+                },
+                {
+                    "quote": "Nos équipes sont reparties inspirées et prêtes à intégrer des réflexes IA dans leur quotidien pro.",
+                    "author": "CEO d'une PME"
+                }
+            ]
+        },
+        "cta": {
+            "title": "Demandez votre conférence IA sur mesure",
+            "description": "Prêt·e à proposer une conférence IA en entreprise, un séminaire inspirant ou un atelier d'acculturation à l'IA générative à vos équipes ? Réservez un rendez-vous avec notre équipe pour définir votre besoin et recevoir un devis personnalisé.",
+            "buttonText": "Prendre rendez-vous",
+            "buttonLink": "#"
+        },
+        "gallery": {
+            "title": "Un aperçu en images",
+            "description": "Des temps forts, des échanges dynamiques, et des publics captivés par les enjeux de l'intelligence artificielle.",
+            "note": "(Galerie à insérer ici : photos de conférences passées)"
+        },
+        "contact": {
+            "title": "Besoin d'infos ? Envie d'échanger ?",
+            "description": "Contactez-nous via notre formulaire, ou suivez nos coulisses & prochaines interventions sur nos réseaux :",
+            "buttons": [
+                {
+                    "text": "Nous écrire",
+                    "link": "#"
+                },
+                {
+                    "text": "Madin.IA",
+                    "link": "#"
+                },
+                {
+                    "text": "LinkedIn",
+                    "link": "#"
+                }
+            ]
+        }
+    },
+    "audit": {
+        "hero": {
+            "title": "Audit et Conseils en Intelligence Artificielle",
+            "subtitle": "Optimisez votre entreprise avec l'IA",
+            "description": "Notre expertise en intelligence artificielle vous permet d'identifier les opportunités d'automatisation et d'optimisation dans votre entreprise. Nous vous accompagnons dans la mise en place de solutions IA sur mesure pour améliorer votre productivité et votre compétitivité.",
+            "additionalInfo": "Une approche personnalisée pour chaque client, adaptée à vos besoins spécifiques et à votre secteur d'activité.",
+            "cta": {
+                "buttonText": "Prendre rendez-vous"
+            }
+        },
+        "pourquoiAudit": {
+            "title": "Pourquoi un audit IA ?",
+            "visualHighlight": "Découvrez le potentiel de l'IA pour votre entreprise",
+            "introduction": "Un audit IA vous permet de :",
+            "services": [
+                "Évaluer la maturité IA de votre entreprise",
+                "Identifier les opportunités d'automatisation",
+                "Définir une stratégie IA adaptée à vos besoins",
+                "Estimer le ROI potentiel des solutions IA"
+            ],
+            "conclusion": "Prêt à transformer votre entreprise avec l'IA ?"
+        },
+        "conseilPersonnalise": {
+            "title": "Conseil Personnalisé",
+            "introduction": "Nos experts vous accompagnent à chaque étape :",
+            "services": ["Analyse approfondie de vos processus", "Recommandations sur mesure", "Plan d'action détaillé", "Suivi et ajustements"]
+        },
+        "formatAdapte": {
+            "title": "Un format adapté à vos besoins",
+            "options": [
+                "Audit initial gratuit",
+                "Rapport détaillé avec recommandations",
+                "Accompagnement dans la mise en œuvre",
+                "Formation de vos équipes"
+            ]
+        },
+        "benefices": {
+            "title": "Les bénéfices pour votre entreprise",
+            "visualHighlight": "Transformez votre entreprise avec l'IA",
+            "advantages": [
+                "Amélioration de la productivité",
+                "Réduction des coûts opérationnels",
+                "Meilleure prise de décision",
+                "Innovation et compétitivité"
+            ]
+        },
+        "temoignages": {
+            "title": "Ce que disent nos clients",
+            "clients": [
+                {
+                    "quote": "L'audit IA nous a permis d'identifier des opportunités d'automatisation que nous n'avions pas envisagées.",
+                    "author": "Jean Dupont, Directeur Technique"
+                },
+                {
+                    "quote": "Un accompagnement de qualité qui nous a permis de mettre en place des solutions IA efficaces.",
+                    "author": "Marie Martin, CEO"
+                },
+                {
+                    "quote": "Des recommandations concrètes et applicables qui ont transformé notre façon de travailler.",
+                    "author": "Pierre Durand, Directeur des Opérations"
+                }
+            ]
+        },
+        "cta": {
+            "title": "Prêt à démarrer votre transformation IA ?",
+            "description": "Contactez-nous pour un audit initial gratuit et découvrez comment l'IA peut transformer votre entreprise.",
+            "buttonText": "Prendre rendez-vous"
+        }
+    },
+    "accompagnementPerso": {
+        "hero": {
+            "title": "Accompagnement personnalisé en Intelligence Artificielle",
+            "subtitle": "Pour start-up, PME et porteurs de projets ambitieux",
+            "description": "Chez Madin.IA, nous vous accompagnons pas à pas pour intégrer l'intelligence artificielle dans votre quotidien professionnel. Que vous souhaitiez automatiser vos tâches, gagner en efficacité ou valider un projet innovant, notre équipe vous propose un accompagnement IA générative sur-mesure.",
+            "mission": "Notre objectif : vous aider à transformer vos idées en solutions concrètes, avec une stratégie IA personnalisée et un accompagnement à l'automatisation adapté à vos besoins.",
+            "buttons": {
+                "bookCall": "Réserver un appel",
+                "learnMore": "En savoir plus"
+            }
+        },
+        "whyChooseUs": {
+            "title": "Pourquoi choisir notre accompagnement IA ?",
+            "advantages": [
+                "Diagnostic sur-mesure pour comprendre vos enjeux métiers",
+                "Conseil en intelligence artificielle appliqué à votre secteur",
+                "Mise en œuvre de solutions IA pour entreprise concrètes",
+                "Suivi personnalisé selon l'évolution de vos besoins",
+                "Vulgarisation, clarté et outils actionnables immédiatement"
+            ],
+            "note": "Nouveau : Bénéficiez d'un appel découverte gratuit de 15 minutes pour mieux comprendre votre besoin et définir la meilleure formule."
+        },
+        "packages": {
+            "title": "Nos packs d'accompagnement IA",
+            "packs": [
+                {
+                    "title": "Pack 2 heures – 300 € TTC",
+                    "subtitle": "Idéal pour une première approche de l'intelligence artificielle dans votre activité",
+                    "features": [
+                        "2h d'échange avec un expert IA dédié",
+                        "Analyse de votre projet avec recommandations stratégiques",
+                        "Une feuille de route personnalisée pour passer à l'action rapidement"
+                    ],
+                    "cta": "Réserver mon appel",
+                    "ctaLink": "#"
+                },
+                {
+                    "title": "Pack personnalisé – Sur devis",
+                    "subtitle": "Pour un accompagnement en profondeur et une intégration IA entreprise réussie",
+                    "features": [
+                        "Une analyse approfondie de vos objectifs et contraintes",
+                        "La conception de solutions IA sur mesure",
+                        "Un accompagnement complet dans le temps, modulable selon vos besoins"
+                    ],
+                    "cta": "Demander un devis",
+                    "ctaLink": "#"
+                }
+            ]
+        },
+        "process": {
+            "title": "Comment ça fonctionne ?",
+            "steps": [
+                {
+                    "title": "Réservez un appel gratuit de 15 minutes",
+                    "description": "Un premier échange sans engagement pour comprendre votre projet et vous conseiller."
+                },
+                {
+                    "title": "Choisissez votre pack d'accompagnement IA",
+                    "description": "À l'issue de l'appel, on vous oriente vers la formule la plus adaptée."
+                },
+                {
+                    "title": "Lancez votre projet IA avec nous",
+                    "description": "On vous accompagne de A à Z, selon la formule choisie."
+                }
+            ],
+            "cta": "Réserver mon appel gratuit",
+            "ctaLink": "#"
+        },
+        "testimonials": {
+            "title": "Ce que disent nos clients",
+            "clientFeedback": [
+                {
+                    "quote": "Grâce à Madin.IA, j'ai pu structurer mon projet en 2 heures chrono. L'expert a été super clair et pertinent. Je recommande les yeux fermés.",
+                    "author": "Julie"
+                },
+                {
+                    "quote": "L'accompagnement sur mesure m'a permis de gagner un temps précieux. Leur expertise IA est un vrai plus pour mon activité.",
+                    "author": "Cédric"
+                }
+            ]
+        },
+        "faq": {
+            "title": "Foire aux questions",
+            "questions": [
+                {
+                    "question": "Comment savoir si l'IA peut m'aider ?",
+                    "answer": "L'appel gratuit est justement fait pour ça. En 15 minutes, on évalue si une solution IA est pertinente pour vous."
+                },
+                {
+                    "question": "Dois-je avoir des compétences techniques ?",
+                    "answer": "Non. Nos experts vulgarisent l'IA tout et vous guident pas à pas."
+                },
+                {
+                    "question": "Est-ce que c'est utile pour un projet déjà en cours ?",
+                    "answer": "Bien sûr. Nous vous aidons à clarifier, accélérer ou réorienter vos démarches en cours, avec un œil expert."
+                },
+                {
+                    "question": "Puis-je combiner les deux packs ?",
+                    "answer": "Oui, selon votre évolution, on peut ajuster votre accompagnement à tout moment."
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contactez-nous",
+            "description": "Une question ? Envie d'échanger avant de réserver ?",
+            "cta": "Envoyer un message",
+            "ctaLink": "#"
+        },
+        "social": {
+            "title": "Restez connecté·e",
+            "networks": [
+                {
+                    "name": "Instagram",
+                    "description": "Suivez nos actus IA & coulisses sur Instagram",
+                    "link": "#"
+                },
+                {
+                    "name": "LinkedIn",
+                    "description": "Rejoignez notre réseau pro sur LinkedIn",
+                    "link": "#"
+                }
+            ]
+        },
+        "conclusion": {
+            "title": "Prêt·e à intégrer l'IA dans votre quotidien pro ?",
+            "description": "Faites le premier pas avec un appel gratuit de 15 minutes. On vous oriente vers la solution IA pour entreprise qui correspond à vos besoins, vos ambitions, et votre niveau.",
+            "cta": "Réserver mon appel gratuit maintenant",
+            "ctaLink": "#"
+        }
+    },
+    "formations": [
+        {
+            "id": 1,
+            "title": "IA Starter",
+            "slug": "ia-starter",
+            "description": "Niveau 1 : Introduction à l'Intelligence Artificielle générative",
+            "description_lg": "Découvrez comment l'intelligence artificielle générative peut transformer votre quotidien professionnel ! Cette formation accessible vous initiera aux outils tels que ChatGPT et DALL·E pour booster créativité et productivité. En plus de la maîtrise technique, vous abordez les pratiques éthiques essentielles pour une utilisation responsable. À l'issue de la session, vous disposerez des bases pour intégrer l'IA générative dans votre travail quotidien de manière éclairée et efficace.",
+            "price": 1500,
+            "duration": "3 heures",
+            "category": "Formation IA",
+            "format": "En présentiel",
+            "resources": ["Support pédagogique", "Sessions interactives", "Attestation de réussite"],
+            "isBestSeller": true,
+            "languages": ["Français"],
+            "learnList": [
+                "Comprendre les concepts clés de l'intelligence artificielle générative.",
+                "Découvrir et prendre en main les outils d'IA générative comme ChatGPT et DALL·E.",
+                "Identifier les cas d'usage de l'IA générative dans votre environnement professionnel.",
+                "Réfléchir aux bonnes pratiques éthiques et aux limites de l'IA générative."
+            ],
+            "public_cible": [
+                "Dirigeants et Responsables d'entreprise : Découvrir les bases de l'IA générative pour simplifier certaines tâches et améliorer le fonctionnement de l'entreprise.",
+                "Cadres et Managers : S'initier aux outils d'IA générative pour commencer à explorer les bénéfices en matière de créativité et de productivité d'équipe.",
+                "Freelances et Entrepreneurs : Découvrir comment l'IA peut aider à gagner du temps et à simplifier des aspects du travail quotidien.",
+                "Étudiants : Acquérir des notions de base en IA pour enrichir leurs compétences et explorer de nouvelles opportunités dans leur parcours scolaire."
+            ],
+            "prerequisites": ["Aucune connaissance requise est nécessaire pour suivre la formation IA Starter."],
+            "teachers": [
+                {
+                    "name": "Jacques-Henry Joseph"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "IA Performer",
+            "slug": "ia-performer",
+            "description": "Niveau 2 : Utilisation avancée et prompt engineering",
+            "description_lg": "Nous adoptons une approche interactive pour assurer une compréhension complète des concepts théoriques et pratiques. Chaque session combine des explications claires, des démonstrations en direct et des exercices pratiques pour garantir que vous serez capable de mettre en œuvre l'IA générative dans vos projets dès la fin de la formation.",
+            "price": 2500,
+            "duration": "7 heures",
+            "category": "Formation IA",
+            "format": "En présentiel",
+            "resources": "Support de cours, accès à des outils IA pendant 3 mois, 2 sessions de coaching individuel",
+            "isBestSeller": false,
+            "languages": ["Français"],
+            "learnList": [
+                "Maîtrise des fonctionnalités principales de ChatGPT et de ses différentes options.",
+                "Capacité à utiliser ChatGPT pour des tâches variées (rédaction, assistance, automatisation).",
+                "Introduction à la création de prompts efficaces pour améliorer les interactions avec ChatGPT.",
+                "Utilisation de ChatGPT dans différents contextes professionnels pour booster la productivité.",
+                "Préparation à des techniques avancées de prompt engineering."
+            ],
+            "public_cible": [
+                "Dirigeants et Responsables d'entreprise : Approfondir les connaissances de l'IA générative pour maximiser en rentabilité avec des cas d'usages avancés.",
+                "Cadres et Managers : Apprendre à créer et à affiner des prompts efficaces qui améliorent les résultats et optimisent le temps de travail.",
+                "Freelances et Entrepreneurs : Acquérir des compétences spécifiques pour se démarquer grâce à notre initiation au prompt engineering.",
+                "Étudiants : Enrichir vos pratiques et connaissances de l'IA générative avec des outils tels que Perplexity."
+            ],
+            "prerequisites": ["Connaître les principes et les outils de base est nécessaire pour suivre la formation IA Performer."],
+            "teachers": [
+                {
+                    "name": "Jacques-Henry Joseph"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "IA Master",
+            "slug": "ia-master",
+            "description": "Niveau 3 : Expertise et intégration avancée de l'IA générative",
+            "description_lg": "Explorez les applications avancées de l'IA dans cette formation intensive et pratique. Vous apprendrez à concevoir des prompts complexes, à développer des solutions personnalisées et à automatiser vos workflows. Basée sur des scénarios réels et des exercices interactifs, cette session vous permettra d'affiner vos compétences à travers des ateliers pratiques et des simulations poussées. Explorez des applications avancées de l'IA dans une formation intensive et pratique. Apprenez à concevoir des prompts sophistiqués, à développer des solutions personnalisées et à automatiser des workflows complexes. Basée sur des scénarios réels et des exercices interactifs, cette session permet d'affiner vos compétences à travers des ateliers concrets et des simulations immersives.",
+            "price": 3500,
+            "duration": "7 heures",
+            "category": "Formation IA",
+            "format": "En présentiel",
+            "resources": "Support de cours, accès illimité à une suite d'outils IA professionnels, 6 mois de mentorat",
+            "isBestSeller": false,
+            "languages": ["Français"],
+            "learnList": [
+                "Maîtriser le prompt engineering avancé et ses optimisations.",
+                "Personnaliser des outils d'IA générative pour répondre à vos besoins spécifiques.",
+                "Créer des automatisations de vos processus avec des outils d'IA performants."
+            ],
+            "public_cible": [
+                "Dirigeants et Stratèges d'entreprise : Intégrer l'IA avancée pour des décisions stratégiques et des gains de productivité avec des cas d'usages avancés.",
+                "Cadres et Managers : Concevoir et affiner des prompts efficaces qui améliorent les résultats et optimisent le temps de travail.",
+                "Freelances et Entrepreneurs : Acquérir des compétences spécifiques pour se démarquer grâce à notre initiation au prompt engineering. Développer des compétences pour former et accompagner des entreprises sur l'IA générative. Création de contenus et animation de workshops spécialisés.",
+                "Chercheurs et Étudiants en Master/Doctorat : Approfondir les connaissances pour des projets de recherche. Accès aux dernières techniques et ressources pour publier des travaux avec des outils tels que Perplexity."
+            ],
+            "prerequisites": ["Professionnels souhaitant intégrer l'IA générative dans leurs projets."],
+            "teachers": [
+                {
+                    "name": "Jacques-Henry Joseph"
+                }
+            ]
+        }
+    ]
+}

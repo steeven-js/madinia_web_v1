@@ -10,6 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import { alpha, useTheme } from '@mui/material/styles';
 
 import { CONFIG } from '@/global-config';
+import { useTranslate } from '@/locales';
 import { MainLayout } from '@/layouts/main';
 
 import { Iconify } from '@/components/iconify';
@@ -17,15 +18,15 @@ import { CtaPreinscription } from '@/components/cta-preinscription';
 
 // ----------------------------------------------------------------------
 
-const metadata = {
-  title: 'Certification Qualiopi - Madin.IA',
-  description:
-    "Découvrez la certification Qualiopi de Madin.IA, gage de qualité pour nos formations en intelligence artificielle. Organisme de formation certifié pour l'excellence de nos prestations.",
-  keywords: 'certification,qualiopi,formation,qualité,madin.IA,organisme,formation,professionnelle',
-};
-
 export default function CertificationQualiopiPage(): React.JSX.Element {
   const theme = useTheme();
+  const { t } = useTranslate('pages');
+
+  const metadata = {
+    title: `${t('certification.meta.title')} - ${CONFIG.appName}`,
+    description: t('certification.meta.description'),
+    keywords: 'certification,qualiopi,formation,qualité,madin.IA,organisme,formation,professionnelle',
+  };
 
   const handleDownloadCertificate = (): void => {
     const documentUrl: string =

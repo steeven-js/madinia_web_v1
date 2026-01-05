@@ -1,0 +1,462 @@
+{
+    "home": {
+        "hero": {
+            "title": {
+                "firstPart": "Discover the power of",
+                "highlightedPart": "Madin.IA"
+            },
+            "description1": "Madin.IA combines expertise in generative AI with educational quality recognized by Qualiopi certification.",
+            "description2": "Accelerate your company's productivity with our customized generative AI solutions. From training to development, we train and support you to maximize your efficiency and innovate sustainably through AI.",
+            "buttons": {
+                "appointment": "Book an appointment",
+                "formations": "Our training"
+            }
+        },
+        "theyTalks": {
+            "title": "They talk about us"
+        },
+        "services": {
+            "overline": "Our Services",
+            "title": "What we offer",
+            "description": "Quality service to support you in your project.",
+            "items": {
+                "formation": {
+                    "name": "Generative AI Training",
+                    "content": "Training adapted to you and your teams whatever your level."
+                },
+                "consulting": {
+                    "name": "AI Consulting",
+                    "content": "Integrated generative AI solutions adapted to your specific needs."
+                },
+                "accompaniment": {
+                    "name": "Personal Support",
+                    "content": "Tailor-made support to integrate AI into your business."
+                },
+                "chatbot": {
+                    "name": "AI Chatbot",
+                    "content": "Automate your customer interactions with our AI chatbot."
+                }
+            }
+        },
+        "about": {
+            "overline": "Madin.IA",
+            "title": "Who are we?",
+            "description": "Founded in Martinique, Madin.IA was born from a conviction: generative artificial intelligence must be accessible to all companies and organizations, regardless of their size or sector. We offer training, consulting and development services to help our clients exploit the potential of AI in a concrete way adapted to their needs.",
+            "button": "Learn more",
+            "stats": {
+                "priority": {
+                    "label": "Companies prioritizing AI",
+                    "content": "of companies worldwide make AI an absolute priority in their business strategies"
+                },
+                "satisfaction": {
+                    "label": "Satisfied employees",
+                    "content": "of employees believe that AI helps them improve their overall performance at work"
+                },
+                "productivity": {
+                    "label": "AI productivity gains",
+                    "content": "more productivity for companies using generative AI regularly"
+                }
+            }
+        },
+        "clientsFeedback": {
+            "title": "What our clients think",
+            "overline": "Our Impact",
+            "description": "Discover the concrete impact of our training and support on our clients.",
+            "footnote": "Initial data will be communicated at the end of 2025.",
+            "stats": {
+                "satisfaction": {
+                    "label": "Satisfaction rate",
+                    "content": "of our clients are satisfied with our training and support"
+                },
+                "recommendation": {
+                    "label": "Recommendation rate",
+                    "content": "of our clients recommend us to their professional network"
+                },
+                "dailyUsage": {
+                    "label": "Daily AI usage",
+                    "content": "of candidates use AI daily after training"
+                }
+            }
+        },
+        "advertisement": {
+            "title": {
+                "firstPart": "Revolutionize\nyour Business\nwith",
+                "highlightedPart": "Madin.IA"
+            },
+            "button": "Contact us"
+        },
+        "faqs": {
+            "title": "Frequently Asked Questions",
+            "items": {
+                "whatIsGenerativeAI": {
+                    "question": "What is generative AI?",
+                    "answer": "Generative artificial intelligence is a technology capable of creating original content, such as text, images or even code, from pre-existing data. It is used to automate tasks, improve creativity and optimize processes in various sectors of activity."
+                },
+                "whoAreTrainings": {
+                    "question": "Who are your training courses for?",
+                    "answer": "Our training courses are aimed at all profiles: managers, employees, entrepreneurs, students and individuals. We adapt the content and pedagogy according to the level and specific needs of each participant."
+                },
+                "howLongTraining": {
+                    "question": "How long do your training courses last?",
+                    "answer": "The duration varies depending on the type of training: from a few hours for awareness to several days for in-depth training. We also offer tailor-made support that can extend over several weeks."
+                },
+                "trainingFormats": {
+                    "question": "What training formats are offered?",
+                    "answer": "We offer face-to-face, online (videoconference) and hybrid training. We adapt to your geographical and organizational constraints to offer you the best learning experience."
+                },
+                "followUpAfterTraining": {
+                    "question": "Is there follow-up after training?",
+                    "answer": "Yes, we offer post-training support to help you put into practice the knowledge acquired. This can include Q&A sessions, mentoring or technical support depending on your needs."
+                },
+                "whyChooseMadinIA": {
+                    "question": "Why choose Madin.IA?",
+                    "answer": "Madin.IA combines technical expertise, adapted pedagogical approach and knowledge of the local market. We are based in Martinique and understand the specificities of Caribbean companies while having a global vision of generative AI."
+                }
+            },
+            "contact": {
+                "title": "Do you have other questions?",
+                "description": "Contact our team to get more information.",
+                "button": "Contact us"
+            }
+        }
+    },
+    "about": {
+        "hero": {
+            "title": "Who are we?",
+            "description": "Welcome to Madin.IA, an innovative company specialized in the integration of generative artificial intelligence to transform and support companies in their daily development.\n\nFounded by Dimitri and Jacques-Henry passionate about new technologies and innovation, Madin.IA was born from a vision and conviction to democratize generative AI to make it accessible to all companies, regardless of their size or sector of activity."
+        },
+        "mission": {
+            "title": "Our mission",
+            "description": "At Madin.IA, we believe that generative artificial intelligence is not just a technology: it is a powerful lever to innovate, optimize and personalize experiences.",
+            "engagementIntro": "We are committed to:",
+            "engagements": [
+                "**Supporting companies** in their digital transformation, by offering them tailor-made solutions.",
+                "**Promoting autonomy and excellence** through our training and simple-to-use tools, adapted to their needs.",
+                "**Creating entrepreneurial opportunities** by making generative AI accessible to as many people as possible."
+            ]
+        },
+        "values": {
+            "title": "Our values",
+            "description": "Discover how AI transforms your business processes, boosts your efficiency and opens new opportunities for innovation.",
+            "items": {
+                "innovation": {
+                    "title": "Innovation",
+                    "description": "Always at the cutting edge of technological advances to offer the best."
+                },
+                "proximity": {
+                    "title": "Proximity",
+                    "description": "A human and personalized approach, adapted to local specificities and global challenges."
+                },
+                "personalization": {
+                    "title": "Personalization",
+                    "description": "Training adapted to each client's needs."
+                },
+                "impact": {
+                    "title": "Impact",
+                    "description": "Developing solutions that truly transform our clients' daily lives."
+                }
+            }
+        },
+        "team": {
+            "title": "Our team",
+            "description": "Composed of experienced and passionate professionals, our team works hand in hand with our clients to provide them with unique and innovative solutions.",
+            "members": {
+                "jacquesHenry": {
+                    "name": "Jacques-Henry JOSEPH",
+                    "role": "Training Manager",
+                    "message": "Passionate about new technologies since always, I created a company that can offer innovative services to the Caribbean population. Having training/degree/certification in prompt engineering, I design tailor-made training to democratize the use of generative AI in business. Working with us ensures you get an answer to your needs and the implementation of effective tools for your development."
+                },
+                "dimitri": {
+                    "name": "Dimitri BRAULT",
+                    "role": "Business Development Manager",
+                    "message": "Commercial Director of Madin.IA, my role is to develop strategic partnerships and promote our generative artificial intelligence solutions to companies. I support our clients so that they get the most out of this innovative technology, in order to meet their specific needs and achieve their objectives."
+                },
+                "amandine": {
+                    "name": "Amandine LOZA",
+                    "role": "Social Media Manager",
+                    "message": "Having worked for many years in the digital marketing sector, I do everything possible to animate our Instagram page to demonstrate the infinite possibilities of using generative AI for businesses and our society. Madin.IA is made up of dynamic young people convinced that generative AI can be a real asset for businesses."
+                },
+                "steeven": {
+                    "name": "Steeven JACQUES",
+                    "role": "AI Chatbot Developer and Designer",
+                    "message": "Application developer and designer, specialized in AI chatbots and cybersecurity. Passionate about technological innovation, he creates tailor-made solutions. Madin.IA represents a unique opportunity to blend expertise and creativity. His objective: to design secure and efficient applications. He aspires to shape the digital future with innovative and reliable tools."
+                }
+            }
+        },
+        "newsletter": {
+            "title": "Pre-register for the newsletter",
+            "description": "Soon receive the latest news.",
+            "placeholder": "Enter your email",
+            "button": "Subscribe"
+        }
+    },
+    "contact": {
+        "title": "Contact us",
+        "description": "Ready to transform your business with AI? Contact us to discuss your needs.",
+        "info": {
+            "title": "Let's get in touch",
+            "alt": "Contact Madin.IA",
+            "followUs": "Follow us",
+            "labels": {
+                "email": "Email",
+                "location": "Location",
+                "phone": "Phone"
+            },
+            "values": {
+                "email": "contact@madinia.fr",
+                "location": "Martinique, France",
+                "phone": "+33 6 47 43 80 84"
+            }
+        },
+        "form": {
+            "title": "Contact form",
+            "subtitle": "Fill out the form below and we'll get back to you quickly.",
+            "services": ["AI Training", "Conferences", "AI Consulting", "AI Chatbot"],
+            "fields": {
+                "firstName": "First name",
+                "lastName": "Last name",
+                "email": "Email",
+                "phoneNumber": "Phone number",
+                "company": "Company",
+                "website": "Website",
+                "message": "Message",
+                "budget": "Your budget",
+                "services": "Desired services"
+            },
+            "button": "Send message",
+            "validation": {
+                "servicesRequired": "You must choose at least one service",
+                "emailRequired": "Email address required",
+                "emailInvalid": "Invalid email address",
+                "companyRequired": "Company name required",
+                "messageRequired": "Message content required",
+                "firstNameRequired": "First name required",
+                "lastNameRequired": "Last name required",
+                "phoneRequired": "Phone number required",
+                "budgetRequired": "Budget required"
+            }
+        }
+    },
+    "formations": {
+        "hero": {
+            "title": "Generative Artificial Intelligence Training",
+            "subtitle": "For businesses, institutions and schools",
+            "description": "At Madin.IA, we offer training on generative artificial intelligence to demystify, inspire and equip your teams. Our courses adapt to your audience and your challenges, whether in business, school or within an institution.",
+            "additionalInfo": "Do you want to train your employees in generative AI, understand the challenges of digital transition or explore concrete uses of AI automation? Our formats combine pedagogy, practice and interactivity, accessible to all levels.",
+            "cta": "Book an appointment"
+        },
+        "list": {
+            "title": "Our generative artificial intelligence training courses"
+        },
+        "details": {
+            "breadcrumbs": {
+                "home": "Home",
+                "formations": "AI Training"
+            },
+            "requestAccess": "Request access to this training",
+            "bookAppointment": "Book an appointment",
+            "includes": "This course includes:",
+            "pedagogicalSupport": "Educational support",
+            "interactiveSessions": "Interactive sessions",
+            "certificate": "Certificate of completion",
+            "whatYouWillLearn": "What you will learn",
+            "description": "Description",
+            "prerequisites": "Prerequisites",
+            "targetAudience": "Target audience"
+        },
+        "item": {
+            "requestAccess": "Request access"
+        },
+        "descriptions": {
+            "ia-starter": "Discover how generative artificial intelligence can transform your daily professional life! This accessible training will introduce you to tools such as ChatGPT and DALL·E to boost creativity and productivity. In addition to technical mastery, you will address essential ethical practices for responsible use. At the end of the session, you will have the basics to integrate generative AI into your daily work in an informed and effective way.",
+            "ia-performer": "We adopt an interactive approach to ensure complete understanding of theoretical and practical concepts. Each session combines clear explanations, live demonstrations and practical exercises to guarantee that you will be able to implement generative AI in your projects by the end of the training.",
+            "ia-master": "Explore advanced AI applications in this intensive and practical training. You will learn to design complex prompts, develop personalized solutions and automate your workflows. Based on real scenarios and interactive exercises, this session will allow you to refine your skills through practical workshops and advanced simulations. Explore advanced AI applications in intensive and practical training. Learn to design sophisticated prompts, develop personalized solutions and automate complex workflows. Based on real scenarios and interactive exercises, this session allows you to refine your skills through concrete workshops and immersive simulations."
+        }
+    },
+    "error": {
+        "404": {
+            "title": "Page not found",
+            "description": "Sorry, we can't find the page you're looking for.",
+            "button": "Back to home"
+        },
+        "500": {
+            "title": "Server error",
+            "description": "An unexpected error occurred. Please try again later.",
+            "button": "Refresh page"
+        }
+    },
+    "footer": {
+        "description": "Revolutionize your business with our personalized generative AI solutions. Madin.IA trains and supports you to integrate generative AI, boost your productivity and accelerate your digital transformation.",
+        "sections": {
+            "services": "Our Services",
+            "about": "About Us",
+            "resources": "Resources"
+        },
+        "links": {
+            "formationIA": "AI Training",
+            "conferenceIA": "AI Conference",
+            "auditConseilsIA": "AI Audit & Consulting",
+            "accompagnementPerso": "Personalized Support",
+            "about": "About",
+            "contact": "Contact",
+            "allPosts": "All our articles",
+            "privacyPolicy": "Privacy Policy",
+            "internalRegulations": "Internal Regulations",
+            "certificationQualiopi": "Qualiopi Certification"
+        },
+        "copyright": "All rights reserved.",
+        "legalInfo": "MADIN.IA – 934 303 843 00015 | +33 6 47 43 80 84 | contact@madinia.fr | Registered under activity declaration number 02973663897 with the Prefect of the Martinique region, this number does not constitute State approval"
+    },
+    "newsletter": {
+        "title": "Stay informed",
+        "description": "Subscribe to our newsletter to receive the latest AI news.",
+        "placeholder": "Your email address",
+        "button": "Subscribe"
+    },
+    "formationsCertifiantes": {
+        "hero": {
+            "title": "Certified Training",
+            "description": "Develop your artificial intelligence skills with our recognized certified training. Obtain professional certifications that enhance your expertise.",
+            "cta": "Discover our training"
+        },
+        "programs": {
+            "title": "Our certified training programs",
+            "subtitle": "Recognized training to develop your AI skills",
+            "rs7138": {
+                "title": "Integrating AI into training consultant missions",
+                "code": "RS7138",
+                "level": "Intermediate",
+                "duration": "35 hours",
+                "price": "€1,500",
+                "description": "Specialized training for training consultants wishing to integrate artificial intelligence into their training missions",
+                "features": [
+                    "Understand the impact of AI on training",
+                    "AI tools for creating educational content",
+                    "AI-assisted evaluation methods",
+                    "Qualiopi certification included"
+                ],
+                "cta": "Discover the training",
+                "downloadPdf": "Download the sheet"
+            }
+        },
+        "rs7138Detail": {
+            "meta": {
+                "title": "RS7138 Training - Integrating AI into training consultant missions",
+                "description": "Professional certification RS7138 to integrate generative artificial intelligence into training consultant activities. Qualiopi certified training.",
+                "keywords": "RS7138 training,AI,training consultant,artificial intelligence,professional certification,qualiopi,madinia"
+            },
+            "hero": {
+                "badge": "Professional Certification",
+                "title": "RS7138 - Integrating AI into training consultant missions",
+                "subtitle": "Professional certification to integrate generative artificial intelligence into training consultant activities",
+                "cta": "Register for training",
+                "downloadPdf": "Download the sheet"
+            },
+            "sections": {
+                "essentialInfo": {
+                    "title": "Essential information",
+                    "code": "Sheet code",
+                    "status": "Status",
+                    "expiryDate": "Expiry date",
+                    "certifier": "Certifier",
+                    "active": "Active"
+                },
+                "objectives": {
+                    "title": "Objectives and context of the certification",
+                    "description1": "This certification attests to skills related to the integration of generative artificial intelligence (GAI) into training consultant activities. This integration concerns several phases of the training process: pedagogical design, animation, evaluation, regulatory and administrative management and compliance with quality requirements, particularly respect for the Qualiopi framework.",
+                    "description2": "This system is aimed at experienced training consultants working in companies or continuing or initial training organizations. The skills acquired are applicable and transferable to any GAI tool, thus allowing sector professionals to develop their current and future employability."
+                },
+                "skills": {
+                    "title": "Attested skills",
+                    "needsAnalysis": {
+                        "title": "Needs analysis",
+                        "description": "Analyze learner needs to define operational and evaluable objectives for a training pathway, taking into account the context and particularities of the learner's situation."
+                    },
+                    "pathwayOptimization": {
+                        "title": "Pathway optimization",
+                        "description": "Optimize a training pathway meeting previously defined operational objectives, using generative artificial intelligence tools for pedagogical design."
+                    },
+                    "animationEvaluation": {
+                        "title": "Animation and evaluation",
+                        "description": "Lead training sessions by integrating generative AI tools to improve the learning experience and evaluate learner achievements."
+                    }
+                },
+                "classification": {
+                    "title": "Classification",
+                    "nsfCodes": "NSF Code(s)",
+                    "formacodes": "Formacode(s)",
+                    "nsf333": "333 : Teaching, training",
+                    "nsf333p": "333p : Organization and administration of training services and centers",
+                    "formacode44586": "44586 : Trainer training",
+                    "formacode44517": "44517 : Training action design",
+                    "formacode31028": "31028 : Artificial intelligence",
+                    "formacode44542": "44542 : Pedagogy",
+                    "formacode44589": "44589 : Training consulting"
+                },
+                "practicalInfo": {
+                    "title": "Practical information",
+                    "registrationDuration": "Registration duration",
+                    "decisionDate": "Decision date",
+                    "lastDelivery": "Last possible delivery",
+                    "threeYears": "3 years"
+                },
+                "cta": {
+                    "title": "Ready to integrate AI into your training?",
+                    "subtitle": "Join the RS7138 certification and transform your pedagogical practices with generative artificial intelligence.",
+                    "cta": "Register now",
+                    "franceCompetences": "View on France Compétences"
+                }
+            }
+        },
+        "cta": {
+            "title": "Ready to train?",
+            "description": "Discover our certified training and develop your artificial intelligence skills.",
+            "button": "Discover our training"
+        }
+    },
+    "certification": {
+        "hero": {
+            "title": "Qualiopi Certification",
+            "subtitle": "Madin.IA is Qualiopi certified for the quality of its training programs"
+        },
+        "card": {
+            "title": "Qualiopi Certified Organization",
+            "description": "The Qualiopi certification attests to the quality of the process implemented by Madin.IA for its training activities. This certification is issued by an accredited certification body based on the national quality framework.",
+            "details": {
+                "title": "Certification details",
+                "certificate": "Certificate No.:",
+                "issued": "Issued on:",
+                "valid": "Valid until:",
+                "category": "Category:"
+            },
+            "download": "Download PDF certificate"
+        },
+        "about": {
+            "title": "What is Qualiopi certification?",
+            "description": "Qualiopi is the quality certification mark for providers of actions contributing to skills development. It attests to the quality of the process implemented by providers of training actions, skills assessments, experience validation actions and apprenticeship training actions.",
+            "benefits": {
+                "quality": {
+                    "title": "Guaranteed Quality",
+                    "description": "Training processes compliant with national requirements"
+                },
+                "trust": {
+                    "title": "Trust",
+                    "description": "Certification recognized by the State and funders"
+                },
+                "excellence": {
+                    "title": "Excellence",
+                    "description": "Continuous improvement of our educational practices"
+                }
+            }
+        },
+        "meta": {
+            "title": "Qualiopi Certification - Madin.IA",
+            "description": "Madin.IA is Qualiopi certified for its Artificial Intelligence training programs. Discover our quality certification."
+        },
+        "footer": {
+            "certified": "Qualiopi certified training organization",
+            "certifier": "Quality certification issued by CERTIFOPAC"
+        },
+        "badge": "Qualiopi certified organization"
+    }
+}

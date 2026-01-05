@@ -1,5 +1,7 @@
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider as Provider } from '@mui/x-date-pickers/LocalizationProvider';
+import { LocalizationProvider as MuiLocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+
+import { I18nProvider } from './i18n-provider';
 
 // ----------------------------------------------------------------------
 
@@ -8,5 +10,9 @@ type Props = {
 };
 
 export function LocalizationProvider({ children }: Props) {
-  return <Provider dateAdapter={AdapterDayjs}>{children}</Provider>;
+  return (
+    <I18nProvider>
+      <MuiLocalizationProvider dateAdapter={AdapterDayjs}>{children}</MuiLocalizationProvider>
+    </I18nProvider>
+  );
 }

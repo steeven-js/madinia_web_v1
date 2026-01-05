@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 import { paths } from '@/routing/paths';
 
 import { CONFIG } from '@/global-config';
+import { useTranslate } from '@/locales';
 
 import { Iconify } from '@/components/iconify';
 import { CustomBreadcrumbs } from '@/components/custom-breadcrumbs';
@@ -25,6 +26,9 @@ type Props = BoxProps & {
 };
 
 export function ServiceDetailsHero({ sx, title, category, totalViews, ...other }: Props) {
+  const { t: tCommon } = useTranslate('common');
+  const { t: tNav } = useTranslate('navigation');
+
   const renderInfo = () => (
     <Box
       sx={{
@@ -56,7 +60,7 @@ export function ServiceDetailsHero({ sx, title, category, totalViews, ...other }
 
         {totalViews && (
           <Box sx={{ gap: 1, display: 'flex', alignItems: 'center' }}>
-            <Iconify icon="solar:eye-outline" /> {totalViews} vues
+            <Iconify icon="solar:eye-outline" /> {totalViews} {tCommon('labels.views')}
           </Box>
         )}
       </Box>
@@ -74,7 +78,7 @@ export function ServiceDetailsHero({ sx, title, category, totalViews, ...other }
       }}
     >
       <Button fullWidth variant="contained" size="large" color="primary" href={paths.contact.root}>
-        Nous contacter
+        {tCommon('buttons.contactUs')}
       </Button>
     </Box>
   );
@@ -100,8 +104,8 @@ export function ServiceDetailsHero({ sx, title, category, totalViews, ...other }
       <Container>
         <CustomBreadcrumbs
           links={[
-            { name: 'Accueil', href: paths.home },
-            { name: 'Services', href: paths.home },
+            { name: tNav('breadcrumbs.home'), href: paths.home },
+            { name: tNav('breadcrumbs.services'), href: paths.home },
             { name: title },
           ]}
           sx={{

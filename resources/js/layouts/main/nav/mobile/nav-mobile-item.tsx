@@ -44,6 +44,10 @@ export function NavItem({
       })}
       {...other}
     >
+      {icon && (
+        <ItemIcon {...ownerState}>{icon}</ItemIcon>
+      )}
+
       <ItemTitle {...ownerState}>{title}</ItemTitle>
 
       {hasChild && (
@@ -90,6 +94,18 @@ const ItemRoot = styled(ButtonBase, { shouldForwardProp })<StyledState>(({ theme
     ],
   };
 });
+
+/**
+ * @slot icon
+ */
+const ItemIcon = styled('span', { shouldForwardProp })<StyledState>(() => ({
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  flexShrink: 0,
+  width: 20,
+  height: 20,
+}));
 
 /**
  * @slot title

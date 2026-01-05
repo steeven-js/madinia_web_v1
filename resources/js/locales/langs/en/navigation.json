@@ -1,0 +1,53 @@
+{
+    "main": {
+        "home": "Home",
+        "formationIA": "AI Training",
+        "accompagnementPersonnalise": "Personal Support",
+        "conferenceIA": "AI Conference",
+        "auditEtConseilsIA": "AI Audit & Consulting",
+        "aboutUs": "About Us",
+        "contact": "Contact"
+    },
+    "subheader": {
+        "madinia": "Madin.IA"
+    },
+    "breadcrumbs": {
+        "home": "Home",
+        "blog": "Blog",
+        "about": "About",
+        "contact": "Contact",
+        "services": "Services"
+    },
+    "footer": {
+        "sections": {
+            "services": "Services",
+            "company": "Company",
+            "support": "Support",
+            "legal": "Legal"
+        },
+        "links": {
+            "formationIA": "AI Training",
+            "conferenceIA": "AI Conference",
+            "auditConseilsIA": "AI Audit & Consulting",
+            "accompagnementPerso": "Personal Support",
+            "about": "About",
+            "team": "Team",
+            "contact": "Contact",
+            "help": "Help",
+            "faq": "FAQ",
+            "support": "Support",
+            "privacyPolicy": "Privacy Policy",
+            "termsOfService": "Terms of Service",
+            "reglementInterieur": "Internal Regulations"
+        },
+        "social": {
+            "followUs": "Follow Us",
+            "instagram": "Instagram",
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn"
+        },
+        "copyright": "© 2024 Madin.IA. All rights reserved.",
+        "madeWith": "Made with ❤️ in Martinique"
+    }
+}

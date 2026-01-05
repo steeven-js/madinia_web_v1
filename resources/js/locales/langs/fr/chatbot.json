@@ -1,0 +1,17 @@
+{
+    "title": "Madin.IA",
+    "subtitle": "Posez-moi vos questions, je suis là pour vous aider 24/7.",
+    "footer": "Powered by Madinia IA",
+    "getStarted": "Nouvelle conversation",
+    "inputPlaceholder": "Tapez votre question...",
+    "welcomeMessage": "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+    "helpMessage": "N'hésitez pas à me poser vos questions sur Madinia, nos services ou l'intelligence artificielle.",
+    "sendButton": "Envoyer",
+    "minimize": "Minimiser",
+    "close": "Fermer",
+    "initialMessages": [
+        "Bonjour ! 👋",
+        "Je suis l'assistant IA de Madinia. Comment puis-je vous aider aujourd'hui ?",
+        "Vous pouvez me poser des questions sur nos formations, services ou l'intelligence artificielle en général."
+    ]
+}

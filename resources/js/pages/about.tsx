@@ -1,20 +1,22 @@
 import { Head } from '@inertiajs/react';
 
 import { CONFIG } from '@/global-config';
+import { useTranslate } from '@/locales';
 import { MainLayout } from '@/layouts/main';
 
 import { CareerAboutView } from '@/sections/_career/view/career-about-view';
 
 // ----------------------------------------------------------------------
 
-const metadata = {
-  title: `À propos - ${CONFIG.appName}`,
-  description:
-    'Découvrez MADIN.IA, votre partenaire en intelligence artificielle. Notre mission, notre vision et notre équipe dédiée à la démocratisation de l\'IA.',
-  keywords: 'à propos,madin.ia,équipe,mission,vision,intelligence artificielle,martinique',
-};
-
 export default function AboutPage() {
+  const { t } = useTranslate('pages');
+
+  const metadata = {
+    title: `${CONFIG.appName} | ${t('about.hero.title')}`,
+    description: t('about.hero.description').split('\n\n')[0],
+    keywords: 'à propos,madin.ia,équipe,mission,vision,intelligence artificielle,martinique',
+  };
+
   return (
     <MainLayout
       slotProps={{

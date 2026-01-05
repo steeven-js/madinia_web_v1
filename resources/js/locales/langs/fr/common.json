@@ -1,0 +1,105 @@
+{
+    "demo": {
+        "lang": "Français",
+        "description": "Le point de départ de votre prochain projet basé sur MUI. Une personnalisation facile vous aide à créer des applications plus rapidement et mieux."
+    },
+    "buttons": {
+        "submit": "Envoyer",
+        "cancel": "Annuler",
+        "save": "Enregistrer",
+        "edit": "Modifier",
+        "delete": "Supprimer",
+        "add": "Ajouter",
+        "close": "Fermer",
+        "back": "Retour",
+        "next": "Suivant",
+        "previous": "Précédent",
+        "confirm": "Confirmer",
+        "learnMore": "En savoir plus",
+        "readMore": "Lire la suite",
+        "viewAll": "Voir tout",
+        "getStarted": "Commencer",
+        "downloadNow": "Télécharger maintenant",
+        "bookAppointment": "Prendre rendez-vous",
+        "contactUs": "Nous contacter",
+        "subscribe": "S'abonner",
+        "login": "Se connecter",
+        "logout": "Se déconnecter",
+        "register": "S'inscrire"
+    },
+    "status": {
+        "loading": "Chargement...",
+        "success": "Succès",
+        "error": "Erreur",
+        "warning": "Attention",
+        "info": "Information",
+        "pending": "En attente",
+        "completed": "Terminé",
+        "failed": "Échec"
+    },
+    "actions": {
+        "search": "Rechercher",
+        "filter": "Filtrer",
+        "sort": "Trier",
+        "download": "Télécharger",
+        "upload": "Téléverser",
+        "share": "Partager",
+        "copy": "Copier",
+        "print": "Imprimer"
+    },
+    "labels": {
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "phone": "Téléphone",
+        "company": "Entreprise",
+        "subject": "Sujet",
+        "date": "Date",
+        "time": "Heure",
+        "duration": "Durée",
+        "price": "Prix",
+        "description": "Description",
+        "title": "Titre",
+        "category": "Catégorie",
+        "format": "Format",
+        "views": "vues",
+        "features": "Caractéristiques",
+        "benefits": "Avantages"
+    },
+    "services": {
+        "requestQuote": "Demander un devis",
+        "otherServices": "Autres services",
+        "otherServicesDescription": "Découvrez nos autres services en intelligence artificielle"
+    },
+    "placeholders": {
+        "enterName": "Entrez votre nom",
+        "enterEmail": "Entrez votre email",
+        "enterMessage": "Entrez votre message",
+        "enterPhone": "Entrez votre téléphone",
+        "enterCompany": "Entrez votre entreprise",
+        "search": "Rechercher..."
+    },
+    "validation": {
+        "required": "Ce champ est requis",
+        "invalidEmail": "Adresse email invalide",
+        "minLength": "Minimum {{count}} caractères",
+        "maxLength": "Maximum {{count}} caractères",
+        "invalidPhone": "Numéro de téléphone invalide"
+    },
+    "time": {
+        "minute": "minute",
+        "minutes": "minutes",
+        "hour": "heure",
+        "hours": "heures",
+        "day": "jour",
+        "days": "jours",
+        "week": "semaine",
+        "weeks": "semaines",
+        "month": "mois",
+        "months": "mois",
+        "year": "année",
+        "years": "années",
+        "ago": "il y a",
+        "readingTime": "{{time}} min de lecture"
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "demo": {
+        "lang": "Español",
+        "description": "El punto de partida para tu próximo proyecto está basado en MUI. La personalización fácil te ayuda a construir aplicaciones más rápido y mejor."
+    },
+    "buttons": {
+        "submit": "Enviar",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "edit": "Editar",
+        "delete": "Eliminar",
+        "add": "Agregar",
+        "close": "Cerrar",
+        "back": "Atrás",
+        "next": "Siguiente",
+        "previous": "Anterior",
+        "confirm": "Confirmar",
+        "learnMore": "Saber más",
+        "readMore": "Leer más",
+        "viewAll": "Ver todo",
+        "getStarted": "Comenzar",
+        "downloadNow": "Descargar ahora",
+        "bookAppointment": "Reservar cita",
+        "contactUs": "Contáctanos",
+        "subscribe": "Suscribirse",
+        "login": "Iniciar sesión",
+        "logout": "Cerrar sesión",
+        "register": "Registrarse"
+    },
+    "status": {
+        "loading": "Cargando...",
+        "success": "Éxito",
+        "error": "Error",
+        "warning": "Advertencia",
+        "info": "Información",
+        "pending": "Pendiente",
+        "completed": "Completado",
+        "failed": "Falló"
+    },
+    "actions": {
+        "search": "Buscar",
+        "filter": "Filtrar",
+        "sort": "Ordenar",
+        "download": "Descargar",
+        "upload": "Subir",
+        "share": "Compartir",
+        "copy": "Copiar",
+        "print": "Imprimir"
+    },
+    "labels": {
+        "name": "Nombre",
+        "email": "Email",
+        "message": "Mensaje",
+        "phone": "Teléfono",
+        "company": "Empresa",
+        "subject": "Asunto",
+        "date": "Fecha",
+        "time": "Hora",
+        "duration": "Duración",
+        "price": "Precio",
+        "description": "Descripción",
+        "title": "Título",
+        "category": "Categoría",
+        "format": "Formato",
+        "views": "vistas",
+        "features": "Características",
+        "benefits": "Ventajas"
+    },
+    "services": {
+        "requestQuote": "Solicitar un presupuesto",
+        "otherServices": "Otros servicios",
+        "otherServicesDescription": "Descubre nuestros otros servicios de inteligencia artificial"
+    },
+    "placeholders": {
+        "enterName": "Ingresa tu nombre",
+        "enterEmail": "Ingresa tu email",
+        "enterMessage": "Ingresa tu mensaje",
+        "enterPhone": "Ingresa tu teléfono",
+        "enterCompany": "Ingresa tu empresa",
+        "search": "Buscar..."
+    },
+    "validation": {
+        "required": "Este campo es requerido",
+        "invalidEmail": "Dirección de email inválida",
+        "minLength": "Mínimo {{count}} caracteres",
+        "maxLength": "Máximo {{count}} caracteres",
+        "invalidPhone": "Número de teléfono inválido"
+    },
+    "time": {
+        "minute": "minuto",
+        "minutes": "minutos",
+        "hour": "hora",
+        "hours": "horas",
+        "day": "día",
+        "days": "días",
+        "week": "semana",
+        "weeks": "semanas",
+        "month": "mes",
+        "months": "meses",
+        "year": "año",
+        "years": "años",
+        "ago": "hace",
+        "readingTime": "{{time}} min de lectura"
+    }
+}

@@ -1,6 +1,6 @@
 import type { IconButtonProps } from '@mui/material/IconButton';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useCallback } from 'react';
 import { usePopover } from 'minimal-shared/hooks';
 
 import Popover from '@mui/material/Popover';
@@ -8,11 +8,11 @@ import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 
+import { useTranslate } from '@/locales';
+
 import { FlagIcon } from '@/components/flag-icon';
 
 // ----------------------------------------------------------------------
-
-const STORAGE_KEY = 'app-locale';
 
 export type LanguagePopoverProps = IconButtonProps & {
   data?: {
@@ -24,57 +24,16 @@ export type LanguagePopoverProps = IconButtonProps & {
 
 export function LanguagePopover({ data = [], sx, ...other }: LanguagePopoverProps) {
   const { open, onClose, onOpen, anchorEl } = usePopover();
+  const { currentLang, onChangeLang } = useTranslate();
 
-  // Récupérer la langue depuis localStorage ou utiliser 'fr' par défaut
-  const getInitialLocale = () => {
-    if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored && data.find((lang) => lang.value === stored)) {
-        return stored;
-      }
-    }
-    // Par défaut, utiliser 'fr' ou le premier élément du tableau
-    return data.find((lang) => lang.value === 'fr')?.value || data[0]?.value || 'fr';
-  };
-
-  const [locale, setLocale] = useState<string>(getInitialLocale());
-
-  // Synchroniser avec localStorage
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(STORAGE_KEY, locale);
-    }
-  }, [locale]);
-
-  // Écouter l'événement de reset depuis Settings
-  useEffect(() => {
-    const handleLocaleReset = (event: CustomEvent) => {
-      const newLocale = event.detail?.locale || 'fr';
-      setLocale(newLocale);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem(STORAGE_KEY, newLocale);
-      }
-    };
-
-    if (typeof window !== 'undefined') {
-      window.addEventListener('locale-reset', handleLocaleReset as EventListener);
-      return () => {
-        window.removeEventListener('locale-reset', handleLocaleReset as EventListener);
-      };
-    }
-  }, []);
-
-  const currentLang = data.find((lang) => lang.value === locale) || data[0];
+  const currentLangData = data.find((lang) => lang.value === currentLang.value) || data[0];
 
   const handleChangeLang = useCallback(
     (newLang: string) => {
-      setLocale(newLang);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem(STORAGE_KEY, newLang);
-      }
+      onChangeLang(newLang);
       onClose();
     },
-    [onClose]
+    [onChangeLang, onClose],
   );
 
   const renderButton = () => (
@@ -91,7 +50,7 @@ export function LanguagePopover({ data = [], sx, ...other }: LanguagePopoverProp
       ]}
       {...other}
     >
-      <FlagIcon code={currentLang?.countryCode} />
+      <FlagIcon code={currentLangData?.countryCode} />
     </IconButton>
   );
 
@@ -107,7 +66,7 @@ export function LanguagePopover({ data = [], sx, ...other }: LanguagePopoverProp
         {data?.map((option) => (
           <MenuItem
             key={option.value}
-            selected={option.value === currentLang?.value}
+            selected={option.value === currentLangData?.value}
             onClick={() => handleChangeLang(option.value)}
             sx={{ gap: 2 }}
           >

@@ -1,0 +1,462 @@
+{
+    "home": {
+        "hero": {
+            "title": {
+                "firstPart": "Découvrez la puissance de",
+                "highlightedPart": "Madin.IA"
+            },
+            "description1": "Madin.IA allie expertise en IA générative et qualité pédagogique reconnue par la certification Qualiopi.",
+            "description2": "Accélérez la productivité de votre entreprise avec nos solutions d'IA générative personnalisées. De la formation au développement, nous vous formons et accompagnons pour maximiser votre efficacité et innover durablement grâce à l'IA.",
+            "buttons": {
+                "appointment": "Prendre rendez-vous",
+                "formations": "Nos formations"
+            }
+        },
+        "theyTalks": {
+            "title": "Ils parlent de nous"
+        },
+        "services": {
+            "overline": "Nos Services",
+            "title": "Ce que nous proposons",
+            "description": "Un service de qualité pour vous accompagner dans votre projet.",
+            "items": {
+                "formation": {
+                    "name": "Formations IA générative",
+                    "content": "Des formations adaptées à vous et vos équipes quel que soit votre niveau."
+                },
+                "consulting": {
+                    "name": "Consulting IA",
+                    "content": "Des solutions IA génératives intégrées et adaptées à vos besoins spécifiques."
+                },
+                "accompaniment": {
+                    "name": "Accompagnement Personnalisé",
+                    "content": "Un accompagnement sur mesure pour intégrer l'IA dans votre entreprise."
+                },
+                "chatbot": {
+                    "name": "Chatbot IA",
+                    "content": "Automatisez vos interactions clients avec notre chatbot IA."
+                }
+            }
+        },
+        "about": {
+            "overline": "Madin.IA",
+            "title": "Qui sommes-nous ?",
+            "description": "Fondée en Martinique, Madin.IA est née d'une conviction : l'intelligence artificielle générative doit être accessible à toutes les entreprises et organisations, peu importe leur taille ou secteur. Nous offrons des services de formation, de consulting et de développement, pour aider nos clients à exploiter le potentiel de l'IA de manière concrète et adaptée à leurs besoins.",
+            "button": "En savoir plus",
+            "stats": {
+                "priority": {
+                    "label": "Entreprises priorisant l'IA",
+                    "content": "des entreprises dans le monde font de l'IA une priorité absolue dans leurs stratégies commerciales"
+                },
+                "satisfaction": {
+                    "label": "Salariés satisfaits",
+                    "content": "des salariés estiment que l'IA leur permet d'améliorer leur performance globale au travail"
+                },
+                "productivity": {
+                    "label": "Gains de productivité grâce à l'IA",
+                    "content": "de productivité en plus pour les entreprises utilisant l'IA générative de manière régulière"
+                }
+            }
+        },
+        "clientsFeedback": {
+            "title": "Ce que pensent nos clients",
+            "overline": "Notre Impact",
+            "description": "Découvrez l'impact concret de nos formations et accompagnements sur nos clients.",
+            "footnote": "Les premières données seront communiquées fin 2025.",
+            "stats": {
+                "satisfaction": {
+                    "label": "Taux de satisfaction",
+                    "content": "de nos clients sont satisfaits de nos formations et accompagnements"
+                },
+                "recommendation": {
+                    "label": "Taux de recommandation",
+                    "content": "de nos clients nous recommandent à leur réseau professionnel"
+                },
+                "dailyUsage": {
+                    "label": "Utilisation quotidienne de l'IA",
+                    "content": "des candidats utilisent quotidiennement l'IA à l'issue de la formation"
+                }
+            }
+        },
+        "advertisement": {
+            "title": {
+                "firstPart": "Révolutionnez\nvotre Entreprise\navec",
+                "highlightedPart": "Madin.IA"
+            },
+            "button": "Nous contacter"
+        },
+        "faqs": {
+            "title": "Foire Aux Questions",
+            "items": {
+                "whatIsGenerativeAI": {
+                    "question": "Qu'est-ce que l'IA générative ?",
+                    "answer": "L'intelligence artificielle générative est une technologie capable de créer du contenu original, comme du texte, des images ou même du code, à partir de données préexistantes. Elle est utilisée pour automatiser des tâches, améliorer la créativité et optimiser les processus dans divers secteurs d'activité."
+                },
+                "whoAreTrainings": {
+                    "question": "Pour qui sont destinées vos formations ?",
+                    "answer": "Nos formations s'adressent à tous les profils : dirigeants, managers, employés, entrepreneurs, étudiants et particuliers. Nous adaptons le contenu et la pédagogie selon le niveau et les besoins spécifiques de chaque participant."
+                },
+                "howLongTraining": {
+                    "question": "Combien de temps durent vos formations ?",
+                    "answer": "La durée varie selon le type de formation : de quelques heures pour les sensibilisations à plusieurs jours pour les formations approfondies. Nous proposons aussi des accompagnements sur mesure qui peuvent s'étendre sur plusieurs semaines."
+                },
+                "trainingFormats": {
+                    "question": "Quels sont les formats de formation proposés ?",
+                    "answer": "Nous proposons des formations en présentiel, en ligne (visioconférence) et en format hybride. Nous nous adaptons à vos contraintes géographiques et organisationnelles pour vous offrir la meilleure expérience d'apprentissage."
+                },
+                "followUpAfterTraining": {
+                    "question": "Y a-t-il un suivi après la formation ?",
+                    "answer": "Oui, nous proposons un accompagnement post-formation pour vous aider à mettre en pratique les connaissances acquises. Cela peut inclure des sessions de Q&R, du mentoring ou un support technique selon vos besoins."
+                },
+                "whyChooseMadinIA": {
+                    "question": "Pourquoi choisir Madin.IA ?",
+                    "answer": "Madin.IA combine expertise technique, approche pédagogique adaptée et connaissance du marché local. Nous sommes basés en Martinique et comprenons les spécificités des entreprises caribéennes tout en ayant une vision globale de l'IA générative."
+                }
+            },
+            "contact": {
+                "title": "Vous avez d'autres questions ?",
+                "description": "Contactez notre équipe pour obtenir de plus amples informations.",
+                "button": "Nous contacter"
+            }
+        }
+    },
+    "about": {
+        "hero": {
+            "title": "Qui sommes nous?",
+            "description": "Bienvenue chez Madin.IA, une entreprise innovante spécialisée dans l'intégration de l'intelligence artificielle générative pour transformer et accompagner les entreprises dans leur développement quotidien.\n\nFondée par Dimitri et Jacques-Henry passionnés par les nouvelles technologies et l'innovation, Madin.IA est née d'une vision et d'une conviction de démocratiser l'IA générative pour la rendre accessible à toutes les entreprises, quelles que soient leur taille ou leur secteur d'activité."
+        },
+        "mission": {
+            "title": "Notre mission",
+            "description": "Chez Madin.IA, nous croyons que l'intelligence artificielle générative n'est pas seulement une technologie : c'est un levier puissant pour innover, optimiser et personnaliser les expériences.",
+            "engagementIntro": "Nous nous engageons à :",
+            "engagements": [
+                "**Accompagner les entreprises** dans leur transformation digitale, en leur offrant des solutions sur-mesure.",
+                "**Promouvoir l'autonomie et l'excellence** grâce à nos formations et des outils simples d'utilisation, adaptés à leurs besoins.",
+                "**Créer des opportunités entrepreneuriales** en rendant l'IA générative accessible au plus grand nombre."
+            ]
+        },
+        "values": {
+            "title": "Nos valeurs",
+            "description": "Découvrez comment l'IA transforme vos processus métiers, booste votre efficacité et ouvre de nouvelles opportunités pour l'innovation.",
+            "items": {
+                "innovation": {
+                    "title": "Innovation",
+                    "description": "Toujours à la pointe des avancées technologiques pour offrir le meilleur."
+                },
+                "proximity": {
+                    "title": "Proximité",
+                    "description": "Une approche humaine et personnalisée, adaptée aux spécificités locales et aux défis globaux."
+                },
+                "personalization": {
+                    "title": "Personnalisation",
+                    "description": "Formation adaptée aux besoins de chaque client."
+                },
+                "impact": {
+                    "title": "Impact",
+                    "description": "Développer des solutions qui transforment réellement le quotidien de nos clients."
+                }
+            }
+        },
+        "team": {
+            "title": "Notre équipe",
+            "description": "Composée de professionnels expérimentés et passionnés, notre équipe travaille main dans la main avec nos clients pour leur fournir des solutions uniques et innovantes.",
+            "members": {
+                "jacquesHenry": {
+                    "name": "Jacques-Henry JOSEPH",
+                    "role": "Responsable des formations",
+                    "message": "Passionné par les nouvelles technologies depuis toujours, j'ai créé une entreprise pouvant proposer des services innovants à la population antillaise. Ayant une formation/ un diplôme/une certification en prompt engineering, je conçois des formations sur-mesure pour démocratiser l'utilisation de l'IA générative en entreprise. Travailler avec nous c'est vous assurer d'une réponse à vos besoins et la mise en place d'outils efficaces à votre développement."
+                },
+                "dimitri": {
+                    "name": "Dimitri BRAULT",
+                    "role": "Responsable du développement commercial",
+                    "message": "Directeur Commercial de Madin.IA, mon rôle est de développer les partenariats stratégiques et de promouvoir nos solutions d'intelligence artificielle générative auprès des entreprises. J'accompagne nos clients pour qu'ils tirent le meilleur parti de cette technologie innovante, afin de répondre à leurs besoins spécifiques et d'atteindre leurs objectifs."
+                },
+                "amandine": {
+                    "name": "Amandine LOZA",
+                    "role": "Social Media Manager",
+                    "message": "Travaillant depuis de nombreuses années dans le secteur du marketing digital, je mets tout en œuvre pour animer notre page Instagram afin de démontrer les possibilités infinies de l'utilisation de l'IA générative pour les entreprises et notre société. Madin.IA ce sont des jeunes dynamiques et convaincus que l'IA générative peut être un véritable atout pour les entreprises."
+                },
+                "steeven": {
+                    "name": "Steeven JACQUES",
+                    "role": "Développeur et concepteur chatbot IA",
+                    "message": "Développeur et concepteur d'applications, spécialisé dans les chatbots IA et la cybersécurité. Passionné par l'innovation technologique, il crée des solutions sur mesure. Madin.IA représente une opportunité unique de mêler expertise et créativité. Son objectif : concevoir des applications sécurisées et performantes. Il aspire à façonner l'avenir numérique avec des outils innovants et fiables."
+                }
+            }
+        },
+        "newsletter": {
+            "title": "Pré-inscrivez-vous à la newsletter",
+            "description": "Recevez bientôt les dernières actualités.",
+            "placeholder": "Entrez votre email",
+            "button": "S'inscrire"
+        }
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "description": "Prêt à transformer votre entreprise avec l'IA ? Contactez-nous pour discuter de vos besoins.",
+        "info": {
+            "title": "Entrons en contact",
+            "alt": "Contact Madin.IA",
+            "followUs": "Nous suivre",
+            "labels": {
+                "email": "Email",
+                "location": "Localisation",
+                "phone": "Téléphone"
+            },
+            "values": {
+                "email": "contact@madinia.fr",
+                "location": "Martinique, France",
+                "phone": "+33 6 47 43 80 84"
+            }
+        },
+        "form": {
+            "title": "Formulaire de contact",
+            "subtitle": "Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.",
+            "services": ["Formations IA", "Conférences", "Consulting IA", "Chatbot IA"],
+            "fields": {
+                "firstName": "Prénom",
+                "lastName": "Nom",
+                "email": "Email",
+                "phoneNumber": "Numéro de téléphone",
+                "company": "Entreprise",
+                "website": "Site web",
+                "message": "Message",
+                "budget": "Votre budget",
+                "services": "Services souhaités"
+            },
+            "button": "Envoyer le message",
+            "validation": {
+                "servicesRequired": "Vous devez choisir au moins un service",
+                "emailRequired": "Adresse Email requis",
+                "emailInvalid": "Adresse Email invalid",
+                "companyRequired": "Nom de l'entreprise requis",
+                "messageRequired": "Contenu de message requis",
+                "firstNameRequired": "Prenom requis",
+                "lastNameRequired": "Nom requis",
+                "phoneRequired": "numéro de téléphone requis",
+                "budgetRequired": "Budget requis"
+            }
+        }
+    },
+    "formations": {
+        "hero": {
+            "title": "Formations sur l'intelligence artificielle générative",
+            "subtitle": "Pour entreprises, institutions et écoles",
+            "description": "Chez Madin.IA, nous proposons des formations sur l'intelligence artificielle générative pour démystifier, inspirer et outiller vos équipes. Nos parcours s'adaptent à votre public et à vos enjeux, que ce soit en entreprise, en école ou au sein d'une institution.",
+            "additionalInfo": "Vous souhaitez former vos collaborateurs à l'IA générative, comprendre les enjeux de la transition numérique ou explorer les usages concrets de l'automatisation IA ? Nos formats allient pédagogie, pratique et interactivité, accessibles à tous niveaux.",
+            "cta": "Prendre rendez-vous"
+        },
+        "list": {
+            "title": "Nos parcours de formation à l'intelligence artificielle générative"
+        },
+        "details": {
+            "breadcrumbs": {
+                "home": "Accueil",
+                "formations": "Formation IA"
+            },
+            "requestAccess": "Demander l'accès",
+            "bookAppointment": "Prendre rendez-vous",
+            "includes": "Ce cours comprend :",
+            "pedagogicalSupport": "Support pédagogique",
+            "interactiveSessions": "Sessions interactives",
+            "certificate": "Attestation de réussite",
+            "whatYouWillLearn": "Ce que vous apprendrez",
+            "description": "Description",
+            "prerequisites": "Prérequis",
+            "targetAudience": "Public cible"
+        },
+        "item": {
+            "requestAccess": "Demander l'accès"
+        },
+        "descriptions": {
+            "ia-starter": "Découvrez comment l'intelligence artificielle générative peut transformer votre quotidien professionnel ! Cette formation accessible vous initiera aux outils tels que ChatGPT et DALL·E pour booster créativité et productivité. En plus de la maîtrise technique, vous abordez les pratiques éthiques essentielles pour une utilisation responsable. À l'issue de la session, vous disposerez des bases pour intégrer l'IA générative dans votre travail quotidien de manière éclairée et efficace.",
+            "ia-performer": "Nous adoptons une approche interactive pour assurer une compréhension complète des concepts théoriques et pratiques. Chaque session combine des explications claires, des démonstrations en direct et des exercices pratiques pour garantir que vous serez capable de mettre en œuvre l'IA générative dans vos projets dès la fin de la formation.",
+            "ia-master": "Explorez les applications avancées de l'IA dans cette formation intensive et pratique. Vous apprendrez à concevoir des prompts complexes, à développer des solutions personnalisées et à automatiser vos workflows. Basée sur des scénarios réels et des exercices interactifs, cette session vous permettra d'affiner vos compétences à travers des ateliers pratiques et des simulations poussées. Explorez des applications avancées de l'IA dans une formation intensive et pratique. Apprenez à concevoir des prompts sophistiqués, à développer des solutions personnalisées et à automatiser des workflows complexes. Basée sur des scénarios réels et des exercices interactifs, cette session permet d'affiner vos compétences à travers des ateliers concrets et des simulations immersives."
+        }
+    },
+    "error": {
+        "404": {
+            "title": "Page non trouvée",
+            "description": "Désolé, nous ne trouvons pas la page que vous recherchez.",
+            "button": "Retour à l'accueil"
+        },
+        "500": {
+            "title": "Erreur serveur",
+            "description": "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
+            "button": "Actualiser la page"
+        }
+    },
+    "footer": {
+        "description": "Révolutionnez votre entreprise avec nos solutions IA générative personnalisées. Madin.IA vous forme et vous accompagne pour intégrer l'IA générative, booster votre productivité et accélérer votre transformation digitale.",
+        "sections": {
+            "services": "Nos Services",
+            "about": "À propos de nous",
+            "resources": "Ressources"
+        },
+        "links": {
+            "formationIA": "Formation IA",
+            "conferenceIA": "Conférence IA",
+            "auditConseilsIA": "Audit et Conseils IA",
+            "accompagnementPerso": "Accompagnement Personnalisé",
+            "about": "À propos",
+            "contact": "Contact",
+            "allPosts": "Tous nos articles",
+            "privacyPolicy": "Politique de confidentialité",
+            "internalRegulations": "Règlement intérieur",
+            "certificationQualiopi": "Certification Qualiopi"
+        },
+        "copyright": "Tous droits réservés.",
+        "legalInfo": "MADIN.IA – 934 303 843 00015 | +33 6 47 43 80 84 | contact@madinia.fr | Enregistré sous le numéro de déclaration d'activité 02973663897 auprès du préfet de la région Martinique, ce numéro ne vaut pas agrément de l'État"
+    },
+    "newsletter": {
+        "title": "Restez informé",
+        "description": "Abonnez-vous à notre newsletter pour recevoir les dernières actualités sur l'IA.",
+        "placeholder": "Votre adresse email",
+        "button": "S'abonner"
+    },
+    "formationsCertifiantes": {
+        "hero": {
+            "title": "Formations Certifiantes",
+            "description": "Développez vos compétences en intelligence artificielle avec nos formations certifiantes reconnues. Obtenez des certifications professionnelles qui valorisent votre expertise.",
+            "cta": "Découvrir nos formations"
+        },
+        "programs": {
+            "title": "Nos programmes de formation certifiante",
+            "subtitle": "Des formations reconnues pour développer vos compétences en IA",
+            "rs7138": {
+                "title": "Intégrer l'IA dans les missions du consultant formateur",
+                "code": "RS7138",
+                "level": "Intermédiaire",
+                "duration": "24 heures",
+                "price": "Sur devis",
+                "description": "Formation spécialisée pour les consultants formateurs souhaitant intégrer l'intelligence artificielle dans leurs missions de formation",
+                "features": [
+                    "Comprendre l'impact de l'IA sur la formation",
+                    "Outils IA pour la création de contenu pédagogique",
+                    "Méthodes d'évaluation assistées par l'IA",
+                    "Certification Qualiopi incluse"
+                ],
+                "cta": "Découvrir la formation",
+                "downloadPdf": "Télécharger la fiche"
+            }
+        },
+        "rs7138Detail": {
+            "meta": {
+                "title": "Formation RS7138 - Intégrer l'IA dans les missions du consultant formateur",
+                "description": "Certification professionnelle RS7138 pour intégrer l'intelligence artificielle générative dans les activités du consultant formateur. Formation certifiante Qualiopi.",
+                "keywords": "formation RS7138,IA,consultant formateur,intelligence artificielle,certification professionnelle,qualiopi,madinia"
+            },
+            "hero": {
+                "badge": "Certification Professionnelle",
+                "title": "RS7138 - Intégrer l'IA dans les missions du consultant formateur",
+                "subtitle": "Certification professionnelle pour intégrer l'intelligence artificielle générative dans les activités du consultant formateur",
+                "cta": "S'inscrire à la formation",
+                "downloadPdf": "Télécharger la fiche"
+            },
+            "sections": {
+                "essentialInfo": {
+                    "title": "Informations essentielles",
+                    "code": "Code de la fiche",
+                    "status": "État",
+                    "expiryDate": "Date d'échéance",
+                    "certifier": "Certificateur",
+                    "active": "Active"
+                },
+                "objectives": {
+                    "title": "Objectifs et contexte de la certification",
+                    "description1": "Cette certification atteste de compétences relatives à l'intégration de l'intelligence artificielle générative (IAG) dans les activités du consultant formateur. Cette intégration concerne plusieurs phases du processus de formation : la conception pédagogique, l'animation, l'évaluation, la gestion réglementaire, administrative et la conformité aux exigences qualité, notamment le respect du référentiel Qualiopi.",
+                    "description2": "Ce dispositif s'adresse aux consultants formateurs expérimentés intervenant en entreprise ou en organisme de formation continue ou initiale. Les compétences acquises sont applicables et transposables à tout outil d'IAG, permettant ainsi aux professionnels du secteur de développer leur employabilité actuelle et à venir."
+                },
+                "skills": {
+                    "title": "Compétences attestées",
+                    "needsAnalysis": {
+                        "title": "Analyse des besoins",
+                        "description": "Analyser les besoins d'apprenants pour définir les objectifs opérationnels et évaluables d'un parcours de formation, en tenant compte du contexte et des particularités de la situation des apprenants."
+                    },
+                    "pathwayOptimization": {
+                        "title": "Optimisation des parcours",
+                        "description": "Optimiser un parcours de formation répondant à des objectifs opérationnels préalablement définis, en utilisant des outils d'intelligence artificielle générative pour la conception pédagogique."
+                    },
+                    "animationEvaluation": {
+                        "title": "Animation et évaluation",
+                        "description": "Animer des sessions de formation en intégrant des outils d'IA générative pour améliorer l'expérience d'apprentissage et évaluer les acquis des apprenants."
+                    }
+                },
+                "classification": {
+                    "title": "Classification",
+                    "nsfCodes": "Code(s) NSF",
+                    "formacodes": "Formacode(s)",
+                    "nsf333": "333 : Enseignement, formation",
+                    "nsf333p": "333p : Organisation et administration de services et de centres de formation",
+                    "formacode44586": "44586 : Formation formateur",
+                    "formacode44517": "44517 : Conception action formation",
+                    "formacode31028": "31028 : Intelligence artificielle",
+                    "formacode44542": "44542 : Pédagogie",
+                    "formacode44589": "44589 : Conseil formation"
+                },
+                "practicalInfo": {
+                    "title": "Informations pratiques",
+                    "registrationDuration": "Durée de l'enregistrement",
+                    "decisionDate": "Date de décision",
+                    "lastDelivery": "Dernière délivrance possible",
+                    "threeYears": "3 ans"
+                },
+                "cta": {
+                    "title": "Prêt à intégrer l'IA dans vos formations ?",
+                    "subtitle": "Rejoignez la certification RS7138 et transformez vos pratiques pédagogiques avec l'intelligence artificielle générative.",
+                    "cta": "S'inscrire maintenant",
+                    "franceCompetences": "Voir sur France Compétences"
+                }
+            }
+        },
+        "cta": {
+            "title": "Prêt à vous former ?",
+            "description": "Découvrez nos formations certifiantes et développez vos compétences en intelligence artificielle.",
+            "button": "Découvrir nos formations"
+        }
+    },
+    "certification": {
+        "hero": {
+            "title": "Certification Qualiopi",
+            "subtitle": "Madin.IA est certifié Qualiopi pour la qualité de ses actions de formation"
+        },
+        "card": {
+            "title": "Organisme Certifié Qualiopi",
+            "description": "La certification Qualiopi atteste de la qualité du processus mis en œuvre par Madin.IA pour ses actions de formation. Cette certification est délivrée par un organisme certificateur accrédité sur la base du référentiel national qualité.",
+            "details": {
+                "title": "Détails de la certification",
+                "certificate": "Certificat n°:",
+                "issued": "Délivré le:",
+                "valid": "Valide jusqu'au:",
+                "category": "Catégorie:"
+            },
+            "download": "Télécharger le certificat PDF"
+        },
+        "about": {
+            "title": "Qu'est-ce que la certification Qualiopi ?",
+            "description": "Qualiopi est la marque de certification qualité des prestataires d'actions concourant au développement des compétences. Elle atteste de la qualité du processus mis en œuvre par les prestataires d'actions de formation, de bilans de compétences, d'actions de validation des acquis de l'expérience et d'actions de formation par apprentissage.",
+            "benefits": {
+                "quality": {
+                    "title": "Qualité Garantie",
+                    "description": "Processus de formation conformes aux exigences nationales"
+                },
+                "trust": {
+                    "title": "Confiance",
+                    "description": "Certification reconnue par l'État et les financeurs"
+                },
+                "excellence": {
+                    "title": "Excellence",
+                    "description": "Amélioration continue de nos pratiques pédagogiques"
+                }
+            }
+        },
+        "meta": {
+            "title": "Certification Qualiopi - Madin.IA",
+            "description": "Madin.IA est certifié Qualiopi pour ses actions de formation en Intelligence Artificielle. Découvrez notre certification qualité."
+        },
+        "footer": {
+            "certified": "Organisme de formation certifié Qualiopi",
+            "certifier": "La certification qualité délivrée par CERTIFOPAC"
+        },
+        "badge": "Organisme certifié Qualiopi"
+    }
+}

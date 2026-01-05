@@ -1,0 +1,57 @@
+{
+    "main": {
+        "home": "Accueil",
+        "formationIA": "Formation IA",
+        "formationsCertifiantes": "Formations Certifiantes",
+        "accompagnementPersonnalise": "Accompagnement Personnalisé",
+        "conferenceIA": "Conférence IA",
+        "auditEtConseilsIA": "Audit et conseils IA",
+        "aboutUs": "À propos de nous",
+        "contact": "Contact"
+    },
+    "subheader": {
+        "madinia": "Madin.IA"
+    },
+    "breadcrumbs": {
+        "home": "Accueil",
+        "blog": "Blog",
+        "about": "À propos",
+        "contact": "Contact",
+        "services": "Services"
+    },
+    "footer": {
+        "sections": {
+            "services": "Services",
+            "formations": "Formations",
+            "company": "Entreprise",
+            "support": "Support",
+            "legal": "Légal"
+        },
+        "links": {
+            "formationIA": "Formation IA",
+            "formationsCertifiantes": "Formations Certifiantes",
+            "conferenceIA": "Conférence IA",
+            "auditConseilsIA": "Audit et conseils IA",
+            "accompagnementPerso": "Accompagnement personnalisé",
+            "about": "À propos",
+            "team": "Équipe",
+            "contact": "Contact",
+            "help": "Aide",
+            "faq": "FAQ",
+            "support": "Support",
+            "privacyPolicy": "Politique de confidentialité",
+            "termsOfService": "Conditions d'utilisation",
+            "reglementInterieur": "Règlement intérieur",
+            "preinscription": "Pré-inscription"
+        },
+        "social": {
+            "followUs": "Suivez-nous",
+            "instagram": "Instagram",
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn"
+        },
+        "copyright": "© 2024 Madin.IA. Tous droits réservés.",
+        "madeWith": "Fait avec ❤️ en Martinique"
+    }
+}

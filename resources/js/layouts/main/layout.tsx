@@ -12,12 +12,14 @@ import Alert from '@mui/material/Alert';
 import { usePathname } from '@/routing/hooks';
 import { varAlpha } from 'minimal-shared/utils';
 
+import { useTranslate } from '@/locales';
+
 import { Logo } from '@/components/logo';
 
 import { Footer } from './footer';
 import { HomeFooter } from './home-footer';
 import { langs } from '../langs-config';
-import { navData } from './nav-config';
+import { getNavData } from './nav-config';
 import { MainSection } from '../core/main-section';
 import { LayoutSection } from '../core/layout-section';
 import { HeaderSection } from '../core/header-section';
@@ -54,8 +56,10 @@ export function MainLayout({
   const pathname = usePathname();
 
   const { value: open, onFalse: onClose, onTrue: onOpen } = useBoolean();
+  const { t } = useTranslate('navigation');
 
   const homePage = pathname === '/';
+  const navDataTranslated = getNavData(t);
 
   const renderHeader = () => {
     const headerSlots: HeaderSectionProps['slots'] = {
@@ -75,7 +79,7 @@ export function MainLayout({
               display: { xs: 'inline-flex', [layoutQuery]: 'none' },
             }}
           />
-          <NavMobile data={slotProps?.nav?.data ?? navData} open={open} onClose={onClose} />
+          <NavMobile data={slotProps?.nav?.data ?? navDataTranslated} open={open} onClose={onClose} />
 
           {/** @slot Logo */}
           <Logo />
@@ -83,7 +87,7 @@ export function MainLayout({
       ),
       centerArea: (
         <NavDesktop
-          data={slotProps?.nav?.data ?? navData}
+          data={slotProps?.nav?.data ?? navDataTranslated}
           sx={(theme) => ({
             display: 'none',
             [theme.breakpoints.up(layoutQuery)]: { display: 'flex' },

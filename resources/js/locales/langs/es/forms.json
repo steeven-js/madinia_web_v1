@@ -1,0 +1,156 @@
+{
+    "contact": {
+        "title": "Formulario de contacto",
+        "fields": {
+            "firstName": {
+                "label": "Nombre",
+                "placeholder": "Ingresa tu nombre"
+            },
+            "lastName": {
+                "label": "Apellido",
+                "placeholder": "Ingresa tu apellido"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Ingresa tu email"
+            },
+            "phoneNumber": {
+                "label": "Número de teléfono",
+                "placeholder": "Ingresa tu número"
+            },
+            "company": {
+                "label": "Empresa",
+                "placeholder": "Nombre de tu empresa"
+            },
+            "website": {
+                "label": "Sitio web",
+                "placeholder": "https://tu-sitio.com"
+            },
+            "message": {
+                "label": "Mensaje",
+                "placeholder": "Describe tu proyecto"
+            },
+            "services": {
+                "label": "Servicios deseados",
+                "placeholder": "Selecciona tus servicios"
+            },
+            "budget": {
+                "label": "Tu presupuesto",
+                "description": "Indica tu presupuesto aproximado"
+            }
+        },
+        "buttons": {
+            "submit": "Enviar mensaje",
+            "submitting": "Enviando..."
+        },
+        "validation": {
+            "firstName": {
+                "required": "Nombre requerido"
+            },
+            "lastName": {
+                "required": "Apellido requerido"
+            },
+            "email": {
+                "required": "Dirección de email requerida",
+                "invalid": "Dirección de email inválida"
+            },
+            "phoneNumber": {
+                "required": "Número de teléfono requerido"
+            },
+            "company": {
+                "required": "Nombre de empresa requerido"
+            },
+            "message": {
+                "required": "Contenido del mensaje requerido"
+            },
+            "services": {
+                "required": "Debes elegir al menos un servicio"
+            },
+            "budget": {
+                "required": "Presupuesto requerido"
+            }
+        },
+        "success": {
+            "title": "¡Mensaje enviado!",
+            "description": "Tu mensaje ha sido enviado exitosamente. Te contactaremos pronto."
+        },
+        "error": {
+            "title": "Error",
+            "description": "Ocurrió un error al enviar. Por favor, intenta de nuevo."
+        }
+    },
+    "newsletter": {
+        "title": "Boletín",
+        "fields": {
+            "email": {
+                "label": "Email",
+                "placeholder": "Tu dirección de email"
+            }
+        },
+        "buttons": {
+            "subscribe": "Suscribirse",
+            "subscribing": "Suscribiendo..."
+        },
+        "messages": {
+            "alreadySubscribed": "Este email ya está registrado",
+            "subscribed": "Ahora estás suscrito",
+            "error": "Ocurrió un error"
+        },
+        "validation": {
+            "email": {
+                "required": "Email requerido",
+                "invalid": "Email inválido"
+            }
+        }
+    },
+    "checkout": {
+        "title": "Pago",
+        "fields": {
+            "personalInfo": {
+                "title": "Información personal",
+                "firstName": "Nombre",
+                "lastName": "Apellido",
+                "email": "Email",
+                "phone": "Teléfono"
+            },
+            "billingAddress": {
+                "title": "Dirección de facturación",
+                "address": "Dirección",
+                "city": "Ciudad",
+                "postalCode": "Código postal",
+                "country": "País"
+            },
+            "payment": {
+                "title": "Pago",
+                "method": "Método de pago",
+                "cardNumber": "Número de tarjeta",
+                "expiryDate": "Fecha de vencimiento",
+                "cvv": "CVV"
+            }
+        },
+        "buttons": {
+            "continue": "Continuar",
+            "back": "Atrás",
+            "placeOrder": "Realizar pedido",
+            "processing": "Procesando..."
+        },
+        "steps": {
+            "cart": "Carrito",
+            "checkout": "Pago",
+            "payment": "Pago",
+            "confirmation": "Confirmación"
+        },
+        "summary": {
+            "title": "Resumen del pedido",
+            "subtotal": "Subtotal",
+            "tax": "Impuesto",
+            "shipping": "Envío",
+            "total": "Total"
+        }
+    },
+    "search": {
+        "placeholder": "Buscar...",
+        "noResults": "No se encontraron resultados",
+        "results": "resultados encontrados"
+    }
+}
