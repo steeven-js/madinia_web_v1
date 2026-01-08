@@ -70,14 +70,16 @@ export function NavList({ data, sx, ...other }: NavListProps) {
       <NavDropdown open={open} onMouseEnter={handleOpenMenu} onMouseLeave={onClose}>
         <Nav>
           <NavUl sx={{ gap: { xs: 3, lg: 5 }, flexDirection: 'row' }}>
-            {mainList?.map((list) => (
-              <NavSubList
-                key={list.subheader}
-                subheader={list.subheader}
-                coverUrl={list.coverUrl}
-                items={list.items}
-              />
-            ))}
+            {mainList
+              ?.filter((list) => list.items && list.items.length > 0)
+              ?.map((list) => (
+                <NavSubList
+                  key={list.subheader}
+                  subheader={list.subheader}
+                  coverUrl={list.coverUrl}
+                  items={list.items}
+                />
+              ))}
 
             {commonList && <NavSubList subheader={commonList.subheader} items={commonList.items} />}
           </NavUl>

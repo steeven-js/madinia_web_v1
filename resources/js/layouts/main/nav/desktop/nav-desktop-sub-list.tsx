@@ -19,25 +19,30 @@ export function NavSubList({ sx, items, coverUrl, subheader }: NavSubListProps) 
 
   const isCommonList = subheader === 'Common';
 
-  const renderCover = () => (
-    <Link component={RouterLink} href={items[0].path ?? ''}>
-      <Box
-        component="img"
-        alt={coverUrl}
-        src={coverUrl}
-        sx={(theme) => ({
-          borderRadius: 1.25,
-          objectFit: 'cover',
-          aspectRatio: '16/10',
-          transition: theme.transitions.create(['opacity', 'box-shadow']),
-          '&:hover': {
-            opacity: 0.8,
-            boxShadow: theme.vars.customShadows.z24,
-          },
-        })}
-      />
-    </Link>
-  );
+  const renderCover = () => {
+    if (!items || items.length === 0 || !items[0]?.path) {
+      return null;
+    }
+    return (
+      <Link component={RouterLink} href={items[0].path}>
+        <Box
+          component="img"
+          alt={coverUrl}
+          src={coverUrl}
+          sx={(theme) => ({
+            borderRadius: 1.25,
+            objectFit: 'cover',
+            aspectRatio: '16/10',
+            transition: theme.transitions.create(['opacity', 'box-shadow']),
+            '&:hover': {
+              opacity: 0.8,
+              boxShadow: theme.vars.customShadows.z24,
+            },
+          })}
+        />
+      </Link>
+    );
+  };
 
   return (
     <NavLi

@@ -51,14 +51,22 @@ const getFooterLinks = (t: TFunction, tPages: TFunction) => [
   {
     subheader: t('navigation:footer.sections.company') || tPages('footer.sections.about'),
     items: [
-      { title: t('navigation:footer.links.about'), path: paths.about.root },
+      // [MAINTENANCE] Page About désactivée temporairement - 2025-01-XX
+      // Raison: Mise à jour du code en cours
+      // Pour réactiver: décommenter la ligne suivante
+      // { title: t('navigation:footer.links.about'), path: paths.about.root },
       { title: t('navigation:footer.links.contact'), path: '/contact' },
       { title: tPages('footer.links.certificationQualiopi'), path: paths.about.certificationQualiopi },
     ],
   },
   {
     subheader: tPages('footer.sections.resources'),
-    items: [{ title: tPages('footer.links.allPosts'), path: '/posts' }],
+    items: [
+      // [MAINTENANCE] Blog/Posts désactivés temporairement - 2025-01-XX
+      // Raison: Mise à jour du code en cours
+      // Pour réactiver: décommenter la ligne suivante
+      // { title: tPages('footer.links.allPosts'), path: '/posts' },
+    ],
   },
 ];
 

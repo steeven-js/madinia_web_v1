@@ -33,7 +33,10 @@ const getPageLinks = (t: TFunction) => [
     subheader: t('navigation:subheader.madinia'),
     coverUrl: imagePath('career.webp'),
     items: [
-      { title: t('navigation:footer.links.about'), path: paths.about.root },
+      // [MAINTENANCE] Page About désactivée temporairement - 2025-01-XX
+      // Raison: Mise à jour du code en cours
+      // Pour réactiver: décommenter la ligne suivante
+      // { title: t('navigation:footer.links.about'), path: paths.about.root },
       { title: t('pages:footer.links.certificationQualiopi'), path: paths.about.certificationQualiopi },
     ],
   },
@@ -41,7 +44,10 @@ const getPageLinks = (t: TFunction) => [
     subheader: t('pages:footer.sections.resources') || 'Ressources',
     coverUrl: imagePath('e-learning.webp'),
     items: [
-      { title: t('pages:footer.links.allPosts'), path: paths.blog.posts },
+      // [MAINTENANCE] Blog/Posts désactivés temporairement - 2025-01-XX
+      // Raison: Mise à jour du code en cours
+      // Pour réactiver: décommenter la ligne suivante
+      // { title: t('pages:footer.links.allPosts'), path: paths.blog.posts },
       // { title: 'Post', path: paths.blog.post },
     ],
   },
@@ -71,20 +77,30 @@ export const getNavData = (t: TFunction) => [
     path: '/',
     icon: <Iconify icon="solar:home-2-outline" width={20} />,
   },
+  // [MAINTENANCE] Menu About désactivé temporairement - 2025-01-XX
+  // Raison: Mise à jour du code en cours
+  // Pour réactiver: décommenter le bloc suivant et commenter le bloc alternatif ci-dessous
+  // {
+  //   title: t('navigation:subheader.madinia'),
+  //   path: paths.about.root,
+  //   children: getPageLinks(t),
+  //   icon: <Iconify icon="solar:menu-dots-bold" width={20} />,
+  // },
   {
+    // Alternative: Menu sans lien direct vers About (seulement les sous-menus)
     title: t('navigation:subheader.madinia'),
-    path: paths.about.root,
+    path: '#', // Lien désactivé temporairement
     children: getPageLinks(t),
     icon: <Iconify icon="solar:menu-dots-bold" width={20} />,
   },
   {
     title: t('navigation:main.contact'),
     path: paths.contact.root,
-    icon: <Iconify icon="solar:chat-round-dots-outline" width={20} />,
+    icon: <Iconify icon="solar:chat-dots-linear" width={20} />,
   },
   // { title: 'Docs', path: paths.docs },
 ];
 
 // Legacy export for backward compatibility (will be removed)
-export const pageLinks = getPageLinks(() => '');
-export const navData = getNavData(() => '');
+export const pageLinks = getPageLinks((() => '') as TFunction);
+export const navData = getNavData((() => '') as TFunction);
