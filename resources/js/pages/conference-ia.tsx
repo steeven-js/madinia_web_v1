@@ -17,6 +17,7 @@ export default function ConferenceIAPage() {
   const service = useMemo<IServiceProps | undefined>(() => {
     const objectives = (t('conference.objectives.goals', { returnObjects: true }) || []) as string[];
     const formatDetails = (t('conference.format.details', { returnObjects: true }) || []) as string[];
+    const benefits = (t('conference.benefits.items', { returnObjects: true }) || []) as string[];
 
     // Construire le contenu HTML depuis les traductions
     const content = `
@@ -36,18 +37,8 @@ export default function ConferenceIAPage() {
     // Utiliser les objectifs comme features (premiers 4)
     const features = Array.isArray(objectives) ? objectives.slice(0, 4) : [];
 
-    // Construire les benefits depuis les détails du format
-    const benefits = Array.isArray(formatDetails)
-      ? formatDetails
-          .map((detail) => {
-            if (detail.includes('Durée')) return 'Format flexible (1h à 3h)';
-            if (detail.includes('Niveau')) return 'Pour tous les publics';
-            if (detail.includes('Format')) return 'Intervention sur site ou en ligne';
-            if (detail.includes('Tarif')) return 'Contenu personnalisé';
-            return detail.split(':')[0]?.trim() || detail;
-          })
-          .slice(0, 4)
-      : [];
+    // Utiliser les benefits depuis les traductions
+    const benefitsList = Array.isArray(benefits) ? benefits.slice(0, 4) : [];
 
     return {
       id: '1',
@@ -57,7 +48,7 @@ export default function ConferenceIAPage() {
       description: t('conference.hero.description'),
       content,
       features,
-      benefits,
+      benefits: benefitsList,
       totalViews: 245,
     };
   }, [t]);

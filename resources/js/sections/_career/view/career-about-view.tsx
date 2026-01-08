@@ -7,12 +7,13 @@ import { CareerAbout } from '../about/career-about';
 import { CareerNewsletter } from '../career-newsletter';
 import { CareerOurClients } from '../career-our-clients';
 import { CareerTestimonial } from '../career-testimonial';
-import { CareerLatestPosts } from '../posts/career-latest-posts';
+// import { CareerLatestPosts } from '../posts/career-latest-posts';
 import { CareerAboutOurVision } from '../about/career-about-our-vision';
+import { CtaPreinscription } from '@/components/cta-preinscription';
 
 // ----------------------------------------------------------------------
 
-const latestPosts = _careerPosts.slice(0, 5);
+// const latestPosts = _careerPosts.slice(0, 5);
 
 export function CareerAboutView() {
   return (
@@ -37,9 +38,9 @@ export function CareerAboutView() {
 
       <CareerOurClients brands={_brands} />
 
-      <CareerLatestPosts largePost={latestPosts[0]} smallPosts={latestPosts.slice(1, 5)} />
+      {/* <CareerLatestPosts largePost={latestPosts[0]} smallPosts={latestPosts.slice(1, 5)} /> */}
 
-      <CareerNewsletter />
+      <CtaPreinscription />
     </>
   );
 }

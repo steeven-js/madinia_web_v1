@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { CareerNewsletter } from '@/sections/_career/career-newsletter';
 import { MarketingContactForm } from '@/sections/_contact/contact-form';
 import { MarketingContactInfo } from '@/sections/_contact/contact-info';
+import { CtaPreinscription } from '@/components/cta-preinscription';
 
 // ----------------------------------------------------------------------
 
@@ -41,7 +42,7 @@ export function ServiceAccompagnementView() {
         </Container>
       </Box>
 
-      <CareerNewsletter />
+      <CtaPreinscription />
     </>
   );
 }

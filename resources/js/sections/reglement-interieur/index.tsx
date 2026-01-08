@@ -27,9 +27,15 @@ interface ReglementInterieurData {
 
 interface ReglementInterieurViewProps {
   data: ReglementInterieurData;
+  labels?: {
+    consignesIncendie?: string;
+    dureeConservation?: string;
+    referenceLegale?: string;
+    article?: string;
+  };
 }
 
-export function ReglementInterieurView({ data }: ReglementInterieurViewProps) {
+export function ReglementInterieurView({ data, labels }: ReglementInterieurViewProps) {
   const theme = useTheme();
 
   const renderSpecificProperties = (article: ArticleItem) => {
@@ -60,7 +66,7 @@ export function ReglementInterieurView({ data }: ReglementInterieurViewProps) {
       properties.push(
         <Box key="consignes_incendie" sx={{ mt: 2 }}>
           <Typography variant="h6" sx={{ color: 'primary.main', mb: 1 }}>
-            Consignes incendie :
+            {labels?.consignesIncendie || 'Consignes incendie :'}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1 }}>
             {article.consignes_incendie}
@@ -109,12 +115,12 @@ export function ReglementInterieurView({ data }: ReglementInterieurViewProps) {
         <Box key="donnees_supplementaires" sx={{ mt: 2 }}>
           {article.duree_conservation && (
             <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1 }}>
-              <strong>Durée de conservation :</strong> {article.duree_conservation}
+              <strong>{labels?.dureeConservation || 'Durée de conservation :'}</strong> {article.duree_conservation}
             </Typography>
           )}
           {article.reference_legale && (
             <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1 }}>
-              <strong>Référence légale :</strong> {article.reference_legale}
+              <strong>{labels?.referenceLegale || 'Référence légale :'}</strong> {article.reference_legale}
             </Typography>
           )}
         </Box>
@@ -157,7 +163,7 @@ export function ReglementInterieurView({ data }: ReglementInterieurViewProps) {
             }}
           >
             <Typography variant="h4" sx={{ color: 'primary.main', mb: 2 }}>
-              Article {article.numero} - {article.titre}
+              {labels?.article || 'Article'} {article.numero} - {article.titre}
             </Typography>
 
             <Typography variant="body1" sx={{ mb: 3, color: 'text.secondary' }}>

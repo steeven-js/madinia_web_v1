@@ -47,6 +47,14 @@
                 "Tarif : sur devis, selon l'envergure de l'événement"
             ]
         },
+        "benefits": {
+            "items": [
+                "Format flexible (1h à 3h)",
+                "Contenu personnalisé",
+                "Pour tous les publics",
+                "Intervention sur site ou en ligne"
+            ]
+        },
         "clients": {
             "title": "Ils nous ont fait confiance",
             "description": "Nos conférences IA ont déjà été animées pour des acteurs engagés dans la transformation numérique :",
@@ -108,12 +116,31 @@
     "audit": {
         "hero": {
             "title": "Audit et Conseils en Intelligence Artificielle",
-            "subtitle": "Optimisez votre entreprise avec l'IA",
-            "description": "Notre expertise en intelligence artificielle vous permet d'identifier les opportunités d'automatisation et d'optimisation dans votre entreprise. Nous vous accompagnons dans la mise en place de solutions IA sur mesure pour améliorer votre productivité et votre compétitivité.",
-            "additionalInfo": "Une approche personnalisée pour chaque client, adaptée à vos besoins spécifiques et à votre secteur d'activité.",
+            "subtitle": "Consulting & Stratégie",
+            "description": "Évaluez votre maturité IA et définissez votre stratégie de transformation",
+            "additionalInfo": "Notre service d'audit et de conseil en IA vous permet d'évaluer le potentiel de l'intelligence artificielle dans votre organisation et d'identifier les opportunités stratégiques les plus prometteuses.",
+            "processDescription": "Nous analysons vos processus, vos données et vos objectifs pour vous proposer un plan d'action concret et adapté à vos ressources.",
             "cta": {
                 "buttonText": "Prendre rendez-vous"
             }
+        },
+        "objectives": {
+            "title": "Notre approche",
+            "goals": [
+                "Analyse de maturité : Évaluation de votre niveau actuel en IA",
+                "Identification des opportunités : Détection des cas d'usage prioritaires",
+                "Recommandations stratégiques : Plan d'action personnalisé",
+                "Accompagnement : Suivi dans la mise en œuvre"
+            ]
+        },
+        "deliverables": {
+            "title": "Livrables",
+            "items": [
+                "Rapport d'audit détaillé",
+                "Feuille de route stratégique",
+                "Recommandations priorisées",
+                "Support dans l'implémentation"
+            ]
         },
         "pourquoiAudit": {
             "title": "Pourquoi un audit IA ?",
@@ -176,14 +203,33 @@
     },
     "accompagnementPerso": {
         "hero": {
-            "title": "Accompagnement personnalisé en Intelligence Artificielle",
-            "subtitle": "Pour start-up, PME et porteurs de projets ambitieux",
-            "description": "Chez Madin.IA, nous vous accompagnons pas à pas pour intégrer l'intelligence artificielle dans votre quotidien professionnel. Que vous souhaitiez automatiser vos tâches, gagner en efficacité ou valider un projet innovant, notre équipe vous propose un accompagnement IA générative sur-mesure.",
-            "mission": "Notre objectif : vous aider à transformer vos idées en solutions concrètes, avec une stratégie IA personnalisée et un accompagnement à l'automatisation adapté à vos besoins.",
+            "title": "Accompagnement Personnalisé",
+            "subtitle": "Formation & Coaching",
+            "description": "Un accompagnement sur mesure pour réussir votre transformation IA",
+            "additionalInfo": "Notre service d'accompagnement personnalisé vous offre une formation sur mesure en intelligence artificielle, adaptée à vos besoins spécifiques et à votre contexte professionnel.",
+            "mission": "Bénéficiez d'un suivi individuel avec un expert dédié qui vous guide à chaque étape de votre parcours d'apprentissage, du niveau débutant à l'expertise avancée.",
             "buttons": {
                 "bookCall": "Réserver un appel",
                 "learnMore": "En savoir plus"
             }
+        },
+        "format": {
+            "title": "Format d'accompagnement",
+            "details": [
+                "Sessions individuelles : Coaching personnalisé selon vos besoins",
+                "Formation pratique : Mise en œuvre sur vos propres projets",
+                "Suivi régulier : Points d'avancement et ajustements",
+                "Support continu : Disponible pour vos questions"
+            ]
+        },
+        "advantages": {
+            "title": "Avantages",
+            "items": [
+                "Contenu 100% sur mesure",
+                "Rythme adapté à votre disponibilité",
+                "Expertise dédiée à votre projet",
+                "Résultats concrets et mesurables"
+            ]
         },
         "whyChooseUs": {
             "title": "Pourquoi choisir notre accompagnement IA ?",

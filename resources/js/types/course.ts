@@ -62,4 +62,5 @@ export type ICourseFiltersProps = {
   categories: string[];
   rating: string | null;
   language: string[];
+  certification: string[];
 };

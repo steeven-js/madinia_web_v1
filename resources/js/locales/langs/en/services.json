@@ -47,6 +47,14 @@
                 "Price: on quote, depending on the scale of the event"
             ]
         },
+        "benefits": {
+            "items": [
+                "Flexible format (1h to 3h)",
+                "Personalized content",
+                "For all audiences",
+                "On-site or online intervention"
+            ]
+        },
         "clients": {
             "title": "They trusted us",
             "description": "Our AI conferences have already been delivered for players committed to digital transformation:",
@@ -108,12 +116,31 @@
     "audit": {
         "hero": {
             "title": "AI Audit and Consulting",
-            "subtitle": "Optimize your business with AI",
-            "description": "Our artificial intelligence expertise allows you to identify automation and optimization opportunities in your business. We support you in implementing custom AI solutions to improve your productivity and competitiveness.",
-            "additionalInfo": "A personalized approach for each client, adapted to your specific needs and sector of activity.",
+            "subtitle": "Consulting & Strategy",
+            "description": "Assess your AI maturity and define your transformation strategy",
+            "additionalInfo": "Our AI audit and consulting service allows you to evaluate the potential of artificial intelligence in your organization and identify the most promising strategic opportunities.",
+            "processDescription": "We analyze your processes, your data, and your objectives to propose a concrete action plan adapted to your resources.",
             "cta": {
                 "buttonText": "Book an appointment"
             }
+        },
+        "objectives": {
+            "title": "Our approach",
+            "goals": [
+                "Maturity analysis : Assessment of your current AI level",
+                "Opportunity identification : Detection of priority use cases",
+                "Strategic recommendations : Personalized action plan",
+                "Support : Follow-up in implementation"
+            ]
+        },
+        "deliverables": {
+            "title": "Deliverables",
+            "items": [
+                "Detailed audit report",
+                "Strategic roadmap",
+                "Prioritized recommendations",
+                "Implementation support"
+            ]
         },
         "pourquoiAudit": {
             "title": "Why an AI audit?",
@@ -166,14 +193,33 @@
     },
     "accompagnementPerso": {
         "hero": {
-            "title": "Personalized AI Consulting",
-            "subtitle": "For startups, SMEs and ambitious project leaders",
-            "description": "At Madin.IA, we support you step by step to integrate artificial intelligence into your professional daily life. Whether you want to automate your tasks, gain efficiency or validate an innovative project, our team offers you tailor-made generative AI support.",
-            "mission": "Our objective: help you transform your ideas into concrete solutions, with a personalized AI strategy and automation support adapted to your needs.",
+            "title": "Personalized Support",
+            "subtitle": "Training & Coaching",
+            "description": "Tailor-made support to succeed in your AI transformation",
+            "additionalInfo": "Our personalized support service offers you tailor-made training in artificial intelligence, adapted to your specific needs and professional context.",
+            "mission": "Benefit from individual follow-up with a dedicated expert who guides you at each stage of your learning journey, from beginner level to advanced expertise.",
             "buttons": {
                 "bookCall": "Book a call",
                 "learnMore": "Learn more"
             }
+        },
+        "format": {
+            "title": "Support format",
+            "details": [
+                "Individual sessions : Personalized coaching according to your needs",
+                "Practical training : Implementation on your own projects",
+                "Regular follow-up : Progress reviews and adjustments",
+                "Continuous support : Available for your questions"
+            ]
+        },
+        "advantages": {
+            "title": "Advantages",
+            "items": [
+                "100% tailor-made content",
+                "Pace adapted to your availability",
+                "Expertise dedicated to your project",
+                "Concrete and measurable results"
+            ]
         },
         "whyChooseUs": {
             "title": "Why choose our AI support?",

@@ -183,6 +183,34 @@
                 }
             }
         },
+        "career": {
+            "overline": "Madin.IA",
+            "title": "Hacemos lo mejor para todos nuestros clientes.",
+            "description1": "Fundada en Martinica, Madin.IA nació de una convicción: la inteligencia artificial generativa debe ser accesible a todas las empresas y organizaciones, sin importar su tamaño o sector.",
+            "description2": "Ofrecemos servicios de formación, consultoría y desarrollo para ayudar a nuestros clientes a explotar el potencial de la IA de manera concreta y adaptada a sus necesidades.",
+            "section": {
+                "title": "Madin.IA ha estado presente",
+                "description": "Bienvenido a Madin.IA, una empresa innovadora especializada en la integración de la inteligencia artificial generativa para transformar y acompañar a las empresas en su desarrollo diario. Fundada por Dimitri y Jacques-Henry, democratizamos la IA generativa para hacerla accesible a todas las empresas."
+            },
+            "stats": {
+                "formations": {
+                    "name": "Formaciones impartidas",
+                    "number": 150
+                },
+                "clients": {
+                    "name": "Clientes satisfechos",
+                    "number": 85
+                },
+                "partners": {
+                    "name": "Socios",
+                    "number": 25
+                },
+                "team": {
+                    "name": "Miembros del equipo",
+                    "number": 4
+                }
+            }
+        },
         "newsletter": {
             "title": "Pre-regístrate al boletín",
             "description": "Pronto recibirás las últimas noticias.",
@@ -458,5 +486,160 @@
             "certifier": "Certificación de calidad emitida por CERTIFOPAC"
         },
         "badge": "Organización certificada Qualiopi"
+    },
+    "reglementInterieur": {
+        "meta": {
+            "title": "Reglamento Interno - Madin.IA",
+            "description": "Reglamento interno de la organización de formación Madin.IA"
+        },
+        "titre": "REGLAMENTO INTERNO DE LA ORGANIZACIÓN DE FORMACIÓN",
+        "labels": {
+            "article": "Artículo",
+            "consignesIncendie": "Instrucciones de incendio:",
+            "dureeConservation": "Duración de conservación:",
+            "referenceLegale": "Referencia legal:"
+        },
+        "articles": [
+            {
+                "numero": 1,
+                "titre": "Ámbito de aplicación y aceptación",
+                "contenu": "El presente reglamento interno se aplica a todos los participantes en una formación impartida por la organización de formación. Al inscribirse en una formación, cada participante acepta cumplir con las normas y prescripciones definidas a continuación. Este reglamento interno está disponible en nuestro sitio web y se pone a disposición en el espacio del candidato. Si la formación se lleva a cabo en las instalaciones de la empresa cliente, el reglamento interno de la empresa cliente se aplica para las normas de higiene y seguridad. Para todas las demás cláusulas, se aplica el reglamento interno de la organización proveedora."
+            },
+            {
+                "numero": 2,
+                "titre": "Higiene y seguridad",
+                "contenu": "La seguridad y la salud de los participantes es una prioridad. Los participantes deben respetar las instrucciones de higiene y seguridad vigentes en las instalaciones de la organización de formación. En caso de formación presencial, deben respetarse escrupulosamente normas específicas relacionadas con la crisis sanitaria (por ejemplo, Covid-19):",
+                "regles_specifiques": ["Lavado o desinfección regular de las manos"],
+                "consignes_incendie": "Las instrucciones de incendio, incluyendo la localización de extintores y salidas de emergencia, deben tenerse en cuenta desde la llegada a las instalaciones. En caso de incidente o accidente, el participante debe informar inmediatamente a la organización de formación."
+            },
+            {
+                "numero": 3,
+                "titre": "Disciplina",
+                "contenu": "Está prohibido consumir alcohol, drogas o fumar en las instalaciones de formación. Cualquier comportamiento inapropiado, ya sea verbal o físico, puede resultar en sanciones disciplinarias, desde una advertencia hasta la exclusión definitiva de la formación."
+            },
+            {
+                "numero": 4,
+                "titre": "Sanciones",
+                "contenu": "Las infracciones al reglamento interno pueden resultar en sanciones, tales como:",
+                "types_sanctions": ["Advertencia oral o escrita", "Exclusión temporal o definitiva de la formación"],
+                "application": "Las sanciones se aplican según la gravedad de la falta. Las multas o sanciones pecuniarias están prohibidas."
+            },
+            {
+                "numero": 5,
+                "titre": "Saber estar y comportamiento",
+                "contenu": "Los participantes deben adoptar una actitud respetuosa y profesional. Se exige una vestimenta decente para todos los participantes. Cualquier forma de acoso o comportamiento perturbador resultará en sanciones."
+            },
+            {
+                "numero": 6,
+                "titre": "Asistencia",
+                "contenu": "Los participantes deben respetar los horarios de formación. Cualquier retraso o ausencia debe estar justificado. Las ausencias injustificadas pueden resultar en sanciones y, para las formaciones financiadas por un tercero (OPCO, Pôle emploi, etc.), deducciones salariales o información a su financiador. En caso de retraso, el participante debe informar al formador a través de los datos de contacto disponibles en la plataforma o el sitio web lo antes posible."
+            },
+            {
+                "numero": 7,
+                "titre": "Seguimiento y validación de la formación",
+                "contenu": "Los participantes deben firmar la hoja de asistencia en cada sesión. Al finalizar la formación, se les entregará un certificado de asistencia y un certificado de finalización de formación. Estos documentos deben transmitirse al empleador o financiador, si es necesario. En el caso de una formación cubierta por fondos públicos o mutualizados, se transmitirá un certificado de realización individual a cada participante."
+            },
+            {
+                "numero": 8,
+                "titre": "Uso del material",
+                "contenu": "El candidato debe presentarse a la formación con su material informático. El material puesto a disposición para la formación debe utilizarse exclusivamente en este contexto. En caso de mal funcionamiento, el participante debe informar inmediatamente al formador. El material debe conservarse en buen estado."
+            },
+            {
+                "numero": 9,
+                "titre": "Acceso a las instalaciones",
+                "contenu": "El acceso a las instalaciones está reservado para la formación. Está prohibido introducir personas ajenas a la organización de formación sin autorización previa. La venta de bienes o servicios también está prohibida en las instalaciones."
+            },
+            {
+                "numero": 10,
+                "titre": "Grabaciones y documentación pedagógica",
+                "contenu": "Las grabaciones de audio o video de las sesiones de formación están prohibidas sin autorización previa. La documentación entregada durante las formaciones está protegida por derechos de autor y solo puede utilizarse con fines personales."
+            },
+            {
+                "numero": 11,
+                "titre": "Responsabilidad",
+                "contenu": "La organización de formación declina toda responsabilidad en caso de pérdida, robo o deterioro de los bienes personales de los participantes dejados en las instalaciones."
+            },
+            {
+                "numero": 12,
+                "titre": "Datos personales",
+                "contenu": "La información recopilada sobre los participantes se utiliza para el seguimiento administrativo y financiero de la formación. Se conserva durante 3 años. De conformidad con el Reglamento Europeo 2016/679 sobre protección de datos, los participantes pueden acceder, rectificar o eliminar sus datos contactando con la organización de formación.",
+                "duree_conservation": "3 años",
+                "reference_legale": "Reglamento Europeo 2016/679 sobre protección de datos"
+            },
+            {
+                "numero": 13,
+                "titre": "Accesibilidad para personas con discapacidad",
+                "contenu": "Las formaciones son accesibles para todos, incluidas las personas con discapacidad. Se puede establecer un acompañamiento específico a solicitud."
+            },
+            {
+                "numero": 14,
+                "titre": "Aceptación del reglamento interno",
+                "contenu": "El reglamento interno se entrega a cada participante antes de la formación. La firma del documento no es exigida por la ley, pero puede solicitarse para asegurar que el participante está informado de sus derechos y obligaciones."
+            },
+            {
+                "numero": 15,
+                "titre": "Publicidad del reglamento",
+                "contenu": "Este reglamento interno está expuesto en las instalaciones de la organización de formación y puede consultarse en cualquier momento."
+            }
+        ]
+    },
+    "privacyPolicy": {
+        "meta": {
+            "title": "Política de Privacidad - Madin.IA",
+            "description": "Política de privacidad Madin.IA"
+        },
+        "titre": "POLÍTICA DE PRIVACIDAD",
+        "labels": {
+            "article": "Artículo",
+            "contactEmail": "Email de contacto:"
+        },
+        "articles": [
+            {
+                "numero": 1,
+                "titre": "Fecha de entrada en vigor",
+                "contenu": "Entrada en vigor: 7 de octubre de 2024. Esta Política de Privacidad describe cómo se recopilan, utilizan y comparten la información cuando interactúa con MadinIA, una empresa especializada en IA Generativa."
+            },
+            {
+                "numero": 2,
+                "titre": "Recopilación y Uso de Información",
+                "contenu": "Actualmente solo recopilamos las direcciones de correo electrónico de los usuarios que se suscriben a nuestro boletín. Esta información se utiliza únicamente para enviarle actualizaciones, noticias e información relacionada con nuestros productos y servicios en el campo de la IA Generativa."
+            },
+            {
+                "numero": 3,
+                "titre": "Protección de Datos",
+                "contenu": "Nos tomamos muy en serio la protección de sus datos personales. Las direcciones de correo electrónico recopiladas se almacenan de forma segura y solo son accesibles para el personal autorizado de MadinIA."
+            },
+            {
+                "numero": 4,
+                "titre": "Compartir Información",
+                "contenu": "No vendemos, intercambiamos ni transferimos su información personal a terceros. Esto no incluye a terceros de confianza que nos ayudan a operar nuestro sitio web o realizar nuestras actividades, siempre que estas partes acuerden mantener esta información confidencial."
+            },
+            {
+                "numero": 5,
+                "titre": "Consentimiento",
+                "contenu": "Al proporcionar su dirección de correo electrónico para nuestro boletín, usted consiente la recopilación y el uso de esta información de acuerdo con esta política de privacidad."
+            },
+            {
+                "numero": 6,
+                "titre": "Acceso y Control de su Información",
+                "contenu": "Usted tiene derecho a:",
+                "droits": [
+                    "Darse de baja de nuestro boletín en cualquier momento a través del enlace de cancelación de suscripción presente en cada correo electrónico",
+                    "Solicitar el acceso, la corrección o la eliminación de sus datos personales",
+                    "Oponerse al tratamiento de sus datos personales"
+                ]
+            },
+            {
+                "numero": 7,
+                "titre": "Modificaciones de la Política de Privacidad",
+                "contenu": "Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier modificación se publicará en esta página con una fecha de actualización."
+            },
+            {
+                "numero": 8,
+                "titre": "Contacto",
+                "contenu": "Para cualquier pregunta o inquietud con respecto a esta política de privacidad o el tratamiento de sus datos, contáctenos en: contact@madin-ia.com. Al usar nuestro sitio y suscribirse a nuestro boletín, usted acepta esta política de privacidad.",
+                "contact_email": "contact@madin-ia.com"
+            }
+        ]
     }
 }

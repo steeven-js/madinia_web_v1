@@ -101,5 +101,11 @@
         "years": "años",
         "ago": "hace",
         "readingTime": "{{time}} min de lectura"
+    },
+    "ctaPreinscription": {
+        "title": "¿Interesado(a) en nuestras",
+        "formationsIA": "Formaciones IA",
+        "description": "Preinscríbete gratis y únete a la lista de espera. Sé notificado(a) tan pronto como se forme un grupo para la formación de tu elección.",
+        "buttonText": "Inscribirme ahora"
     }
 }

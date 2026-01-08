@@ -12,10 +12,10 @@ import { _socials } from '@/_mock';
 import { Iconify } from '@/components/iconify';
 
 import { Advertisement } from '@/sections/advertisement';
-import { CareerNewsletter } from '@/sections/_career/career-newsletter';
 import { ServiceDetailsInfo } from '../details/service-details-info';
 import { ServiceDetailsHero } from '../details/service-details-hero';
 import { ServiceDetailsSummary } from '../details/service-details-summary';
+import { CtaPreinscription } from '@/components/cta-preinscription';
 
 // ----------------------------------------------------------------------
 
@@ -102,7 +102,7 @@ export function ServiceView({ service, relatedServices }: ViewProps) {
           </Grid>
         </Grid>
       </Container>
-      <CareerNewsletter />
+      <CtaPreinscription />
     </>
   );
 }

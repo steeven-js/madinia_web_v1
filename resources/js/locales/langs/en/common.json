@@ -101,5 +101,11 @@
         "years": "years",
         "ago": "ago",
         "readingTime": "{{time}} min read"
+    },
+    "ctaPreinscription": {
+        "title": "Interested in our",
+        "formationsIA": "AI Training",
+        "description": "Pre-register for free and join the waiting list. Be notified as soon as a group is formed for the training of your choice.",
+        "buttonText": "Sign up now"
     }
 }

@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 
 import { paths } from '@/routing/paths';
+import { useTranslate } from '@/locales';
 import { Iconify } from '@/components/iconify';
 import { varFade } from '@/components/animate';
 
@@ -16,6 +17,7 @@ import { varFade } from '@/components/animate';
 
 export function CtaPreinscription() {
     const theme = useTheme();
+    const { t } = useTranslate('common');
 
     const handleClick = () => {
         router.visit(paths.formations.preinscription);
@@ -55,7 +57,7 @@ export function CtaPreinscription() {
                                 lineHeight: 1.3,
                             }}
                         >
-                            Intéressé(e) par nos{' '}
+                            {t('ctaPreinscription.title')}{' '}
                             <Box
                                 component="span"
                                 sx={{
@@ -65,7 +67,7 @@ export function CtaPreinscription() {
                                     backgroundClip: 'text',
                                 }}
                             >
-                                Formations IA
+                                {t('ctaPreinscription.formationsIA')}
                             </Box>
                             {' '}?
                         </Typography>
@@ -78,8 +80,7 @@ export function CtaPreinscription() {
                                 lineHeight: 1.6,
                             }}
                         >
-                            Pré-inscrivez-vous gratuitement et rejoignez la file d'attente. 
-                            Soyez notifié(e) dès qu'un groupe se constitue pour la formation de votre choix.
+                            {t('ctaPreinscription.description')}
                         </Typography>
                     </Stack>
 
@@ -99,7 +100,7 @@ export function CtaPreinscription() {
                             size="large"
                             variant="contained"
                             onClick={handleClick}
-                            endIcon={<Iconify icon="solar:arrow-right-bold" />}
+                            endIcon={<Iconify icon="carbon:chevron-right" width={20} />}
                             sx={{
                                 px: 4,
                                 py: 1.5,
@@ -115,7 +116,7 @@ export function CtaPreinscription() {
                                 },
                             }}
                         >
-                            Je m'inscris maintenant
+                            {t('ctaPreinscription.buttonText')}
                         </Button>
                     </m.div>
                 </Stack>

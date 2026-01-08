@@ -23,9 +23,13 @@ interface PolitiqueConfidentialiteData {
 
 interface PolitiqueConfidentialiteViewProps {
   data: PolitiqueConfidentialiteData;
+  labels?: {
+    article?: string;
+    contactEmail?: string;
+  };
 }
 
-export function PolitiqueConfidentialiteView({ data }: PolitiqueConfidentialiteViewProps) {
+export function PolitiqueConfidentialiteView({ data, labels }: PolitiqueConfidentialiteViewProps) {
   const theme = useTheme();
 
   const renderSpecificProperties = (article: ArticleItem) => {
@@ -56,7 +60,7 @@ export function PolitiqueConfidentialiteView({ data }: PolitiqueConfidentialiteV
       properties.push(
         <Box key="contact_email" sx={{ mt: 2 }}>
           <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1 }}>
-            <strong>Email de contact :</strong> {article.contact_email}
+            <strong>{labels?.contactEmail || 'Email de contact :'}</strong> {article.contact_email}
           </Typography>
         </Box>
       );
@@ -98,7 +102,7 @@ export function PolitiqueConfidentialiteView({ data }: PolitiqueConfidentialiteV
             }}
           >
             <Typography variant="h4" sx={{ color: 'primary.main', mb: 2 }}>
-              Article {article.numero} - {article.titre}
+              {labels?.article || 'Article'} {article.numero} - {article.titre}
             </Typography>
 
             <Typography variant="body1" sx={{ mb: 3, color: 'text.secondary' }}>

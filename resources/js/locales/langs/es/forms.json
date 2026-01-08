@@ -18,6 +18,10 @@
                 "label": "Número de teléfono",
                 "placeholder": "Ingresa tu número"
             },
+            "phone": {
+                "label": "Teléfono",
+                "placeholder": "Ingresa tu número de teléfono"
+            },
             "company": {
                 "label": "Empresa",
                 "placeholder": "Nombre de tu empresa"
@@ -32,7 +36,13 @@
             },
             "services": {
                 "label": "Servicios deseados",
-                "placeholder": "Selecciona tus servicios"
+                "placeholder": "Selecciona tus servicios",
+                "items": [
+                    "Formaciones IA",
+                    "Conferencias",
+                    "Consultoría IA",
+                    "Chatbot IA"
+                ]
             },
             "budget": {
                 "label": "Tu presupuesto",
@@ -45,14 +55,14 @@
         },
         "validation": {
             "firstName": {
-                "required": "Nombre requerido"
+                "required": "El nombre es requerido"
             },
             "lastName": {
-                "required": "Apellido requerido"
+                "required": "El apellido es requerido"
             },
             "email": {
-                "required": "Dirección de email requerida",
-                "invalid": "Dirección de email inválida"
+                "required": "El email es requerido",
+                "invalid": "El email debe ser válido"
             },
             "phoneNumber": {
                 "required": "Número de teléfono requerido"
@@ -61,7 +71,7 @@
                 "required": "Nombre de empresa requerido"
             },
             "message": {
-                "required": "Contenido del mensaje requerido"
+                "required": "El mensaje es requerido"
             },
             "services": {
                 "required": "Debes elegir al menos un servicio"

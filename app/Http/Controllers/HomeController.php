@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use App\Helpers\SupabaseHelper;
 use App\Models\Formation;
 use App\Models\FormationCategory;
 use Illuminate\Http\Request;
@@ -36,6 +37,11 @@ class HomeController extends Controller
                 'title' => $formation->title,
                 'slug' => $formation->slug,
                 'short_description' => $formation->short_description,
+                'description' => $formation->description,
+                'certification' => $formation->certification ?? false,
+                'certification_label' => $formation->certification_label,
+                'image' => $formation->image ? SupabaseHelper::getPublicUrl($formation->image) : null,
+                'level' => $formation->level,
                 'category' => $formation->category ? [
                     'id' => $formation->category->id,
                     'name' => $formation->category->name,

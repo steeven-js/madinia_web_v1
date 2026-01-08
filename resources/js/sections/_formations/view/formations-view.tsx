@@ -156,7 +156,7 @@ export function FormationsView({ formations }: ViewProps) {
                             options={{
                                 // durations: ['0 - 1 Hour', '1 - 3 Hours', '3 - 6 Hours', '6 - 18 Hours', '18+ Hours'],
                                 categories: formations ? 
-                                    [...new Set(formations.map(f => f.category?.name).filter(Boolean))] : 
+                                    [...new Set(formations.map(f => f.category?.name).filter((name): name is string => Boolean(name)))] : 
                                     _tags,
                                 levels: ['Débutant', 'Intermédiaire', 'Avancé'],
                             }}

@@ -1,3 +1,5 @@
+import type { Formation } from '@/types/formation';
+
 import { Head } from '@inertiajs/react';
 
 import { MainLayout } from '@/layouts/main';
@@ -6,6 +8,11 @@ import { CareerLandingView } from '@/sections/_career/view/career-landing-view';
 
 // ----------------------------------------------------------------------
 
+interface HomePageProps {
+    formations?: Formation[];
+    categories?: unknown[];
+}
+
 const metadata = {
   title: 'Zone UI: The starting point for your next project',
   description:
@@ -13,7 +20,7 @@ const metadata = {
   keywords: 'react,material,kit,application,dashboard,admin,template',
 };
 
-export default function Page() {
+export default function Page({ formations = [] }: HomePageProps) {
   return (
     <>
       <Head>
@@ -33,8 +40,8 @@ export default function Page() {
             },
           },
         }}
-      >
-        <CareerLandingView />
+      >        
+        <CareerLandingView formations={formations} />
       </MainLayout>
     </>
   );

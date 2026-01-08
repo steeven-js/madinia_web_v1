@@ -101,5 +101,11 @@
         "years": "années",
         "ago": "il y a",
         "readingTime": "{{time}} min de lecture"
+    },
+    "ctaPreinscription": {
+        "title": "Intéressé(e) par nos",
+        "formationsIA": "Formations IA",
+        "description": "Pré-inscrivez-vous gratuitement et rejoignez la file d'attente. Soyez notifié(e) dès qu'un groupe se constitue pour la formation de votre choix.",
+        "buttonText": "Je m'inscris maintenant"
     }
 }

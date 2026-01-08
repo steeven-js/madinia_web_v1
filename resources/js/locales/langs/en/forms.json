@@ -18,6 +18,10 @@
                 "label": "Phone number",
                 "placeholder": "Enter your number"
             },
+            "phone": {
+                "label": "Phone",
+                "placeholder": "Enter your phone number"
+            },
             "company": {
                 "label": "Company",
                 "placeholder": "Your company name"
@@ -32,7 +36,13 @@
             },
             "services": {
                 "label": "Desired services",
-                "placeholder": "Select your services"
+                "placeholder": "Select your services",
+                "items": [
+                    "AI Training",
+                    "Conferences",
+                    "AI Consulting",
+                    "AI Chatbot"
+                ]
             },
             "budget": {
                 "label": "Your budget",
@@ -45,14 +55,14 @@
         },
         "validation": {
             "firstName": {
-                "required": "First name required"
+                "required": "First name is required"
             },
             "lastName": {
-                "required": "Last name required"
+                "required": "Last name is required"
             },
             "email": {
-                "required": "Email address required",
-                "invalid": "Invalid email address"
+                "required": "Email is required",
+                "invalid": "Email must be valid"
             },
             "phoneNumber": {
                 "required": "Phone number required"
@@ -61,7 +71,7 @@
                 "required": "Company name required"
             },
             "message": {
-                "required": "Message content required"
+                "required": "Message is required"
             },
             "services": {
                 "required": "You must choose at least one service"

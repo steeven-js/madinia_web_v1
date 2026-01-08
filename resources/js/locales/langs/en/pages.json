@@ -183,6 +183,34 @@
                 }
             }
         },
+        "career": {
+            "overline": "Madin.IA",
+            "title": "We make the best for all our customers.",
+            "description1": "Founded in Martinique, Madin.IA was born from a conviction: generative artificial intelligence must be accessible to all companies and organizations, regardless of their size or sector.",
+            "description2": "We offer training, consulting and development services to help our clients exploit the potential of AI in a concrete way adapted to their needs.",
+            "section": {
+                "title": "Madin.IA has been present",
+                "description": "Welcome to Madin.IA, an innovative company specialized in the integration of generative artificial intelligence to transform and support companies in their daily development. Founded by Dimitri and Jacques-Henry, we democratize generative AI to make it accessible to all companies."
+            },
+            "stats": {
+                "formations": {
+                    "name": "Training courses delivered",
+                    "number": 150
+                },
+                "clients": {
+                    "name": "Satisfied clients",
+                    "number": 85
+                },
+                "partners": {
+                    "name": "Partners",
+                    "number": 25
+                },
+                "team": {
+                    "name": "Team members",
+                    "number": 4
+                }
+            }
+        },
         "newsletter": {
             "title": "Pre-register for the newsletter",
             "description": "Soon receive the latest news.",
@@ -458,5 +486,160 @@
             "certifier": "Quality certification issued by CERTIFOPAC"
         },
         "badge": "Qualiopi certified organization"
+    },
+    "reglementInterieur": {
+        "meta": {
+            "title": "Internal Regulations - Madin.IA",
+            "description": "Internal regulations of the Madin.IA training organization"
+        },
+        "titre": "INTERNAL REGULATIONS OF THE TRAINING ORGANIZATION",
+        "labels": {
+            "article": "Article",
+            "consignesIncendie": "Fire safety instructions:",
+            "dureeConservation": "Retention period:",
+            "referenceLegale": "Legal reference:"
+        },
+        "articles": [
+            {
+                "numero": 1,
+                "titre": "Scope and acceptance",
+                "contenu": "These internal regulations apply to all trainees participating in training provided by the training organization. By registering for training, each trainee agrees to comply with the rules and prescriptions defined below. These internal regulations are available on our website and provided in the candidate area. If the training takes place on the client company's premises, the client company's internal regulations apply for hygiene and safety rules. For all other clauses, the service provider organization's internal regulations apply."
+            },
+            {
+                "numero": 2,
+                "titre": "Hygiene and safety",
+                "contenu": "The safety and health of trainees is a priority. Trainees must respect the hygiene and safety instructions in force in the training organization's premises. For in-person training, specific rules related to the health crisis (e.g., Covid-19) must be strictly respected:",
+                "regles_specifiques": ["Regular hand washing or disinfection"],
+                "consignes_incendie": "Fire safety instructions, including the location of fire extinguishers and emergency exits, must be taken into account upon arrival at the premises. In case of incident or accident, the trainee must immediately inform the training organization."
+            },
+            {
+                "numero": 3,
+                "titre": "Discipline",
+                "contenu": "It is forbidden to consume alcohol, drugs, or to smoke in the training premises. Any inappropriate behavior, whether verbal or physical, may result in disciplinary sanctions, ranging from a warning to permanent exclusion from the training."
+            },
+            {
+                "numero": 4,
+                "titre": "Sanctions",
+                "contenu": "Violations of the internal regulations may result in sanctions, such as:",
+                "types_sanctions": ["Oral or written warning", "Temporary or permanent exclusion from training"],
+                "application": "Sanctions are applied according to the severity of the offense. Fines or financial sanctions are prohibited."
+            },
+            {
+                "numero": 5,
+                "titre": "Professional conduct and behavior",
+                "contenu": "Trainees must adopt a respectful and professional attitude. Decent attire is required for all participants. Any form of harassment or disruptive behavior will result in sanctions."
+            },
+            {
+                "numero": 6,
+                "titre": "Attendance",
+                "contenu": "Trainees must respect training schedules. Any delay or absence must be justified. Unjustified absences may result in sanctions and, for training funded by a third party (OPCO, Pôle emploi, etc.), salary deductions or information to their funder. In case of delay, the trainee must inform the trainer via the contact details available on the platform or website as soon as possible."
+            },
+            {
+                "numero": 7,
+                "titre": "Training follow-up and validation",
+                "contenu": "Trainees are required to sign the attendance sheet at each session. At the end of the training, a certificate of attendance and a certificate of completion will be issued to them. These documents must be transmitted to the employer or funder, if necessary. In the case of training covered by public or mutual funds, an individual completion certificate will be sent to each trainee."
+            },
+            {
+                "numero": 8,
+                "titre": "Use of equipment",
+                "contenu": "The candidate is required to attend training with their computer equipment. Equipment provided for training must be used exclusively for this purpose. In case of malfunction, the trainee must immediately inform the trainer. Equipment must be kept in good condition."
+            },
+            {
+                "numero": 9,
+                "titre": "Access to premises",
+                "contenu": "Access to the premises is reserved for training. It is forbidden to bring persons foreign to the training organization without prior authorization. The sale of goods or services is also prohibited on the premises."
+            },
+            {
+                "numero": 10,
+                "titre": "Recordings and educational documentation",
+                "contenu": "Audio or video recordings of training sessions are prohibited without prior authorization. Documentation provided during training is protected by copyright and may only be used for personal purposes."
+            },
+            {
+                "numero": 11,
+                "titre": "Liability",
+                "contenu": "The training organization declines all responsibility in case of loss, theft or damage to personal belongings of trainees left on the premises."
+            },
+            {
+                "numero": 12,
+                "titre": "Personal data",
+                "contenu": "Information collected about trainees is used for administrative and financial follow-up of training. It is kept for 3 years. In accordance with European Regulation 2016/679 on data protection, trainees may access, rectify, or delete their data by contacting the training organization.",
+                "duree_conservation": "3 years",
+                "reference_legale": "European Regulation 2016/679 on data protection"
+            },
+            {
+                "numero": 13,
+                "titre": "Accessibility for people with disabilities",
+                "contenu": "Training is accessible to all, including people with disabilities. Specific support can be provided upon request."
+            },
+            {
+                "numero": 14,
+                "titre": "Acceptance of internal regulations",
+                "contenu": "The internal regulations are given to each trainee before training. Signing the document is not required by law, but it may be requested to ensure that the trainee is informed of their rights and obligations."
+            },
+            {
+                "numero": 15,
+                "titre": "Publicity of regulations",
+                "contenu": "These internal regulations are posted in the training organization's premises and can be consulted at any time."
+            }
+        ]
+    },
+    "privacyPolicy": {
+        "meta": {
+            "title": "Privacy Policy - Madin.IA",
+            "description": "Madin.IA Privacy Policy"
+        },
+        "titre": "PRIVACY POLICY",
+        "labels": {
+            "article": "Article",
+            "contactEmail": "Contact email:"
+        },
+        "articles": [
+            {
+                "numero": 1,
+                "titre": "Effective Date",
+                "contenu": "Effective date: October 7, 2024. This Privacy Policy describes how information is collected, used, and shared when you interact with MadinIA, a company specializing in Generative AI."
+            },
+            {
+                "numero": 2,
+                "titre": "Information Collection and Use",
+                "contenu": "We currently only collect email addresses from users who subscribe to our newsletter. This information is used solely to send you updates, news, and information related to our products and services in the field of Generative AI."
+            },
+            {
+                "numero": 3,
+                "titre": "Data Protection",
+                "contenu": "We take the protection of your personal data very seriously. Collected email addresses are stored securely and are only accessible to authorized MadinIA personnel."
+            },
+            {
+                "numero": 4,
+                "titre": "Information Sharing",
+                "contenu": "We do not sell, exchange, or transfer your personal information to third parties. This does not include trusted third parties who help us operate our website or conduct our business, as long as these parties agree to keep this information confidential."
+            },
+            {
+                "numero": 5,
+                "titre": "Consent",
+                "contenu": "By providing your email address for our newsletter, you consent to the collection and use of this information in accordance with this privacy policy."
+            },
+            {
+                "numero": 6,
+                "titre": "Access and Control of Your Information",
+                "contenu": "You have the right to:",
+                "droits": [
+                    "Unsubscribe from our newsletter at any time via the unsubscribe link in each email",
+                    "Request access, correction, or deletion of your personal data",
+                    "Object to the processing of your personal data"
+                ]
+            },
+            {
+                "numero": 7,
+                "titre": "Privacy Policy Changes",
+                "contenu": "We reserve the right to modify this privacy policy at any time. Any changes will be published on this page with an update date."
+            },
+            {
+                "numero": 8,
+                "titre": "Contact",
+                "contenu": "For any questions or concerns regarding this privacy policy or the processing of your data, please contact us at: contact@madin-ia.com. By using our site and subscribing to our newsletter, you accept this privacy policy.",
+                "contact_email": "contact@madin-ia.com"
+            }
+        ]
     }
 }

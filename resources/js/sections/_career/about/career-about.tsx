@@ -6,21 +6,36 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 import { CONFIG } from '@/global-config';
+import { useTranslate } from '@/locales';
 
 import { AnimateCountUp } from '@/components/animate';
 
 // ----------------------------------------------------------------------
 
-const SUMMARY = [
-  { name: 'Jobs', number: 2230000 },
-  { name: 'Successful hiring', number: 500000 },
-  { name: 'Partners', number: 250 },
-  { name: 'Employee', number: 1560 },
-];
-
-// ----------------------------------------------------------------------
-
 export function CareerAbout({ sx, ...other }: BoxProps) {
+  const { t } = useTranslate('pages');
+
+  // Récupérer les statistiques depuis les traductions
+  const stats = t('about.career.stats', { returnObjects: true }) as any;
+  const SUMMARY = [
+    { 
+      name: stats.formations.name, 
+      number: stats.formations.number 
+    },
+    { 
+      name: stats.clients.name, 
+      number: stats.clients.number 
+    },
+    { 
+      name: stats.partners.name, 
+      number: stats.partners.number 
+    },
+    { 
+      name: stats.team.name, 
+      number: stats.team.number 
+    },
+  ];
+
   return (
     <Box
       component="section"
@@ -43,7 +58,7 @@ export function CareerAbout({ sx, ...other }: BoxProps) {
             textAlign: { xs: 'center', md: 'left' },
           }}
         >
-          About us
+          {t('about.career.overline')}
         </Typography>
 
         <Grid
@@ -56,7 +71,7 @@ export function CareerAbout({ sx, ...other }: BoxProps) {
           }}
         >
           <Grid size={{ xs: 12, md: 6, lg: 5 }}>
-            <Typography variant="h2">We make the best for all our customers.</Typography>
+            <Typography variant="h2">{t('about.career.title')}</Typography>
           </Grid>
 
           <Grid
@@ -70,18 +85,16 @@ export function CareerAbout({ sx, ...other }: BoxProps) {
             }}
           >
             <Typography>
-              Curabitur ullamcorper ultricies nisi. Sed mollis, eros et ultrices tempus, mauris
-              ipsum aliquam libero, non adipiscing dolor urna a orci.
+              {t('about.career.description1')}
             </Typography>
 
             <Typography>
-              Donec vitae sapien ut libero venenatis faucibus. Vestibulum fringilla pede sit amet
-              augue. Vivamus euismod mauris.
+              {t('about.career.description2')}
             </Typography>
           </Grid>
         </Grid>
 
-        <Section />
+        <Section summary={SUMMARY} />
       </Container>
     </Box>
   );
@@ -89,7 +102,13 @@ export function CareerAbout({ sx, ...other }: BoxProps) {
 
 // ----------------------------------------------------------------------
 
-function Section({ sx, ...other }: BoxProps) {
+type SectionProps = BoxProps & {
+  summary: Array<{ name: string; number: number }>;
+};
+
+function Section({ summary, sx, ...other }: SectionProps) {
+  const { t } = useTranslate('pages');
+
   return (
     <Box
       sx={[
@@ -126,7 +145,7 @@ function Section({ sx, ...other }: BoxProps) {
             overflowWrap: 'break-word',
           }}
         >
-          Our agency has been
+          {t('about.career.section.title')}
         </Typography>
 
         <Typography 
@@ -137,12 +156,11 @@ function Section({ sx, ...other }: BoxProps) {
             overflowWrap: 'break-word',
           }}
         >
-          Hello. Our agency has been present for over 20 years. We make the best for all our
-          customers.
+          {t('about.career.section.description')}
         </Typography>
 
         <Box sx={{ gap: { xs: 3, md: 5 }, display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }}>
-          {SUMMARY.map((value) => (
+          {summary.map((value) => (
             <Box
               key={value.name}
               sx={{
@@ -161,7 +179,7 @@ function Section({ sx, ...other }: BoxProps) {
                   justifyContent: 'center',
                 }}
               >
-                <AnimateCountUp variant="h2" to={value.number} toFixed={2} />
+                <AnimateCountUp variant="h2" to={value.number} toFixed={0} />
                 <Box component="span" sx={{ typography: 'h3' }}>
                   +
                 </Box>

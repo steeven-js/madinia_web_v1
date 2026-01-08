@@ -63,6 +63,66 @@ export const _brands = [
 
 // ----------------------------------------------------------------------
 
+export const _madiniaClients = [
+  {
+    id: '1',
+    name: 'Martinique Première',
+    image: `${CONFIG.assetsDir}/assets/images/logo/m1.jpeg`,
+  },
+  {
+    id: '2',
+    name: 'Port de la Martinique',
+    image: `${CONFIG.assetsDir}/assets/images/logo/LogoGrandPort.png`,
+  },
+  {
+    id: '3',
+    name: 'Le Village',
+    image: `${CONFIG.assetsDir}/assets/images/logo/le-village.svg`,
+  },
+  {
+    id: '4',
+    name: 'Cacem',
+    image: `${CONFIG.assetsDir}/assets/images/logo/cacem.jpeg`,
+  },
+  {
+    id: '5',
+    name: 'CCI',
+    image: `${CONFIG.assetsDir}/assets/images/logo/cci.jpeg`,
+  },
+  {
+    id: '6',
+    name: "Ministère de l'éducation nationale",
+    image: `${CONFIG.assetsDir}/assets/images/logo/education-nationale.jpeg`,
+  },
+  {
+    id: '7',
+    name: 'Rci',
+    image: `${CONFIG.assetsDir}/assets/images/logo/rci.png`,
+  },
+  {
+    id: '8',
+    name: 'Rotary International',
+    image: `${CONFIG.assetsDir}/assets/images/logo/rotary.jpeg`,
+  },
+  {
+    id: '9',
+    name: 'Skillfor Campus',
+    image: `${CONFIG.assetsDir}/assets/images/logo/skillfor.jpeg`,
+  },
+  {
+    id: '10',
+    name: 'Université des Antilles',
+    image: `${CONFIG.assetsDir}/assets/images/logo/universite-antilles.jpeg`,
+  },
+  {
+    id: '11',
+    name: 'P14 Academy',
+    image: `${CONFIG.assetsDir}/assets/images/logo/p14.jpeg`,
+  },
+];
+
+// ----------------------------------------------------------------------
+
 export const _faqs = [
   'Sed augue ipsum, egestas nec, vestibulum et',
   'alesuada adipiscing, dui vestibulum suscipit nulla quis orci.',

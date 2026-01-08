@@ -13,6 +13,7 @@ import LoadingButton from '@mui/lab/LoadingButton';
 import FormHelperText from '@mui/material/FormHelperText';
 
 import { useContactForm } from '@/hooks/use-contact-form';
+import { useTranslate } from '@/locales';
 import { fCurrency } from '@/utils/format-number';
 import { varAlpha } from 'minimal-shared/utils';
 
@@ -25,23 +26,25 @@ type MarketingContactFormProps = {
   [key: string]: any;
 };
 
-const SERVICES = ['Formations IA', 'Conférences', 'Consulting IA', 'Chatbot IA'];
-
 export function MarketingContactForm({ sx, ...other }: MarketingContactFormProps) {
   const theme = useTheme();
+  const { t } = useTranslate('forms');
+
+  // Récupérer les services depuis les traductions
+  const SERVICES = (t('contact.fields.services.items', { returnObjects: true }) || []) as string[];
 
   const MarketingContactSchema = zod.object({
-    services: zod.string().array().min(1, { message: 'Vous devez choisir au moins un service' }),
-    firstName: zod.string().min(1, { message: 'Le prénom est requis' }),
-    lastName: zod.string().min(1, { message: 'Le nom est requis' }),
+    services: zod.string().array().min(1, { message: t('contact.validation.services.required') }),
+    firstName: zod.string().min(1, { message: t('contact.validation.firstName.required') }),
+    lastName: zod.string().min(1, { message: t('contact.validation.lastName.required') }),
     email: zod
       .string()
-      .min(1, { message: "L'email est requis" })
-      .email({ message: "L'email doit être valide" }),
+      .min(1, { message: t('contact.validation.email.required') })
+      .email({ message: t('contact.validation.email.invalid') }),
     phone: zod.string().optional(),
     company: zod.string().optional(),
-    budget: zod.number().array().min(1, { message: 'Budget requis' }),
-    message: zod.string().min(1, { message: 'Le message est requis' }),
+    budget: zod.number().array().min(1, { message: t('contact.validation.budget.required') }),
+    message: zod.string().min(1, { message: t('contact.validation.message.required') }),
   });
 
   const defaultValues = {
@@ -80,7 +83,7 @@ export function MarketingContactForm({ sx, ...other }: MarketingContactFormProps
         <Stack spacing={3} alignItems="flex-start">
           <Box sx={{ width: '100%' }}>
             <Typography variant="subtitle2" sx={{ mb: 2, color: 'text.primary', fontWeight: 600 }}>
-              Services souhaités
+              {t('contact.fields.services.label')}
             </Typography>
             <Box gap={1} display="flex" flexWrap="wrap">
               {SERVICES.map((service: string) => (
@@ -128,20 +131,20 @@ export function MarketingContactForm({ sx, ...other }: MarketingContactFormProps
           </Box>
 
           <Stack spacing={{ xs: 2, md: 1.5 }} direction={{ xs: 'column', md: 'row' }} sx={{ width: 1 }}>
-            <Field.Text name="firstName" label="Prénom" required />
-            <Field.Text name="lastName" label="Nom" required />
+            <Field.Text name="firstName" label={t('contact.fields.firstName.label')} required />
+            <Field.Text name="lastName" label={t('contact.fields.lastName.label')} required />
           </Stack>
 
-          <Field.Text name="email" label="Email" type="email" required />
+          <Field.Text name="email" label={t('contact.fields.email.label')} type="email" required />
 
           <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 2, md: 1.5 }} sx={{ width: 1 }}>
-            <Field.Text name="phone" label="Téléphone" />
-            <Field.Text name="company" label="Entreprise" />
+            <Field.Text name="phone" label={t('contact.fields.phone.label')} />
+            <Field.Text name="company" label={t('contact.fields.company.label')} />
           </Stack>
 
           <Stack spacing={3} sx={{ py: 1.5, width: 1 }}>
             <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-              Votre budget
+              {t('contact.fields.budget.label')}
             </Typography>
 
             <Field.Slider
@@ -154,7 +157,7 @@ export function MarketingContactForm({ sx, ...other }: MarketingContactFormProps
             />
           </Stack>
 
-          <Field.Text name="message" label="Message" multiline rows={4} required />
+          <Field.Text name="message" label={t('contact.fields.message.label')} multiline rows={4} required />
         </Stack>
 
         <LoadingButton
@@ -171,7 +174,7 @@ export function MarketingContactForm({ sx, ...other }: MarketingContactFormProps
             fontSize: '1rem',
           }}
         >
-          Envoyer le message
+          {t('contact.buttons.submit')}
         </LoadingButton>
 
         {error && (
