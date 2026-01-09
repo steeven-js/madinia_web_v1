@@ -20,10 +20,10 @@ const TERRITOIRES = [
     color: '#FF6B6B',
     mapPath: `${CONFIG.assetsDir}/assets/map/martinique.svg`,
     stats: {
-      interventions: 45,
-      formations: 12,
-      entreprises: 28,
-      participants: 320,
+      interventions: 80,
+      formations: 35,
+      entreprises: 50,
+      participants: 6500,
     },
   },
   {
@@ -32,10 +32,10 @@ const TERRITOIRES = [
     color: '#4ECDC4',
     mapPath: `${CONFIG.assetsDir}/assets/map/guadeloupe.svg`,
     stats: {
-      interventions: 38,
-      formations: 10,
-      entreprises: 22,
-      participants: 280,
+      interventions: 5,
+      formations: 7,
+      entreprises: 5,
+      participants: 500,
     },
   },
   {
@@ -44,10 +44,22 @@ const TERRITOIRES = [
     color: '#FFE66D',
     mapPath: `${CONFIG.assetsDir}/assets/map/guyane.svg`,
     stats: {
-      interventions: 25,
-      formations: 8,
-      entreprises: 15,
-      participants: 180,
+      interventions: 3,
+      formations: 1,
+      entreprises: 2,
+      participants: 350,
+    },
+  },
+  {
+    id: 'st-martin',
+    name: 'St Martin',
+    color: '#95E1D3',
+    mapPath: `${CONFIG.assetsDir}/assets/map/st-martin.svg`,
+    stats: {
+      interventions: 1,
+      formations: 4,
+      entreprises: 2,
+      participants: 150,
     },
   },
 ];
@@ -170,22 +182,22 @@ export function CareerLandingTerritoires({ sx, ...other }: BoxProps) {
           >
             {renderStat(
               territoire.stats.interventions,
-              'Interventions',
+              'Intervention',
               territoire.color
             )}
             {renderStat(
               territoire.stats.formations,
-              'Formations',
+              'Formation',
               territoire.color
             )}
             {renderStat(
               territoire.stats.entreprises,
-              'Entreprises',
+              'Entreprises accompagné',
               territoire.color
             )}
             {renderStat(
               territoire.stats.participants,
-              'Participants',
+              'Participants sensibilisés',
               territoire.color
             )}
           </Box>
@@ -217,8 +229,12 @@ export function CareerLandingTerritoires({ sx, ...other }: BoxProps) {
             gridTemplateColumns: {
               xs: 'repeat(1, 1fr)',
               sm: 'repeat(2, 1fr)',
-              md: 'repeat(3, 1fr)',
+              md: 'repeat(2, 1fr)',
+              lg: 'repeat(4, 1fr)',
             },
+            justifyContent: 'center',
+            maxWidth: { lg: 1400 },
+            mx: 'auto',
           }}
         >
           {TERRITOIRES.map((territoire) => renderCard(territoire))}

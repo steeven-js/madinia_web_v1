@@ -14,7 +14,7 @@ const imagePath = (name: string) => `${CONFIG.assetsDir}/assets/images/menu/${na
 const getPageLinks = (t: TFunction) => [
   {
     subheader: t('navigation:footer.sections.formations'),
-    coverUrl: imagePath('marketing.webp'),
+    coverUrl: imagePath('formations.webp'),
     items: [
       { title: t('pages:footer.links.formationIA'), path: paths.formations.root },
       { title: t('navigation:footer.links.preinscription') || 'Pré-inscription', path: paths.formations.preinscription },
@@ -22,7 +22,7 @@ const getPageLinks = (t: TFunction) => [
   },
   {
     subheader: t('navigation:footer.sections.services'),
-    coverUrl: imagePath('travel.webp'),
+    coverUrl: imagePath('services.webp'),
     items: [
       { title: t('navigation:footer.links.conferenceIA'), path: paths.services.conferenceIa },
       { title: t('navigation:footer.links.auditConseilsIA'), path: paths.services.auditEtConseilsIa },
@@ -31,7 +31,7 @@ const getPageLinks = (t: TFunction) => [
   },
   {
     subheader: t('navigation:subheader.madinia'),
-    coverUrl: imagePath('career.webp'),
+    coverUrl: imagePath('madinia.webp'),
     items: [
       // [MAINTENANCE] Page About désactivée temporairement - 2025-01-XX
       // Raison: Mise à jour du code en cours
@@ -42,7 +42,7 @@ const getPageLinks = (t: TFunction) => [
   },
   {
     subheader: t('pages:footer.sections.resources') || 'Ressources',
-    coverUrl: imagePath('e-learning.webp'),
+    coverUrl: imagePath('blog.webp'),
     items: [
       // [MAINTENANCE] Blog/Posts désactivés temporairement - 2025-01-XX
       // Raison: Mise à jour du code en cours
@@ -53,7 +53,7 @@ const getPageLinks = (t: TFunction) => [
   },
   {
     subheader: t('navigation:footer.social.followUs') || 'Nos réseaux',
-    coverUrl: imagePath('e-commerce.webp'),
+    coverUrl: imagePath('socials.webp'),
     items: [
       { title: t('navigation:footer.social.facebook'), path: paths.facebook },
       { title: t('navigation:footer.social.linkedin'), path: paths.linkedin },
